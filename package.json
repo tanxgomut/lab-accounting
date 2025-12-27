@@ -1,5 +1,5 @@
 {
-  "name": "LAB-accounting",
+  "name": "lab-accounting",
   "type": "module",
   "private": true,
   "scripts": {
@@ -10,6 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/fonts": "0.12.1",
+    "@nuxt/icon": "2.1.1",
+    "@nuxt/image": "2.0.0",
+    "@nuxt/ui": "^4.3.0",
+    "@nuxtjs/color-mode": "4.0.0",
+    "@nuxtjs/seo": "3.3.0",
     "nuxt": "^4.2.2",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"

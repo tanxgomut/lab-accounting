@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Prompt', sans-serif;
+
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #2563EB;
+  --color-blue-600: #1d4ed8;
+  --color-blue-700: #1e40af;
+  --color-blue-800: #1e3a8a;
+  --color-blue-900: #172554;
+  --color-blue-950: #0b1120;
+
+  /* Info Colors (Cyan - ฟ้า) */
+  --color-cyan-50: #ecfeff;
+  --color-cyan-100: #cffafe;
+  --color-cyan-200: #a5f3fc;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-600: #0891b2;
+  --color-cyan-700: #0e7490;
+  --color-cyan-800: #155e75;
+  --color-cyan-900: #164e63;
+  --color-cyan-950: #083344;
+
+  /* Warning Colors (Orange - ส้ม) */
+  --color-yellow-50: #fff7ed;
+  --color-yellow-100: #ffedd5;
+  --color-yellow-200: #fed7aa;
+  --color-yellow-300: #fdba74;
+  --color-yellow-400: #fb923c;
+  --color-yellow-500: #f97316;
+  --color-yellow-600: #ea580c;
+  --color-yellow-700: #c2410c;
+  --color-yellow-800: #9a3412;
+  --color-yellow-900: #7c2d12;
+  --color-yellow-950: #431407;
+
+  /* Success Colors (Lime - เขียว) */
+  --color-success-50: #f7fee7;
+  --color-success-100: #ecfccb;
+  --color-success-200: #d9f99d;
+  --color-success-300: #bef264;
+  --color-success-400: #a3e635;
+  --color-success-500: #84cc16;
+  --color-success-600: #65a30d;
+  --color-success-700: #4d7c0f;
+  --color-success-800: #3f6212;
+  --color-success-900: #365314;
+  --color-success-950: #1a2e05;
+}
+
+:root {
+  --ui-text: var(--color-gray-950);
+  --ui-text-highlighted: var(--color-gray-850);
+  --ui-text-muted: var(--color-gray-750);
+}
+
+.dark {
+  --ui-text: var(--color-gray-200);
+  --ui-text-highlighted: var(--color-white);
+  --ui-text-muted: var(--color-gray-400);
+
+  --ui-primary: var(--color-blue-500);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
