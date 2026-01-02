@@ -23,9 +23,9 @@ useSeoMeta({
     ogTitle: 'LAB ACCOUNTING PLUS - บริการบัญชีและภาษี',
     description: 'บริการบัญชีและภาษี',
     ogDescription: 'บริการบัญชีและภาษี',
-    ogImage: `${siteUrl}/og-image.jpg`,
+    ogImage: `${siteUrl}/og-image.png`,
     twitterCard: 'summary_large_image',
-    twitterImage: `${siteUrl}/og-image.jpg`,
+    twitterImage: `${siteUrl}/og-image.png`,
     charset: 'utf-8',
     viewport: 'width=device-width, initial-scale=1',
 })
