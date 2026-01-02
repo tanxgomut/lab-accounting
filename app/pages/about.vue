@@ -138,8 +138,7 @@ const links = ref([
         </UPageSection>
 
         <!-- Mission Section -->
-        <UPageSection title="พันธกิจของเรา" headline="Mission" icon="i-heroicons-heart" orientation="horizontal"
-            reverse>
+        <UPageSection title="พันธกิจของเรา" headline="Mission" icon="i-heroicons-heart" orientation="horizontal">
             <NuxtImg src="https://picsum.photos/id/20/800/600" alt="Mission"
                 class="object-cover w-full h-[350px] rounded-2xl shadow-lg" />
             <template #description>
@@ -199,7 +198,7 @@ const links = ref([
                         <div :class="['flex items-center gap-8', index % 2 === 0 ? 'flex-row' : 'flex-row-reverse']">
                             <div class="w-1/2" :class="index % 2 === 0 ? 'text-right' : 'text-left'">
                                 <p class="text-2xl font-bold text-primary-600 dark:text-primary-400">{{ milestone.year
-                                    }}
+                                }}
                                 </p>
                                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ milestone.title }}
                                 </h3>
