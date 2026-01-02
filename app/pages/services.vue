@@ -7,7 +7,10 @@ useSeoMeta({
     description: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร',
     ogTitle: 'บริการของเรา - LMB Accounting Plus',
     ogDescription: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร',
-    ogImage: `${siteUrl}/og-image.jpg`,
+    ogImage: `${siteUrl}/og-image.png`,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogType: 'website',
     ogUrl: `${siteUrl}/services`,
     twitterCard: 'summary_large_image',
 })

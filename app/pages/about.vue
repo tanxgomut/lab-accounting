@@ -7,7 +7,10 @@ useSeoMeta({
     description: 'รู้จัก LMB Accounting Plus สำนักงานบัญชีครบวงจร ดูแลโดยทีมผู้สอบบัญชีรับอนุญาต (CPA) และนักบัญชีมืออาชีพ',
     ogTitle: 'เกี่ยวกับเรา - LMB Accounting Plus',
     ogDescription: 'รู้จัก LMB Accounting Plus สำนักงานบัญชีครบวงจร ดูแลโดยทีมผู้สอบบัญชีรับอนุญาต (CPA)',
-    ogImage: `${siteUrl}/og-image.jpg`,
+    ogImage: `${siteUrl}/og-image.png`,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogType: 'website',
     ogUrl: `${siteUrl}/about`,
     twitterCard: 'summary_large_image',
 })

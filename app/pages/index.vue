@@ -7,7 +7,10 @@ useSeoMeta({
     description: 'รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ตรวจสอบบัญชี ครบวงจร โดยทีมงานมืออาชีพ',
     ogTitle: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
     ogDescription: 'รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ตรวจสอบบัญชี ครบวงจร โดยทีมงานมืออาชีพ',
-    ogImage: `${siteUrl}/og-image.jpg`,
+    ogImage: `${siteUrl}/og-image.png`,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogType: 'website',
     ogUrl: siteUrl,
     twitterCard: 'summary_large_image',
 })

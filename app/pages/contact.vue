@@ -7,7 +7,10 @@ useSeoMeta({
     description: 'ติดต่อสำนักงานบัญชี LMB Accounting Plus รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปรึกษาฟรี',
     ogTitle: 'ติดต่อเรา - LMB Accounting Plus',
     ogDescription: 'ติดต่อสำนักงานบัญชี LMB Accounting Plus รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปรึกษาฟรี',
-    ogImage: `${siteUrl}/og-image.jpg`,
+    ogImage: `${siteUrl}/og-image.png`,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogType: 'website',
     ogUrl: `${siteUrl}/contact`,
     twitterCard: 'summary_large_image',
 })
