@@ -1,18 +1,10 @@
 <script setup lang="ts">
-const runtimeConfig = useRuntimeConfig()
-const siteUrl = runtimeConfig.public.siteUrl
 
 useSeoMeta({
     title: 'เกี่ยวกับเรา - LMB Accounting Plus',
     description: 'รู้จัก LMB Accounting Plus สำนักงานบัญชีครบวงจร ดูแลโดยทีมผู้สอบบัญชีรับอนุญาต (CPA) และนักบัญชีมืออาชีพ',
     ogTitle: 'เกี่ยวกับเรา - LMB Accounting Plus',
     ogDescription: 'รู้จัก LMB Accounting Plus สำนักงานบัญชีครบวงจร ดูแลโดยทีมผู้สอบบัญชีรับอนุญาต (CPA)',
-    ogImage: `${siteUrl}/og-image.png`,
-    ogImageWidth: 1200,
-    ogImageHeight: 630,
-    ogType: 'website',
-    ogUrl: `${siteUrl}/about`,
-    twitterCard: 'summary_large_image',
 })
 
 
@@ -198,7 +190,7 @@ const links = ref([
                         <div :class="['flex items-center gap-8', index % 2 === 0 ? 'flex-row' : 'flex-row-reverse']">
                             <div class="w-1/2" :class="index % 2 === 0 ? 'text-right' : 'text-left'">
                                 <p class="text-2xl font-bold text-primary-600 dark:text-primary-400">{{ milestone.year
-                                }}
+                                    }}
                                 </p>
                                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ milestone.title }}
                                 </h3>

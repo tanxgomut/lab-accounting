@@ -1,18 +1,10 @@
 <script setup lang="ts">
-const runtimeConfig = useRuntimeConfig()
-const siteUrl = runtimeConfig.public.siteUrl
 
 useSeoMeta({
     title: 'บทความและข่าวสาร - LMB Accounting Plus',
     description: 'รวมบทความความรู้ด้านบัญชี ภาษี และกฎหมายธุรกิจ อัปเดตใหม่ล่าสุด',
     ogTitle: 'บทความและข่าวสาร - LMB Accounting Plus',
     ogDescription: 'รวมบทความความรู้ด้านบัญชี ภาษี และกฎหมายธุรกิจ อัปเดตใหม่ล่าสุด',
-    ogImage: `${siteUrl}/og-image.png`,
-    ogImageWidth: 1200,
-    ogImageHeight: 630,
-    ogType: 'website',
-    ogUrl: `${siteUrl}/blogs`,
-    twitterCard: 'summary_large_image',
 })
 
 const articles = [
