@@ -1,9 +1,12 @@
 <script setup lang="ts">
-useHead({
+useSeoMeta({
     title: 'บริการของเรา - LMB Accounting Plus',
-    meta: [
-        { name: 'description', content: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร' }
-    ]
+    description: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร',
+    ogTitle: 'บริการของเรา - LMB Accounting Plus',
+    ogDescription: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร',
+    ogImage: '/og-image.jpg',
+    ogUrl: 'https://lmbaccount-law.com/services',
+    twitterCard: 'summary_large_image',
 })
 
 const features = ref([

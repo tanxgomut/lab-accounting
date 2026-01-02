@@ -19,6 +19,7 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits(['update:modelValue'])
+const router = useRouter()
 
 const editor = useEditor({
     content: props.modelValue || '',
@@ -253,7 +254,7 @@ const previewContent = () => {
     if (!editor.value) return
     const content = editor.value.getHTML()
     localStorage.setItem('tiptap-preview-content', content)
-    window.open('/preview', '_blank')
+    window.open('/manage/preview', '_blank')
 }
 
 const processImageFile = (file: File | undefined) => {
@@ -436,8 +437,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div v-if="editor"
-        class="mt-12 mx-auto max-w-4xl border border-gray-200 dark:border-gray-700 rounded-2xl bg-white dark:bg-gray-900">
+    <div v-if="editor" class="mt-12 border border-gray-200 dark:border-gray-700 rounded-2xl bg-white dark:bg-gray-900">
         <!-- Toolbar (Sticky) -->
         <div
             class="sticky top-(--ui-header-height) z-10 flex flex-wrap items-center gap-1 p-2 sm:p-3 border-b border-gray-200 dark:border-gray-700 bg-gray-50/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-t-2xl">
@@ -717,7 +717,7 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- Editor Content (Scrollable) -->
-        <div class="max-h-[60vh] overflow-y-auto">
+        <div class="max-h-[80vh] overflow-y-auto">
             <EditorContent :editor="editor"
                 class="prose prose-sm sm:prose-base dark:prose-invert max-w-none p-4 sm:p-6" />
         </div>

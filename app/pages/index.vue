@@ -1,10 +1,13 @@
 <script setup lang="ts">
 
-useHead({
+useSeoMeta({
     title: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
-    meta: [
-        { name: 'description', content: 'รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ตรวจสอบบัญชี ครบวงจร โดยทีมงานมืออาชีพ' }
-    ]
+    description: 'รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ตรวจสอบบัญชี ครบวงจร โดยทีมงานมืออาชีพ',
+    ogTitle: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
+    ogDescription: 'รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ตรวจสอบบัญชี ครบวงจร โดยทีมงานมืออาชีพ',
+    ogImage: '/og-image.jpg',
+    ogUrl: 'https://lmbaccount-law.com',
+    twitterCard: 'summary_large_image',
 })
 
 // Why Choose Us
@@ -118,7 +121,7 @@ const items = [
                         <div class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">{{ stat.value }}
                             <span v-if="stat.suffix" class="text-lg font-normal text-gray-500 dark:text-gray-400">{{
                                 stat.suffix
-                            }}</span>
+                                }}</span>
                         </div>
                         <div class="text-gray-500 dark:text-gray-400 text-sm font-medium">{{ stat.label }}</div>
                     </div>

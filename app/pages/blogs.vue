@@ -1,9 +1,12 @@
 <script setup lang="ts">
-useHead({
+useSeoMeta({
     title: 'บทความและข่าวสาร - LMB Accounting Plus',
-    meta: [
-        { name: 'description', content: 'รวมบทความความรู้ด้านบัญชี ภาษี และกฎหมายธุรกิจ อัปเดตใหม่ล่าสุด' }
-    ]
+    description: 'รวมบทความความรู้ด้านบัญชี ภาษี และกฎหมายธุรกิจ อัปเดตใหม่ล่าสุด',
+    ogTitle: 'บทความและข่าวสาร - LMB Accounting Plus',
+    ogDescription: 'รวมบทความความรู้ด้านบัญชี ภาษี และกฎหมายธุรกิจ อัปเดตใหม่ล่าสุด',
+    ogImage: '/og-image.jpg',
+    ogUrl: 'https://lmbaccount-law.com/blogs',
+    twitterCard: 'summary_large_image',
 })
 
 const articles = [

@@ -1,9 +1,12 @@
 <script setup lang="ts">
-useHead({
+useSeoMeta({
     title: 'ติดต่อเรา - LMB Accounting Plus',
-    meta: [
-        { name: 'description', content: 'ติดต่อสำนักงานบัญชี LMB Accounting Plus รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปรึกษาฟรี' }
-    ]
+    description: 'ติดต่อสำนักงานบัญชี LMB Accounting Plus รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปรึกษาฟรี',
+    ogTitle: 'ติดต่อเรา - LMB Accounting Plus',
+    ogDescription: 'ติดต่อสำนักงานบัญชี LMB Accounting Plus รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปรึกษาฟรี',
+    ogImage: '/og-image.jpg',
+    ogUrl: 'https://lmbaccount-law.com/contact',
+    twitterCard: 'summary_large_image',
 })
 
 // ข้อมูลติดต่อ
@@ -156,13 +159,15 @@ const submitForm = async () => {
                                 :rows="4" size="lg" class="w-full" />
                         </UFormField>
 
-                        <div class="flex items-center gap-4">
-                            <UButton type="submit" color="warning" size="xl" :loading="isSubmitting" class="px-8">
-                                <UIcon name="i-heroicons-paper-airplane" class="w-5 h-5 mr-2" />
+                        <div class="  ">
+                            <UButton type="submit" icon="i-heroicons-paper-airplane" color="warning" size="md"
+                                :loading="isSubmitting" class="px-8">
+
                                 ส่งข้อความ
                             </UButton>
-                            <span class="text-sm text-muted">หรือติดต่อผ่านช่องทางด้านข้าง</span>
+                            <p class="text-sm text-muted mt-2">หรือติดต่อผ่านช่องทางด้านข้าง</p>
                         </div>
+
                     </form>
                 </UCard>
             </div>

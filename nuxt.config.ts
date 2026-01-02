@@ -21,12 +21,19 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sources: ['/api/__sitemap__/urls'],
+    urls: [
+      { loc: '/', changefreq: 'weekly', priority: 1.0 },
+      { loc: '/about', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/services', changefreq: 'weekly', priority: 0.9 },
+      { loc: '/blogs', changefreq: 'weekly', priority: 0.8 },
+      { loc: '/contact', changefreq: 'monthly', priority: 0.7 },
+    ],
+    exclude: ['/manage/**'],
   },
 
   robots: {
     allow: ['/'],
-    disallow: ['/api/', '/_nuxt/'],
+    disallow: ['/api/', '/_nuxt/', '/manage/'],
     sitemap: 'https://lmbaccount-law.com/sitemap.xml',
   },
 
