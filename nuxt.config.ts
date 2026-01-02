@@ -14,7 +14,8 @@ export default defineNuxtConfig({
 
   // seo
   site: {
-    url: 'https://lmbaccount-law.com',
+    // url: 'https://lmbaccount-law.com',
+    url: 'https://lab-accounting.vercel.app',
     name: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
     description: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน โดยทีมผู้เชี่ยวชาญ',
     defaultLocale: 'th',
@@ -34,7 +35,8 @@ export default defineNuxtConfig({
   robots: {
     allow: ['/'],
     disallow: ['/api/', '/_nuxt/', '/manage/'],
-    sitemap: 'https://lmbaccount-law.com/sitemap.xml',
+    // sitemap: 'https://lmbaccount-law.com/sitemap.xml',
+    sitemap: 'https://lab-accounting.vercel.app/sitemap.xml',
   },
 
   schemaOrg: {
@@ -42,8 +44,10 @@ export default defineNuxtConfig({
       type: 'LocalBusiness',
       name: 'LMB Accounting Plus',
       description: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี',
-      url: 'https://lmbaccount-law.com',
-      logo: 'https://lmbaccount-law.com/logo.png',
+      // url: 'https://lmbaccount-law.com',
+      // logo: 'https://lmbaccount-law.com/logo.png',
+      url: 'https://lab-accounting.vercel.app',
+      logo: 'https://lab-accounting.vercel.app/logo.png',
       telephone: '+66-XX-XXX-XXXX',
       address: {
         streetAddress: 'ที่อยู่สำนักงาน',
@@ -85,7 +89,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: 'https://lmbaccount-law.com',
+      // siteUrl: 'https://lmbaccount-law.com',
+      siteUrl: 'https://lab-accounting.vercel.app',
     }
   },
 })

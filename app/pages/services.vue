@@ -1,11 +1,14 @@
 <script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
+const siteUrl = runtimeConfig.public.siteUrl
+
 useSeoMeta({
     title: 'บริการของเรา - LMB Accounting Plus',
     description: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร',
     ogTitle: 'บริการของเรา - LMB Accounting Plus',
     ogDescription: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร',
-    ogImage: '/og-image.jpg',
-    ogUrl: 'https://lmbaccount-law.com/services',
+    ogImage: `${siteUrl}/og-image.jpg`,
+    ogUrl: `${siteUrl}/services`,
     twitterCard: 'summary_large_image',
 })
 
