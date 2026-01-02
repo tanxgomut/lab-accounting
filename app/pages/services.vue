@@ -1,0 +1,374 @@
+<script setup lang="ts">
+useHead({
+    title: 'บริการของเรา - LMB Accounting Plus',
+    meta: [
+        { name: 'description', content: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร' }
+    ]
+})
+
+const features = ref([
+    {
+        title: 'จดทะเบียนธุรกิจ',
+        description: 'บริการจดทะเบียนจัดตั้งนิติบุคคล เปลี่ยนแปลงข้อมูล และจดเลิกกิจการ ครบวงจร',
+        icon: 'i-heroicons-document-text'
+    },
+    {
+        title: 'รับทำบัญชีและภาษี',
+        description: 'ปิดงบการเงินรายเดือน/รายปี ยื่นภาษี และวางแผนภาษีอย่างถูกต้อง',
+        icon: 'i-heroicons-calculator'
+    },
+    {
+        title: 'งาน HR และประกันสังคม',
+        description: 'จดขึ้นทะเบียนนายจ้าง งานทะเบียนประกันสังคม ทำสลิปเงินเดือน',
+        icon: 'i-heroicons-scale'
+    }
+])
+
+const registrationServices = [
+    {
+        title: 'จดบริษัทออนไลน์',
+        description: 'สะดวกรวดเร็ว ผ่านระบบ e-Registration',
+        icon: 'i-heroicons-computer-desktop'
+    },
+    {
+        title: 'จดบริษัทแบบมือ',
+        description: 'ดำเนินการยื่นเอกสารกับกรมพัฒนาธุรกิจการค้า',
+        icon: 'i-heroicons-document-text'
+    },
+    {
+        title: 'จดเลิกกิจการ',
+        description: 'ดำเนินการเลิกและชำระบัญชีครบวงจร',
+        icon: 'i-heroicons-x-circle'
+    },
+    {
+        title: 'จดภาษีมูลค่าเพิ่ม',
+        description: 'จดทะเบียน VAT ถูกต้องตามกฎหมาย',
+        icon: 'i-heroicons-receipt-percent'
+    },
+    {
+        title: 'แก้ไขข้อมูลนิติบุคคล',
+        description: 'เปลี่ยนแปลงกรรมการ อำนาจ หรือชื่อบริษัท',
+        icon: 'i-heroicons-pencil-square'
+    },
+    {
+        title: 'ย้ายที่อยู่นิติบุคคล',
+        description: 'แจ้งย้ายสำนักงาน ย้ายข้ามเขต/จังหวัด',
+        icon: 'i-heroicons-map-pin'
+    },
+    {
+        title: 'แปรสภาพห้างหุ้นส่วน',
+        description: 'เปลี่ยนห้างหุ้นส่วนเป็นบริษัทจำกัด',
+        icon: 'i-heroicons-arrow-path'
+    }
+]
+
+const accountingServices = [
+    {
+        title: 'รับทำบัญชี',
+        description: 'บันทึกบัญชีรายเดือนตามมาตรฐาน',
+        icon: 'i-heroicons-book-open'
+    },
+    {
+        title: 'ปิดงบการเงินประจำปี',
+        description: 'จัดทำงบการเงินส่งสรรพากรและพาณิชย์',
+        icon: 'i-heroicons-chart-pie'
+    },
+    {
+        title: 'ปิดงบการเงินย้อนหลัง',
+        description: 'เคลียร์งบค้างปี จัดการปัญหางบเก่า',
+        icon: 'i-heroicons-clock'
+    }
+]
+
+const hrServices = [
+    {
+        title: 'จดขึ้นทะเบียนนายจ้าง',
+        description: 'ขึ้นทะเบียนกองทุนประกันสังคม',
+        icon: 'i-heroicons-building-library'
+    },
+    {
+        title: 'งานทะเบียนประกันสังคม',
+        description: 'แจ้งเข้า-ออกลูกจ้าง ส่งเงินสมทบ',
+        icon: 'i-heroicons-identification'
+    },
+    {
+        title: 'ทำสลิปเงินเดือน',
+        description: 'จัดทำ Payroll และสลิปคาร์บอน/E-slip',
+        icon: 'i-heroicons-banknotes'
+    }
+]
+
+const workflowSteps = [
+    {
+        title: '1. ปรึกษาเบื้องต้นฟรี',
+        description: 'ติดต่อเราเพื่อให้ข้อมูลธุรกิจเบื้องต้น ทีมงานจะวิเคราะห์และแนะนำบริการที่เหมาะสม',
+        icon: 'i-heroicons-chat-bubble-left-right'
+    },
+    {
+        title: '2. รับใบเสนอราคา',
+        description: 'เราจัดทำใบเสนอราคาที่ชัดเจน โปร่งใส ไม่มีค่าใช้จ่ายแอบแฝง ให้คุณพิจารณา',
+        icon: 'i-heroicons-document-text'
+    },
+    {
+        title: '3. เริ่มงานทันที',
+        description: 'เมื่อตกลงจ้างงาน เราจะส่งรายการเอกสารที่ต้องเตรียมและเริ่มดำเนินงานทันที',
+        icon: 'i-heroicons-rocket-launch'
+    },
+    {
+        title: '4. ส่งมอบงาน',
+        description: 'ส่งมอบงานถูกต้อง ครบถ้วน ตรงเวลา พร้อมอธิบายรายละเอียดให้คุณเข้าใจ',
+        icon: 'i-heroicons-check-badge'
+    }
+]
+
+const items = [
+    // รูปที่ 1: Laptop และเอกสาร (ID: 180)
+    'https://picsum.photos/id/180/800/600',
+
+    // รูปที่ 2: สมุดโน้ตและปากกา (ID: 20)
+    'https://picsum.photos/id/20/800/600',
+
+    // รูปที่ 3: โทรศัพท์และสมุดจด (ID: 160)
+    'https://picsum.photos/id/160/800/600',
+
+    // รูปที่ 4: การทำงานบน Laptop (ID: 1)
+    'https://picsum.photos/id/1/800/600',
+
+    // รูปที่ 5: บรรยากาศโต๊ะทำงาน (ID: 60)
+    'https://picsum.photos/id/60/800/600',
+
+    // รูปที่ 6: Laptop (ID: 119)
+    'https://picsum.photos/id/119/800/600'
+]
+
+// สถิติ
+const stats = [
+    { value: '10+', label: 'ปีประสบการณ์', icon: 'i-heroicons-calendar', color: 'primary' },
+    { value: '500+', label: 'ลูกค้าที่ไว้วางใจ', icon: 'i-heroicons-users', color: 'warning' },
+    { value: '1,000+', label: 'บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'success' },
+    { value: '100%', label: 'ความพึงพอใจ', icon: 'i-heroicons-heart', color: 'secondary' },
+]
+</script>
+
+<template>
+
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+            <div
+                class="absolute top-0 right-0 w-[600px] h-[600px] bg-success-500/20 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen opacity-50 animate-pulse">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-500/20 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-screen opacity-50 animate-pulse delay-1000">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/40 dark:bg-gray-900/40 blur-[80px] rounded-full">
+            </div>
+        </div>
+        <UPageSection title="บริการหลักของเรา"
+            description="LMB Accounting Plus ให้บริการครอบคลุมทุกด้าน เพื่อให้คุณโฟกัสกับการเติบโตของธุรกิจได้อย่างเต็มที่"
+            :features="features" orientation="horizontal">
+            <NuxtImg src="https://picsum.photos/id/180/800/600" alt="Accounting Illustration"
+                class="w-full h-[450px] object-cover rounded-xl shadow-md" />
+        </UPageSection>
+    </section>
+
+    <UContainer>
+        <section class="py-12 lg:py-16">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div v-for="stat in stats" :key="stat.label"
+                    class="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div
+                        :class="`w-12 h-12 mx-auto mb-4 bg-${stat.color}-100 dark:bg-${stat.color}-900/30 rounded-xl flex items-center justify-center`">
+                        <UIcon :name="stat.icon" :class="`w-6 h-6 text-${stat.color}`" />
+                    </div>
+                    <p :class="`text-3xl lg:text-4xl font-bold text-${stat.color}`">{{ stat.value }}
+                    </p>
+                    <p class="text-sm text-muted mt-1">{{ stat.label }}</p>
+                </div>
+            </div>
+        </section>
+    </UContainer>
+
+
+    <div class="py-12 bg-gray-50 dark:bg-gray-900/50 relative overflow-hidden">
+
+        <UContainer class="relative z-10">
+            <UPageHeader>
+                <template #title>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 rounded-lg bg-success-100 dark:bg-success-900/30">
+                            <UIcon name="i-heroicons-document-text" class="w-8 h-8 text-success" />
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold leading-tight text-gray-900 dark:text-white">
+                            จดทะเบียนธุรกิจ <span
+                                class="text-success text-xl block sm:inline font-normal mt-1 sm:mt-0">Business
+                                Registration</span>
+                        </h1>
+                    </div>
+                </template>
+            </UPageHeader>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <div v-for="(service, index) in registrationServices" :key="index"
+                    class="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-6  hover:shadow-2xl hover:shadow-success-500/10 transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div class="relative z-10">
+                        <div class=" p-2 rounded-xl w-fit group-hover:scale-110 transition-transform duration-300">
+                            <UIcon :name="service.icon" class="w-6 h-6 text-success" />
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-success transition-colors">
+                            {{ service.title }}
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                            {{ service.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </UContainer>
+    </div>
+
+    <div class="py-12 relative overflow-hidden ">
+        <!-- Decorative Background Icon -->
+
+
+        <UContainer class="relative z-10">
+            <UPageHeader>
+                <template #title>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 rounded-lg bg-warning-100 dark:bg-warning-900/30">
+                            <UIcon name="i-heroicons-calculator" class="w-8 h-8 text-warning" />
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold leading-tight text-gray-900 dark:text-white">
+                            รับทำบัญชีและภาษี <span
+                                class="text-warning text-xl block sm:inline font-normal mt-1 sm:mt-0">Accounting &
+                                Tax</span>
+                        </h1>
+                    </div>
+                </template>
+            </UPageHeader>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <div v-for="(service, index) in accountingServices" :key="index"
+                    class="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-6  hover:shadow-2xl hover:shadow-warning-500/10 transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div class="relative z-10">
+                        <div class=" p-2 rounded-xl w-fit group-hover:scale-110 transition-transform duration-300">
+                            <UIcon :name="service.icon" class="w-6 h-6 text-warning" />
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-warning transition-colors">
+                            {{ service.title }}
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                            {{ service.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </UContainer>
+    </div>
+
+    <div class="py-12 bg-gray-50 dark:bg-gray-900/50 relative overflow-hidden">
+        <!-- Decorative Background Icon -->
+
+        <UContainer class="relative z-10">
+            <UPageHeader>
+                <template #title>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="p-2 rounded-lg bg-secondary-100 dark:bg-secondary-900/30">
+                            <UIcon name="i-heroicons-user-group" class="w-8 h-8 text-secondary" />
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold leading-tight text-gray-900 dark:text-white">
+                            งาน HR และประกันสังคม <span
+                                class="text-secondary text-xl block sm:inline font-normal mt-1 sm:mt-0">HR & SSO</span>
+                        </h1>
+                    </div>
+                </template>
+            </UPageHeader>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <div v-for="(service, index) in hrServices" :key="index"
+                    class="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-6  hover:shadow-2xl hover:shadow-secondary-500/10 transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div class="relative z-10">
+                        <div class="p-2 rounded-xl w-fit group-hover:scale-110 transition-transform duration-300">
+                            <UIcon :name="service.icon" class="w-6 h-6 text-secondary" />
+                        </div>
+                        <h3
+                            class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-secondary transition-colors">
+                            {{ service.title }}
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                            {{ service.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </UContainer>
+    </div>
+
+    <div class="py-12 relative overflow-hidden">
+        <UContainer>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                    ภาพบรรยากาศ <span class="text-primary">การทำงาน</span>
+                </h2>
+                <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
+            </div>
+
+            <UCarousel v-slot="{ item }" :items="items" loop dots arrows auto-scroll
+                :ui="{ item: 'basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 snap-start' }"
+                class="rounded-xl overflow-hidden">
+                <div class="p-2">
+                    <img :src="item"
+                        class="w-full h-64 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+                        draggable="false">
+                </div>
+            </UCarousel>
+        </UContainer>
+    </div>
+
+    <section class="py-16 lg:py-24 bg-gray-900 border-t border-gray-800">
+        <UContainer>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">
+                    ขั้นตอนการทำงาน <span class="text-primary">ที่เรียบง่าย</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    เริ่มต้นใช้งานบริการของเราได้ง่ายๆ เพียง 4 ขั้นตอน ไม่ยุ่งยาก
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-gray-800"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+                    <div v-for="(step, index) in workflowSteps" :key="index" class="relative group pt-4 lg:pt-0">
+                        <div class="flex flex-col items-center text-center relative z-10">
+                            <!-- Step Number Circle -->
+                            <div
+                                class="w-24 h-24 rounded-full bg-gray-800 border-4 border-gray-900 group-hover:border-primary-900/50 flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 shadow-sm">
+                                <UIcon :name="step.icon"
+                                    class="w-10 h-10 text-gray-400 group-hover:text-primary transition-colors duration-300" />
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                                {{ step.title }}
+                            </h3>
+                            <p class="text-gray-400 leading-relaxed text-sm px-2">
+                                {{ step.description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <UButton to="/contact" size="xl" color="primary" trailing
+                    class="px-8 font-semibold rounded-full shadow-lg shadow-primary-500/30 hover:shadow-primary-500/40 hover:-translate-y-1 transition-all">
+                    ติดต่อเราเลย
+                </UButton>
+            </div>
+        </UContainer>
+    </section>
+</template>

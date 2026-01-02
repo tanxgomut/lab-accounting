@@ -34,32 +34,45 @@ const onModalConfirm = () => {
             enter-from-class="transform translate-y-full opacity-0" enter-to-class="transform translate-y-0 opacity-100"
             leave-active-class="transition duration-300 ease-in" leave-from-class="transform translate-y-0 opacity-100"
             leave-to-class="transform translate-y-full opacity-0">
-            <div v-if="isBannerOpen" class="fixed bottom-0 inset-x-0 z-40">
-                <div class="bg-default/75 backdrop-blur border-t border-gray-200 dark:border-gray-800 p-4 shadow-lg">
-                    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div v-if="isBannerOpen"
+                class="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 z-50 md:max-w-md">
+                <div
+                    class="bg-default backdrop-blur-xl border border-gray-200 dark:border-gray-800 p-6 rounded-3xl shadow relative overflow-hidden">
+                    <!-- Decor Blur -->
+                    <!-- <div class="absolute top-0 right-0 -mr-8 -mt-8 w-24 h-24 bg-primary-500/20 rounded-full blur-2xl">
+                    </div> -->
 
-                        <div class="flex items-center gap-4">
-                            <UIcon name="i-lucide-cookie" class="w-6 h-6 text-primary-500 hidden md:block" />
+                    <div class="flex flex-col gap-4 relative z-10">
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 rounded-2xl shrink-0">
+                                <UIcon name="i-heroicons-shield-check"
+                                    class="w-5 h-5 text-primary-600 dark:text-primary-400" />
+                            </div>
                             <div>
-                                <p class="text-xs md:text-sm ">
-                                    เว็บไซต์นี้ใช้คุกกี้เพื่อประสบการณ์ที่ดีที่สุด
-                                    <button @click="isModalOpen = true" class="underline hover:text-primary-500 ml-1">
-                                        อ่านนโยบายความเป็นส่วนตัว
+                                <h3 class="font-bold text-gray-900 dark:text-white mb-1">
+                                    เราให้ความสำคัญกับความเป็นส่วนตัว</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                                    เว็บไซต์นี้ใช้คุกกี้เพื่อเพิ่มประสบการณ์การใช้งานของคุณ
+                                    <button @click="isModalOpen = true"
+                                        class="text-primary-600 dark:text-primary-400 hover:underline font-medium ml-1">
+                                        อ่านนโยบาย
                                     </button>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="flex gap-3">
-                            <UButton variant="ghost" size="xs" @click="declineCookies">ปฏิเสธ</UButton>
-                            <UButton variant="solid" size="xs" @click="acceptCookies">ยอมรับทั้งหมด</UButton>
+                        <div class="flex gap-3 justify-end mt-2">
+                            <UButton variant="ghost" color="neutral" size="sm" @click="declineCookies"
+                                class="rounded-xl">
+                                ปฏิเสธ</UButton>
+                            <UButton color="primary" variant="solid" size="sm" @click="acceptCookies"
+                                class="px-6 rounded-xl">ยอมรับทั้งหมด</UButton>
                         </div>
-
                     </div>
                 </div>
             </div>
         </Transition>
 
-        <!-- <PrivacyPolicyModal v-model="isModalOpen" @confirm="onModalConfirm" /> -->
+        <PrivacyPolicyModal v-model="isModalOpen" @confirm="onModalConfirm" />
     </div>
 </template>
