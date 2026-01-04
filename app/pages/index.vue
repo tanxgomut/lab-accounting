@@ -61,10 +61,10 @@ const testimonials = [
 
 // Stats Data
 const stats = [
-    { label: 'ประสบการณ์', value: '10+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'primary' },
+    { label: 'ประสบการณ์', value: '10+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'secondary' },
     { label: 'ลูกค้าที่ไว้วางใจ', value: '500+', icon: 'i-heroicons-users', color: 'secondary' },
-    { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้านบาท', color: 'warning' },
-    { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile', color: 'success' }
+    { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้านบาท', color: 'secondary' },
+    { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile', color: 'secondary' }
 ]
 
 // Latest Articles Mockup (Replace with actual data fetching later)
@@ -74,7 +74,7 @@ const latestArticles = [
         description: 'สรุปการเปลี่ยนแปลงกฎหมายภาษีล่าสุดที่ผู้ประกอบการต้องรู้',
         date: '10 ม.ค. 2025',
         image: 'https://picsum.photos/id/24/800/600',
-        badge: { label: 'ภาษี', color: 'warning' }
+        badge: { label: 'ภาษี', color: 'primary' }
     },
     {
         title: 'จดทะเบียนบริษัท vs หจก. เลือกแบบไหนดี?',
@@ -145,7 +145,7 @@ const items = [
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                     <div>
                         <h2 class="text-3xl font-bold text-white mb-6">
-                            ทำไมต้องเลือก <span class="text-warning">LMB Accounting Plus</span> ?
+                            ทำไมต้องเลือก <span class="text-success">LMB Accounting Plus</span> ?
                         </h2>
                         <p class="text-lg text-gray-400 mb-8">
                             เราไม่ได้เป็นแค่ผู้ทำบัญชี แต่เป็นพาร์ทเนอร์ที่ช่วยให้คำแนะนำและแก้ไขปัญหาทางธุรกิจของคุณ

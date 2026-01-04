@@ -10,12 +10,12 @@ const links = ref([
         variant: 'solid',
         class: `
             relative overflow-hidden border-0 ring-0 text-white font-extrabold rounded-full tracking-wider
-            shadow-lg shadow-warning/50 
+            shadow-lg shadow-primary/50 
             before:absolute before:inset-[-500%] before:content-[''] 
             before:animate-[spin_3s_linear_infinite] 
-            before:bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,#ffffff_10%,#fbbf24_20%,#f59e0b_25%,transparent_50%)]
+            before:bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,#ffffff_10%,#34d399_20%,#10b981_25%,transparent_50%)]
             before:z-[-2]
-            after:absolute after:inset-[2px] after:bg-warning after:content-[''] 
+            after:absolute after:inset-[2px] after:bg-primary after:content-[''] 
             after:rounded-full after:z-[-1]
             hover:scale-105 transition-all duration-300
         `

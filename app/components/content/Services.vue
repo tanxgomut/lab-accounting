@@ -146,7 +146,7 @@ const workflowSteps = [
 
                 <!-- Accounting Section (Tall Block) - Spans 5 cols -->
                 <div v-if="serviceGroups[1]"
-                    class="lg:col-span-5 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 relative overflow-hidden group shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 border border-gray-100 dark:border-gray-800">
+                    class="lg:col-span-5 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 relative overflow-hidden group shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-secondary-500/10 transition-all duration-500 border border-gray-100 dark:border-gray-800">
                     <!-- <div
                         class="absolute bottom-0 left-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 group-hover:bg-orange-500/10 transition-colors duration-500">
                     </div> -->
@@ -155,12 +155,13 @@ const workflowSteps = [
                         <div class="flex items-center justify-between mb-8">
                             <div class="flex items-center gap-4">
                                 <div
-                                    class="w-14 h-14 rounded-2xl bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-400 group-hover:scale-110 transition-transform duration-500">
+                                    class="w-14 h-14 rounded-2xl bg-secondary-50 dark:bg-secondary-900/30 flex items-center justify-center text-secondary-600 dark:text-secondary-400 group-hover:scale-110 transition-transform duration-500">
                                     <UIcon name="i-heroicons-calculator" class="w-8 h-8" />
                                 </div>
                                 <div>
                                     <h3 class="text-2xl font-bold text-gray-900 dark:text-white">บัญชีและภาษี</h3>
-                                    <p class="text-orange-600 dark:text-orange-400 text-sm font-medium">Accounting & Tax
+                                    <p class="text-secondary-600 dark:text-secondary-400 text-sm font-medium">Accounting
+                                        & Tax
                                     </p>
                                 </div>
                             </div>
@@ -168,14 +169,14 @@ const workflowSteps = [
 
                         <div class="space-y-4">
                             <div v-for="(item, i) in serviceGroups[1]?.items" :key="i"
-                                class="flex items-start gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-orange-50 dark:hover:bg-orange-900/20 transition-colors group/item cursor-default border border-gray-100 dark:border-gray-800 hover:border-orange-100 dark:hover:border-orange-900/30">
+                                class="flex items-start gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-secondary-50 dark:hover:bg-secondary-900/20 transition-colors group/item cursor-default border border-gray-100 dark:border-gray-800 hover:border-secondary-100 dark:hover:border-secondary-900/30">
                                 <div
-                                    class="mt-1 p-1.5 rounded-lg bg-white dark:bg-gray-800 text-gray-400 group-hover/item:text-orange-500 shadow-sm transition-colors">
+                                    class="mt-1 p-1.5 rounded-lg bg-white dark:bg-gray-800 text-gray-400 group-hover/item:text-secondary-500 shadow-sm transition-colors">
                                     <UIcon :name="item.icon" class="w-5 h-5" />
                                 </div>
                                 <div>
                                     <h4
-                                        class="font-bold text-gray-900 dark:text-white group-hover/item:text-orange-600 dark:group-hover/item:text-orange-400 transition-colors">
+                                        class="font-bold text-gray-900 dark:text-white group-hover/item:text-secondary-600 dark:group-hover/item:text-secondary-400 transition-colors">
                                         {{ item.title }}</h4>
                                     <p class="text-sm text-gray-500 mt-1">{{ item.description }}</p>
                                 </div>
@@ -253,7 +254,7 @@ const workflowSteps = [
                             </div>
 
                             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ step.title.split('.')[1]
-                            }}</h3>
+                                }}</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{{ step.description }}
                             </p>
                         </div>

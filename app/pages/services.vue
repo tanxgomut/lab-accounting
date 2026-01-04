@@ -145,10 +145,10 @@ const items = [
 
 // สถิติ
 const stats = [
-    { value: '10+', label: 'ปีประสบการณ์', icon: 'i-heroicons-calendar', color: 'primary' },
+    { value: '10+', label: 'ปีประสบการณ์', icon: 'i-heroicons-calendar', color: 'secondary' },
     { value: '500+', label: 'ลูกค้าที่ไว้วางใจ', icon: 'i-heroicons-users', color: 'secondary' },
-    { value: '1,000+', label: 'บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'warning' },
-    { value: '100%', label: 'ความพึงพอใจ', icon: 'i-heroicons-heart', color: 'success' },
+    { value: '1,000+', label: 'บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'secondary' },
+    { value: '100%', label: 'ความพึงพอใจ', icon: 'i-heroicons-heart', color: 'secondary' },
 ]
 </script>
 
@@ -241,12 +241,12 @@ const stats = [
             <UPageHeader>
                 <template #title>
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="p-2 rounded-lg bg-warning-100 dark:bg-warning-900/30">
-                            <UIcon name="i-heroicons-calculator" class="w-8 h-8 text-warning" />
+                        <div class="p-2 rounded-lg bg-primary-100 dark:bg-primary-900/30">
+                            <UIcon name="i-heroicons-calculator" class="w-8 h-8 text-primary" />
                         </div>
                         <h1 class="text-2xl sm:text-3xl font-extrabold leading-tight text-gray-900 dark:text-white">
                             รับทำบัญชีและภาษี <span
-                                class="text-warning text-xl block sm:inline font-normal mt-1 sm:mt-0">Accounting &
+                                class="text-primary text-xl block sm:inline font-normal mt-1 sm:mt-0">Accounting &
                                 Tax</span>
                         </h1>
                     </div>
@@ -255,13 +255,13 @@ const stats = [
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                 <div v-for="(service, index) in accountingServices" :key="index"
-                    class="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-6  hover:shadow-2xl hover:shadow-warning-500/10 transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    class="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 p-6  hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
                     <div class="relative z-10">
                         <div class=" p-2 rounded-xl w-fit group-hover:scale-110 transition-transform duration-300">
-                            <UIcon :name="service.icon" class="w-6 h-6 text-warning" />
+                            <UIcon :name="service.icon" class="w-6 h-6 text-primary" />
                         </div>
                         <h3
-                            class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-warning transition-colors">
+                            class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                             {{ service.title }}
                         </h3>
                         <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">

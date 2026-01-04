@@ -15,7 +15,7 @@ const values = [
         icon: 'i-heroicons-shield-check',
         title: 'ความน่าเชื่อถือ',
         description: 'เราดำเนินงานด้วยความโปร่งใส ซื่อสัตย์ และยึดมั่นในจรรยาบรรณวิชาชีพ',
-        color: 'primary'
+        color: 'success'
     },
     {
         icon: 'i-heroicons-clock',
@@ -27,13 +27,13 @@ const values = [
         icon: 'i-heroicons-light-bulb',
         title: 'มืออาชีพ',
         description: 'ทีมงานมีใบประกอบวิชาชีพและประสบการณ์ในการให้บริการ',
-        color: 'warning'
+        color: 'success'
     },
     {
         icon: 'i-heroicons-chat-bubble-left-right',
         title: 'ดูแลใกล้ชิด',
         description: 'พร้อมให้คำปรึกษาและตอบคำถามตลอด ไม่ทิ้งลูกค้า',
-        color: 'secondary'
+        color: 'success'
     },
 ]
 
@@ -70,7 +70,7 @@ const milestones = [
 const links = ref([
     {
         label: 'ติดต่อเรา',
-        color: 'warning' as const,
+        color: 'primary' as const,
         icon: 'i-heroicons-phone'
     },
     {
@@ -94,7 +94,7 @@ const links = ref([
             <template #title>
                 <h1 class="text-3xl sm:text-4xl font-extrabold  leading-tight">
                     รากฐานบัญชีที่ <span class="text-primary-600">มั่นคง</span> <br />
-                    คือจุดเริ่มต้นของธุรกิจที่ <span class="text-warning-500">ยั่งยืน</span>
+                    คือจุดเริ่มต้นของธุรกิจที่ <span class="text-secondary-500">ยั่งยืน</span>
                 </h1>
             </template>
 
@@ -137,7 +137,7 @@ const links = ref([
             <template #description>
                 <div class="space-y-4 text-muted">
                     <p class="text-lg">
-                        เราก่อตั้งขึ้นด้วยความตั้งใจที่จะเป็น <strong class="text-warning">"คู่คิดทางธุรกิจ"</strong>
+                        เราก่อตั้งขึ้นด้วยความตั้งใจที่จะเป็น <strong class="text-secondary">"คู่คิดทางธุรกิจ"</strong>
                         ของผู้ประกอบการ SME ทุกราย
                     </p>
                     <p>
@@ -156,7 +156,7 @@ const links = ref([
         <section class="py-12 lg:py-16">
             <div class="text-center mb-12">
                 <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                    ค่านิยม <span class="text-warning">ที่เรายึดมั่น</span>
+                    ค่านิยม <span class="text-secondary">ที่เรายึดมั่น</span>
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                     หลักการที่เราใช้ในการให้บริการลูกค้าทุกราย
@@ -179,7 +179,7 @@ const links = ref([
         <section class="py-12 lg:py-16">
             <div class="text-center mb-12">
                 <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                    เส้นทาง <span class="text-success">ของเรา</span>
+                    เส้นทาง <span class="text-secondary">ของเรา</span>
                 </h2>
             </div>
             <div class="relative">

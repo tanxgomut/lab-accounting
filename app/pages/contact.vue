@@ -93,7 +93,7 @@ const submitForm = async () => {
             <template #title>
                 <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight">
                     พร้อมให้ <span class="text-primary">คำปรึกษา</span> <br />
-                    เรื่องบัญชีและภาษี <span class="text-warning">ฟรี!</span>
+                    เรื่องบัญชีและภาษี <span class="text-secondary">ฟรี!</span>
                 </h1>
             </template>
 
@@ -158,7 +158,7 @@ const submitForm = async () => {
                         </UFormField>
 
                         <div class="  ">
-                            <UButton type="submit" icon="i-heroicons-paper-airplane" color="warning" size="md"
+                            <UButton type="submit" icon="i-heroicons-paper-airplane" color="primary" size="md"
                                 :loading="isSubmitting" class="px-8">
 
                                 ส่งข้อความ

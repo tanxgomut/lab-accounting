@@ -107,9 +107,9 @@ const services = [
                         <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm ">
                             <NuxtLink v-for="service in services" :key="service.label" to="/services"
                                 class="flex items-center gap-2 ">
-                                <UIcon :name="service.icon" class="size-4 shrink-0" color="neutral" />
-                                <span class="text-warning hover:text-secondary transition-colors">{{ service.label
-                                }}</span>
+                                <UIcon :name="service.icon" class="size-4 shrink-0 text-secondary" />
+                                <span class=" font-bold">{{ service.label
+                                    }}</span>
                             </NuxtLink>
                         </div>
                     </div>

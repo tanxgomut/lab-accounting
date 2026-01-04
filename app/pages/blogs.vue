@@ -15,7 +15,7 @@ const articles = [
         image: 'https://picsum.photos/800/600?random=1',
         date: '12 ม.ค. 2025',
         category: 'ภาษี',
-        color: 'warning'
+        color: 'primary'
     },
     {
         id: 2,
@@ -51,7 +51,7 @@ const articles = [
         image: 'https://picsum.photos/800/600?random=5',
         date: '15 ธ.ค. 2024',
         category: 'ภาษี',
-        color: 'warning'
+        color: 'secondary'
     },
     {
         id: 6,
