@@ -83,7 +83,7 @@ const workflowSteps = [
                     Professional Services
                 </div>
 
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
+                <h2 class="text-4xl md:text-5xl font-bold  mb-6 tracking-tight">
                     บริการบัญชี <span class="relative whitespace-nowrap text-primary-600">
                         <svg aria-hidden="true" viewBox="0 0 418 42"
                             class="absolute top-2/3 left-0 h-[0.58em] w-full fill-primary-200/50 dark:fill-primary-800/50"
@@ -105,9 +105,9 @@ const workflowSteps = [
 
                 <div v-if="serviceGroups[0]"
                     class="lg:col-span-7 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 border border-gray-100 dark:border-gray-800 shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 group overflow-hidden relative">
-                    <div
+                    <!-- <div
                         class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-linear-to-br from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-transparent rounded-full opacity-50 blur-3xl">
-                    </div>
+                    </div> -->
 
                     <div class="relative z-10">
                         <div class="flex items-center gap-5 mb-8">
@@ -147,9 +147,9 @@ const workflowSteps = [
                 <!-- Accounting Section (Tall Block) - Spans 5 cols -->
                 <div v-if="serviceGroups[1]"
                     class="lg:col-span-5 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 relative overflow-hidden group shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 border border-gray-100 dark:border-gray-800">
-                    <div
+                    <!-- <div
                         class="absolute bottom-0 left-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 group-hover:bg-orange-500/10 transition-colors duration-500">
-                    </div>
+                    </div> -->
 
                     <div class="relative z-10 h-full flex flex-col justify-between">
                         <div class="flex items-center justify-between mb-8">
@@ -185,14 +185,14 @@ const workflowSteps = [
                 </div>
 
                 <div v-if="serviceGroups[2]"
-                    class="lg:col-span-12 bg-linear-to-r from-blue-50 via-white to-blue-50 dark:from-blue-950/30 dark:via-gray-900 dark:to-blue-950/30 rounded-[2rem] p-8 lg:p-10 border border-blue-100 dark:border-blue-900/30 relative overflow-hidden group hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-500">
-                    <div class="absolute -left-10 bottom-0 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div>
-                    <div class="absolute right-0 top-0 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl"></div>
+                    class="lg:col-span-12 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10  shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 group overflow-hidden relative">
+                    <!-- <div class="absolute -left-10 bottom-0 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div>
+                    <div class="absolute right-0 top-0 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl"></div> -->
 
                     <div class="relative z-10 grid lg:grid-cols-[300px_1fr] gap-10 items-center">
                         <div class="text-center lg:text-left">
                             <div
-                                class="inline-flex p-3 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 mb-4 group-hover:rotate-6 transition-transform duration-500">
+                                class="inline-flex p-3 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-500">
                                 <UIcon name="i-heroicons-user-group" class="w-8 h-8" />
                             </div>
                             <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">HR & ประกันสังคม</h3>
@@ -253,7 +253,7 @@ const workflowSteps = [
                             </div>
 
                             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ step.title.split('.')[1]
-                                }}</h3>
+                            }}</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{{ step.description }}
                             </p>
                         </div>

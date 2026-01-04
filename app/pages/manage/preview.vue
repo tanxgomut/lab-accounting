@@ -9,7 +9,7 @@ onMounted(() => {
 })
 
 useHead({
-    title: 'Preview Content - LAB Accounting'
+    title: 'Preview Content - LMB Accounting'
 })
 
 const closePreview = () => {

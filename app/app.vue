@@ -7,7 +7,7 @@ const route = useRoute()
 
 useHead({
     titleTemplate: (titleChunk) => {
-        return titleChunk ? `${titleChunk} - LAB ACCOUNTING PLUS` : 'LAB ACCOUNTING PLUS - บริการบัญชีและภาษี';
+        return titleChunk ? `${titleChunk} - LMB ACCOUNTING PLUS` : 'LMB ACCOUNTING PLUS - บริการบัญชีและภาษี';
     },
     htmlAttrs: {
         lang: 'th'

@@ -11,12 +11,13 @@ const features = ref([
     {
         title: 'จดทะเบียนธุรกิจ',
         description: 'บริการจดทะเบียนจัดตั้งนิติบุคคล เปลี่ยนแปลงข้อมูล และจดเลิกกิจการ ครบวงจร',
-        icon: 'i-heroicons-document-text'
+        icon: 'i-heroicons-document-text',
     },
     {
         title: 'รับทำบัญชีและภาษี',
         description: 'ปิดงบการเงินรายเดือน/รายปี ยื่นภาษี และวางแผนภาษีอย่างถูกต้อง',
-        icon: 'i-heroicons-calculator'
+        icon: 'i-heroicons-calculator',
+        color: 'primary'
     },
     {
         title: 'งาน HR และประกันสังคม',
@@ -145,9 +146,9 @@ const items = [
 // สถิติ
 const stats = [
     { value: '10+', label: 'ปีประสบการณ์', icon: 'i-heroicons-calendar', color: 'primary' },
-    { value: '500+', label: 'ลูกค้าที่ไว้วางใจ', icon: 'i-heroicons-users', color: 'warning' },
-    { value: '1,000+', label: 'บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'success' },
-    { value: '100%', label: 'ความพึงพอใจ', icon: 'i-heroicons-heart', color: 'secondary' },
+    { value: '500+', label: 'ลูกค้าที่ไว้วางใจ', icon: 'i-heroicons-users', color: 'secondary' },
+    { value: '1,000+', label: 'บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'warning' },
+    { value: '100%', label: 'ความพึงพอใจ', icon: 'i-heroicons-heart', color: 'success' },
 ]
 </script>
 
@@ -168,6 +169,10 @@ const stats = [
         <UPageSection title="บริการหลักของเรา"
             description="LMB Accounting Plus ให้บริการครอบคลุมทุกด้าน เพื่อให้คุณโฟกัสกับการเติบโตของธุรกิจได้อย่างเต็มที่"
             :features="features" orientation="horizontal">
+            <template #title>
+                <h1 class="text-6xl text-primary">บริการหลักของเรา
+                </h1>
+            </template>
             <NuxtImg src="https://picsum.photos/id/180/800/600" alt="Accounting Illustration"
                 class="w-full h-[450px] object-cover rounded-xl shadow-md" />
         </UPageSection>
@@ -176,8 +181,7 @@ const stats = [
     <UContainer>
         <section class="py-12 lg:py-16">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                <div v-for="stat in stats" :key="stat.label"
-                    class="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:shadow-lg transition-shadow">
+                <div v-for="stat in stats" :key="stat.label" class="text-center p-6  transition-all">
                     <div
                         :class="`w-12 h-12 mx-auto mb-4 bg-${stat.color}-100 dark:bg-${stat.color}-900/30 rounded-xl flex items-center justify-center`">
                         <UIcon :name="stat.icon" :class="`w-6 h-6 text-${stat.color}`" />

@@ -100,7 +100,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 </script>
 <template>
-    <UHeader title="LAB-Accounting-Plus" mode="slideover">
+    <UHeader title="LMB-Accounting-Plus" mode="slideover">
 
         <template #left>
             <NuxtLink to="/">
@@ -145,7 +145,7 @@ const items = computed<NavigationMenuItem[]>(() => [
         <slot />
     </UMain>
 
-    <USeparator label="lab-accounting-plus" class="mt-16" />
+    <USeparator label="lmb-accounting-plus" class="mt-16" />
 
     <UFooter id="contact" class="scroll-mt-24" :ui="{ top: 'pt-4 pb-0 lg:pt-8 lg:pb-2', }">
         <template #top>
@@ -156,7 +156,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
         <div class="flex flex-col md:flex-row items-center justify-between ">
             <p class="text-muted text-xs md:text-sm">
-                Copyright © {{ new Date().getFullYear() }} LAB-Accounting-Plus. สงวนลิขสิทธิ์.
+                Copyright © {{ new Date().getFullYear() }} LMB-Accounting-Plus. สงวนลิขสิทธิ์.
             </p>
             <!-- <div>
                 <UTooltip v-for="link in socialLinks" :key="link.label" :text="link.label">

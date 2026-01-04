@@ -19,8 +19,8 @@ const contactInfo = [
     {
         icon: 'i-simple-icons-line',
         label: 'LINE',
-        value: '@LAB-accounting',
-        href: 'https://line.me/ti/p/@LAB-accounting',
+        value: '@LMB-accounting',
+        href: 'https://line.me/ti/p/@LMB-accounting',
         color: 'success'
     },
     {
@@ -215,9 +215,9 @@ const submitForm = async () => {
                     <UIcon name="i-simple-icons-line" class="w-12 h-12 text-success mx-auto mb-3" />
                     <h4 class="font-bold text-highlighted mb-2">แอดไลน์ ตอบไว!</h4>
                     <p class="text-sm text-muted mb-4">สอบถามผ่าน LINE ได้ตลอด 24 ชม.</p>
-                    <UButton to="https://line.me/ti/p/@LAB-accounting" target="_blank" color="success" block>
+                    <UButton to="https://line.me/ti/p/@LMB-accounting" target="_blank" color="success" block>
                         <UIcon name="i-simple-icons-line" class="w-5 h-5 mr-2" />
-                        @LAB-accounting
+                        @LMB-accounting
                     </UButton>
                 </div>
             </div>

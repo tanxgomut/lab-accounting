@@ -69,7 +69,7 @@ const articles = [
     <UContainer>
         <UPageHeader>
             <template #headline>
-                <div class="flex items-center gap-2 text-primary font-bold uppercase tracking-wider mb-2">
+                <div class="flex items-center gap-2 text-secondary font-bold uppercase tracking-wider mb-2">
                     <UIcon name="i-heroicons-newspaper" class="w-5 h-5" />
                     <span>Knowledge Hub</span>
                 </div>

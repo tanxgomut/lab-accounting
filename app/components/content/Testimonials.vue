@@ -37,12 +37,12 @@ const testimonials = [
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div v-for="(item, index) in testimonials" :key="index"
-                    class="bg-[#111827] rounded-xl p-6 border border-gray-800 shadow-lg hover:shadow-primary-500/10 transition-all duration-300 hover:-translate-y-1">
+                    class="bg-default rounded-xl p-6 shadow-lg hover:shadow-primary-500/10 transition-all duration-300 hover:-translate-y-1">
 
                     <div class="flex items-center gap-4 mb-4">
                         <UAvatar :src="item.avatar" :alt="item.name" size="md" />
                         <div>
-                            <h4 class="font-bold text-white text-base">{{ item.name }}</h4>
+                            <h4 class="font-bold  text-base">{{ item.name }}</h4>
                             <p class="text-xs text-primary-400 font-medium">{{ item.position }}</p>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const testimonials = [
                         <UIcon v-for="i in 5" :key="i" name="i-heroicons-star-solid" class="w-4 h-4 text-warning-400" />
                     </div>
 
-                    <p class="text-gray-300 text-sm leading-relaxed font-light">
+                    <p class="text-muted text-sm leading-relaxed font-light">
                         "{{ item.quote }}"
                     </p>
                 </div>

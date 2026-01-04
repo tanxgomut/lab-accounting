@@ -61,10 +61,10 @@ const testimonials = [
 
 // Stats Data
 const stats = [
-    { label: 'ประสบการณ์', value: '10+', icon: 'i-heroicons-calendar-days', suffix: 'ปี' },
-    { label: 'ลูกค้าที่ไว้วางใจ', value: '500+', icon: 'i-heroicons-users' },
-    { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้านบาท' },
-    { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile' }
+    { label: 'ประสบการณ์', value: '10+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'primary' },
+    { label: 'ลูกค้าที่ไว้วางใจ', value: '500+', icon: 'i-heroicons-users', color: 'secondary' },
+    { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้านบาท', color: 'warning' },
+    { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile', color: 'success' }
 ]
 
 // Latest Articles Mockup (Replace with actual data fetching later)
@@ -112,13 +112,12 @@ const items = [
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
                     <div v-for="(stat, index) in stats" :key="index" class="text-center group">
                         <div
-                            class="mb-4 inline-flex p-3 rounded-2xl bg-secondary-50 text-secondary-600 group-hover:bg-secondary-600 group-hover:text-white transition-colors duration-300 transform group-hover:scale-110 shadow-sm">
+                            :class="`mb-4 inline-flex p-3 rounded-2xl bg-${stat.color}-100 text-${stat.color}   transition-colors duration-300 transform group-hover:scale-110 shadow-sm`">
                             <UIcon :name="stat.icon" class="w-8 h-8" />
                         </div>
-                        <div class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">{{ stat.value }}
+                        <div :class="`text-3xl md:text-4xl font-bold mb-2 ${'text-' + stat.color}`">{{ stat.value }}
                             <span v-if="stat.suffix" class="text-lg font-normal text-gray-500 dark:text-gray-400">{{
-                                stat.suffix
-                            }}</span>
+                                stat.suffix }} </span>
                         </div>
                         <div class="text-gray-500 dark:text-gray-400 text-sm font-medium">{{ stat.label }}</div>
                     </div>
@@ -167,7 +166,7 @@ const items = [
                     </div>
                     <div class="mt-12 lg:mt-0 relative">
                         <div
-                            class="absolute inset-0 bg-linear-to-tr  from-success-500/90 to-warning-500/90 rounded-2xl transform rotate-1">
+                            class="absolute inset-0 bg-linear-to-tr  from-cyan-500/90 to-blue-500/90 rounded-2xl transform rotate-1">
                         </div>
                         <UCarousel v-slot="{ item }" :items="items" dots loop :autoplay="{ delay: 2000 }" :ui="{
                             dot: 'w-6 h-1'
