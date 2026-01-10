@@ -30,6 +30,15 @@ const links = ref([
         // class: 'text-white hover:text-secondary transition-colors'
     }
 ])
+
+const items = [
+    'https://picsum.photos/468/468?random=1',
+    'https://picsum.photos/468/468?random=2',
+    'https://picsum.photos/468/468?random=3',
+    'https://picsum.photos/468/468?random=4',
+    'https://picsum.photos/468/468?random=5',
+    'https://picsum.photos/468/468?random=6'
+]
 </script>
 
 <template>
@@ -63,28 +72,43 @@ const links = ref([
 <img src="https://picsum.photos/id/180/1920/1080" alt="App screenshot"
     class="rounded-lg shadow-2xl ring ring-default" />
 </UPageHero> -->
-
-    <UPageHero
-        description="สำนักงานบัญชีครบวงจร ดูแลโดยมืออาชีพ รับจดทะเบียนบริษัท ทำบัญชี ยื่นภาษี ตรวจสอบบัญชี และที่ปรึกษากฎหมายธุรกิจ เพื่อให้ธุรกิจของคุณเติบโตอย่างมั่นคง"
-        orientation="horizontal" :links="links as any">
-        <template #headline>
-            <div class="flex justify-center items-center gap-2">
-                <UIcon name="i-heroicons-shield-check" class="w-5 h-5 text-secondary" />
-                <p class="text-secondary font-bold tracking-wide text-sm sm:text-base uppercase">
-                    มืออาชีพที่คุณวางใจ
-                </p>
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+            <div
+                class="absolute -top-[20%] -right-[10%] w-[700px] h-[700px] bg-primary-400/20 rounded-full blur-[130px] mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse">
             </div>
-        </template>
-        <template #title>
-            <h1 class="text-6xl">
-                <span class="text-primary">LMB</span>
-                <span class="text-primary"> ACCOUNTING</span>
-                <span class="text-secondary"> PLUS</span>
-            </h1>
-        </template>
-        <img src="https://picsum.photos/id/180/1920/1080" alt="lmb accounting"
-            class="rounded-lg shadow-2xl h-[300px] md:h-[380px] ring ring-default" />
-    </UPageHero>
+            <div
+                class="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] bg-secondary-400/20 rounded-full blur-[130px] mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse delay-1000">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/60 dark:bg-gray-900/60 blur-[100px] rounded-full">
+            </div>
+        </div>
+        <UPageHero
+            description="สำนักงานบัญชีครบวงจร ดูแลโดยมืออาชีพ รับจดทะเบียนบริษัท ทำบัญชี ยื่นภาษี ตรวจสอบบัญชี และที่ปรึกษากฎหมายธุรกิจ เพื่อให้ธุรกิจของคุณเติบโตอย่างมั่นคง"
+            orientation="horizontal" :links="links as any">
+            <template #headline>
+                <div class="flex justify-center items-center gap-2">
+                    <UIcon name="i-heroicons-shield-check" class="w-5 h-5 text-secondary" />
+                    <p class="text-secondary font-bold tracking-wide text-sm sm:text-base uppercase">
+                        มืออาชีพที่คุณวางใจ
+                    </p>
+                </div>
+            </template>
+            <template #title>
+                <h1 class="text-5xl">
+                    <span class="text-primary">LMB</span>
+                    <span class="text-primary"> ACCOUNTING</span>
+                    <span class="text-secondary"> PLUS</span>
+                </h1>
+            </template>
+            <UCarousel v-slot="{ item }" loop :arrows="false" dots :autoplay="{ delay: 2000 }" :items="items">
+                <NuxtImg :src="item" class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " />
+            </UCarousel>
+            <!-- <NuxtImg src="https://picsum.photos/id/180/1920/1080" alt="lmb accounting"
+            class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " /> -->
+        </UPageHero>
+    </section>
 
 
 </template>

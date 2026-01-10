@@ -142,9 +142,10 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <UMain>
         <slot />
+
     </UMain>
 
-    <USeparator label="lmb-accounting-plus" class="mt-16" />
+    <USeparator color="secondary" :avatar="{ src: '/logo.png' }" class="mt-16" />
 
     <UFooter id="contact" class="scroll-mt-24" :ui="{ top: 'pt-4 pb-0 lg:pt-8 lg:pb-2', }">
         <template #top>

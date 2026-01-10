@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -12,49 +14,77 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
 
-  // seo
+  // SEO Configuration
   site: {
-    // url: 'https://lmbaccount-law.com',
-    url: 'https://lab-accounting.vercel.app',
+    url: 'https://lmb-accounting.com',
     name: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
     description: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน โดยทีมผู้เชี่ยวชาญ',
     defaultLocale: 'th',
   },
 
+  // Sitemap Configuration
   sitemap: {
-    urls: [
-      { loc: '/', changefreq: 'weekly', priority: 1.0 },
-      { loc: '/about', changefreq: 'monthly', priority: 0.8 },
-      { loc: '/services', changefreq: 'weekly', priority: 0.9 },
-      { loc: '/blogs', changefreq: 'weekly', priority: 0.8 },
-      { loc: '/contact', changefreq: 'monthly', priority: 0.7 },
-    ],
-    exclude: ['/manage/**'],
+    sources: ['/api/__sitemap__/urls'],
+    exclude: ['/manage/**', '/api/**'],
   },
 
+  // Robots Configuration
   robots: {
-    allow: ['/'],
-    disallow: ['/api/', '/_nuxt/', '/manage/'],
-    // sitemap: 'https://lmbaccount-law.com/sitemap.xml',
-    sitemap: 'https://lab-accounting.vercel.app/sitemap.xml',
+    groups: [
+      {
+        userAgent: '*',
+        allow: ['/'],
+        disallow: ['/api/', '/_nuxt/', '/manage/', '/preview'],
+      },
+      {
+        userAgent: 'GPTBot',
+        allow: ['/'],
+      },
+      {
+        userAgent: 'ChatGPT-User',
+        allow: ['/'],
+      },
+      {
+        userAgent: 'Google-Extended',
+        allow: ['/'],
+      },
+      {
+        userAgent: 'Anthropic-AI',
+        allow: ['/'],
+      },
+    ],
+    sitemap: 'https://lmb-accounting.com/sitemap.xml',
   },
 
+  // OG Image Configuration
+  ogImage: {
+    enabled: true,
+    defaults: {
+      width: 1200,
+      height: 630,
+    },
+  },
+
+  // Schema.org Configuration
   schemaOrg: {
     identity: {
       type: 'LocalBusiness',
       name: 'LMB Accounting Plus',
-      description: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี',
-      // url: 'https://lmbaccount-law.com',
-      // logo: 'https://lmbaccount-law.com/logo.png',
-      url: 'https://lab-accounting.vercel.app',
-      logo: 'https://lab-accounting.vercel.app/logo.png',
-      telephone: '+66-XX-XXX-XXXX',
+      description: 'สำนักงานบัญชีครบวงจร บริการรับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน',
+      url: 'https://lmb-accounting.com',
+      logo: 'https://lmb-accounting.com/logo.png',
+      telephone: '+66-81-234-5678',
+      email: 'contact@lmb-accounting.com',
       address: {
-        streetAddress: 'ที่อยู่สำนักงาน',
+        streetAddress: '123 ถนนสุขุมวิท',
         addressLocality: 'กรุงเทพมหานคร',
         addressRegion: 'กรุงเทพมหานคร',
-        postalCode: '10000',
+        postalCode: '10110',
         addressCountry: 'TH',
+      },
+      geo: {
+        latitude: 13.7563,
+        longitude: 100.5018,
       },
       openingHoursSpecification: [
         {
@@ -69,12 +99,19 @@ export default defineNuxtConfig({
         },
       ],
       sameAs: [
-        'https://www.facebook.com/lmbaccounting',
-        'https://line.me/ti/p/@lmbaccounting',
+        'https://www.facebook.com/LMBAccountingPlus',
+        'https://line.me/ti/p/@LMB-accounting',
       ],
+      priceRange: '฿฿',
     },
   },
 
+  // Link Checker (disable in production)
+  linkChecker: {
+    enabled: false,
+  },
+
+  // Vite Build Configuration
   vite: {
     build: {
       cssMinify: 'lightningcss',
@@ -87,10 +124,10 @@ export default defineNuxtConfig({
     },
   },
 
+  // Runtime Config
   runtimeConfig: {
     public: {
-      // siteUrl: 'https://lmbaccount-law.com',
-      siteUrl: 'https://lab-accounting.vercel.app',
+      siteUrl: 'https://lmb-accounting.com',
     }
   },
 })

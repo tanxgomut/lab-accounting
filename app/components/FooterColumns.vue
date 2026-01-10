@@ -38,21 +38,25 @@ const columns: FooterColumn[] = [
             {
                 label: 'โทร: 081-234-5678',
                 icon: 'i-lucide-phone',
+                to: 'tel:0812345678',
                 target: '_self'
             },
             {
-                label: 'LINE: @LAB-accounting',
+                label: 'LINE: @LMB-accounting',
                 icon: 'i-simple-icons-line',
+                to: 'https://line.me/ti/p/@LMB-accounting',
                 target: '_blank'
             },
             {
                 label: 'Facebook Fanpage',
                 icon: 'i-simple-icons-facebook',
+                to: 'https://www.facebook.com/LMBAccountingPlus',
                 target: '_blank'
             },
             {
                 label: 'แผนที่ร้าน (Google Maps)',
                 icon: 'i-lucide-map-pin',
+                to: 'https://www.google.com/maps/place/LMB+Accounting+Plus/@13.756367,100.522567,17z/data=!3m1!4b1!4m5!3m4!1s0x311d56b3b3b3b3b3:0x3b3b3b3b3b3b3b3b!8m2!3d13.756367!4d100.522567',
                 target: '_blank'
             },
 
@@ -84,7 +88,7 @@ const services = [
 <template>
     <UContainer class="mb-6">
         <UFooterColumns :columns="columns">
-            <template #left>
+            <template #right>
                 <div>
                     <!-- Brand Section -->
                     <div class="space-y-3 mb-2">
@@ -109,7 +113,7 @@ const services = [
                                 class="flex items-center gap-2 ">
                                 <UIcon :name="service.icon" class="size-4 shrink-0 text-secondary" />
                                 <span class=" font-bold">{{ service.label
-                                    }}</span>
+                                }}</span>
                             </NuxtLink>
                         </div>
                     </div>

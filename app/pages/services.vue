@@ -174,7 +174,7 @@ const stats = [
                 </h1>
             </template>
             <NuxtImg src="https://picsum.photos/id/180/800/600" alt="Accounting Illustration"
-                class="w-full h-[450px] object-cover rounded-xl shadow-md" />
+                class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md" />
         </UPageSection>
     </section>
 
@@ -320,7 +320,7 @@ const stats = [
                 <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
             </div>
 
-            <UCarousel v-slot="{ item }" :items="items" loop dots arrows auto-scroll
+            <UCarousel v-slot="{ item }" :items="items" loop dots :arrows="false" auto-scroll
                 :ui="{ item: 'basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 snap-start' }"
                 class="rounded-xl overflow-hidden">
                 <div class="p-2">

@@ -104,7 +104,7 @@ const workflowSteps = [
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]">
 
                 <div v-if="serviceGroups[0]"
-                    class="lg:col-span-7 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 border border-gray-100 dark:border-gray-800 shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 group overflow-hidden relative">
+                    class="lg:col-span-7 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10  shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 group overflow-hidden relative">
                     <!-- <div
                         class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-linear-to-br from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-transparent rounded-full opacity-50 blur-3xl">
                     </div> -->
@@ -146,7 +146,7 @@ const workflowSteps = [
 
                 <!-- Accounting Section (Tall Block) - Spans 5 cols -->
                 <div v-if="serviceGroups[1]"
-                    class="lg:col-span-5 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 relative overflow-hidden group shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-secondary-500/10 transition-all duration-500 border border-gray-100 dark:border-gray-800">
+                    class="lg:col-span-5 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 relative overflow-hidden group shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-secondary-500/10 transition-all duration-500 ">
                     <!-- <div
                         class="absolute bottom-0 left-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 group-hover:bg-orange-500/10 transition-colors duration-500">
                     </div> -->

@@ -126,14 +126,27 @@ const items = [
         </div>
 
         <UContainer class="my-20">
-            <UPageLogos title="ได้รับความไว้วางใจจาก" marquee :items="[
-                'i-simple-icons-github',
-                'i-simple-icons-discord',
-                'i-simple-icons-x',
-                'i-simple-icons-instagram',
-                'i-simple-icons-linkedin',
-                'i-simple-icons-facebook'
-            ]" />
+            <UPageLogos title="ได้รับความไว้วางใจจาก" />
+            <UMarquee :overlay="false" pause-on-hover>
+                <NuxtImg src="/images/review/S__43032598.png"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43032599.jpg"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43032600.jpg"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43032601.jpg"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43032602.png"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43089934.jpg"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43089935.jpg"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43089936.jpg"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+                <NuxtImg src="/images/review/S__43089937.jpg"
+                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
+            </UMarquee>
         </UContainer>
 
 

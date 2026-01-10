@@ -53,5 +53,6 @@ const toaster = { position: 'top-right' as const }
             <NuxtPage />
         </NuxtLayout>
         <CookieConsent />
+        <ScrollToTop />
     </UApp>
 </template>
