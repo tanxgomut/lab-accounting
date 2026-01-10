@@ -191,7 +191,7 @@ const links = ref([
                         <div :class="['flex items-center gap-8', index % 2 === 0 ? 'flex-row' : 'flex-row-reverse']">
                             <div class="w-1/2" :class="index % 2 === 0 ? 'text-right' : 'text-left'">
                                 <p class="text-2xl font-bold text-primary-600 dark:text-primary-400">{{ milestone.year
-                                    }}
+                                }}
                                 </p>
                                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ milestone.title }}
                                 </h3>
@@ -233,8 +233,8 @@ const links = ref([
 
         <UPageCTA title="พร้อมให้เราดูแลบัญชีธุรกิจคุณ?"
             description="ปรึกษาฟรี! ไม่มีค่าใช้จ่าย รับข้อเสนอพิเศษสำหรับลูกค้าใหม่วันนี้" variant="soft" :links="[
-                { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/@LAB-accounting', target: '_blank' },
-                { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0812345678' }
+                { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/~lee_lmbaudit', target: '_blank' },
+                { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0963535572' }
             ]" />
 
     </UContainer>

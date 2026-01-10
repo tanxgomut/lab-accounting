@@ -220,8 +220,8 @@ const items = [
             <UPageCTA title="พร้อมก้าวสู่ความสำเร็จทางธุรกิจหรือยัง?"
                 description="ให้เราดูแลเรื่องบัญชีและภาษี เพื่อให้คุณมีเวลาบริหารธุรกิจได้เต็มที่ ปรึกษาเราได้เลยวันนี้"
                 :links="[
-                    { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/@LAB-accounting', target: '_blank' },
-                    { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0812345678' }
+                    { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/~lee_lmbaudit', target: '_blank' },
+                    { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0963535572' }
                 ]" variant="solid" />
         </UContainer>
 

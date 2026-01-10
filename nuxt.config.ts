@@ -73,8 +73,8 @@ export default defineNuxtConfig({
       description: 'สำนักงานบัญชีครบวงจร บริการรับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน',
       url: 'https://lmb-accounting.com',
       logo: 'https://lmb-accounting.com/logo.png',
-      telephone: '+66-81-234-5678',
-      email: 'contact@lmb-accounting.com',
+      telephone: '+66-96-353-5572',
+      email: 'mayulee.mc@gmail.com',
       address: {
         streetAddress: '123 ถนนสุขุมวิท',
         addressLocality: 'กรุงเทพมหานคร',
@@ -99,8 +99,8 @@ export default defineNuxtConfig({
         },
       ],
       sameAs: [
-        'https://www.facebook.com/LMBAccountingPlus',
-        'https://line.me/ti/p/@LMB-accounting',
+        'https://www.facebook.com/LMB.ACC',
+        'https://line.me/ti/p/~lee_lmbaudit',
       ],
       priceRange: '฿฿',
     },

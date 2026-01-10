@@ -82,8 +82,8 @@ const copyLink = () => {
             <UPageCTA title="ต้องการคำปรึกษาเพิ่มเติม?"
                 description="ทีมงาน LMB Accounting Plus พร้อมให้คำปรึกษาด้านบัญชีและภาษีฟรี! ติดต่อเราได้ทันที"
                 variant="soft" :links="[
-                    { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/@LMB-accounting', target: '_blank' },
-                    { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'outline', size: 'xl', to: 'tel:0812345678' }
+                    { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/~lee_lmbaudit', target: '_blank' },
+                    { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'outline', size: 'xl', to: 'tel:0963535572' }
                 ]" />
             <template #right>
                 <UPageAside>
@@ -117,12 +117,12 @@ const copyLink = () => {
                         </p>
                         <div class="flex flex-col gap-2">
                             <UButton icon="i-simple-icons-line" color="success" variant="solid" block
-                                to="https://line.me/ti/p/@LMB-accounting" target="_blank">
+                                to="https://line.me/ti/p/~lee_lmbaudit" target="_blank">
                                 แอดไลน์ปรึกษาฟรี
                             </UButton>
                             <UButton icon="i-heroicons-phone" color="neutral" variant="outline" block
-                                to="tel:0812345678">
-                                โทร 081-234-5678
+                                to="tel:0963535572">
+                                โทร 096-353-5572
                             </UButton>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
 const links = ref([
     {
         label: 'ปรึกษาฟรี / ขอใบเสนอราคา',
-        to: 'https://line.me/ti/p/yourid',
+        to: 'https://line.me/ti/p/~lee_lmbaudit',
         target: '_blank',
         icon: 'i-heroicons-chat-bubble-left-right',
         size: 'xl',
@@ -27,7 +27,6 @@ const links = ref([
         variant: 'ghost',
         size: 'lg',
         trailingIcon: 'i-heroicons-arrow-right',
-        // class: 'text-white hover:text-secondary transition-colors'
     }
 ])
 
@@ -42,36 +41,6 @@ const items = [
 </script>
 
 <template>
-    <!-- <div class="relative bg-cover bg-center bg-no-repeat min-h-[600px] flex items-center"
-        style="background-image: url('https://picsum.photos/id/180/1920/1080');">
-
-        <div class="absolute inset-0 bg-slate-900/80"></div>
-
-        <div class="relative z-10 w-full">
-           
-        </div>
-    </div> -->
-
-    <!-- <UPageHero
-        description="สำนักงานบัญชีครบวงจร ดูแลโดยมืออาชีพ รับจดทะเบียนบริษัท ทำบัญชี ยื่นภาษี ตรวจสอบบัญชี และที่ปรึกษากฎหมายธุรกิจ เพื่อให้ธุรกิจของคุณเติบโตอย่างมั่นคง"
-        reverse :links="links" orientation="vertical" >
-        <template #headline>
-            <div class="flex justify-center items-center gap-2">
-                <UIcon name="i-heroicons-shield-check" class="w-5 h-5 text-secondary" />
-                <p class="text-secondary font-bold tracking-wide text-sm sm:text-base uppercase">
-                    มืออาชีพที่คุณวางใจ
-                </p>
-            </div>
-        </template>
-<template #title>
-            <h1 class="text-5xl font-extrabold sm:text-6xl mb-4">
-                <span class="text-primary-600">LMB ACCOUNTING</span>
-                <span class="text-warning-500"> PLUS</span>
-            </h1>
-        </template>
-<img src="https://picsum.photos/id/180/1920/1080" alt="App screenshot"
-    class="rounded-lg shadow-2xl ring ring-default" />
-</UPageHero> -->
     <section class="relative overflow-hidden">
         <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             <div
@@ -85,13 +54,13 @@ const items = [
             </div>
         </div>
         <UPageHero
-            description="สำนักงานบัญชีครบวงจร ดูแลโดยมืออาชีพ รับจดทะเบียนบริษัท ทำบัญชี ยื่นภาษี ตรวจสอบบัญชี และที่ปรึกษากฎหมายธุรกิจ เพื่อให้ธุรกิจของคุณเติบโตอย่างมั่นคง"
+            description="อยากเริ่มธุรกิจใหม่... แต่ปวดหัวเรื่องเอกสาร? วางใจให้ LMB Accounting เป็นเพื่อนคู่คิดธุรกิจคุณ! 🤝 ✅ รับจดทะเบียนบริษัท / หจก. ✅ วางระบบบัญชีและภาษีครบวงจร ✅ ให้คำปรึกษาด้วยภาษาง่ายๆ ไม่ซับซ้อน เริ่มต้นอย่างมั่นใจ ให้มืออาชีพดูแล"
             orientation="horizontal" :links="links as any">
             <template #headline>
                 <div class="flex justify-center items-center gap-2">
                     <UIcon name="i-heroicons-shield-check" class="w-5 h-5 text-secondary" />
                     <p class="text-secondary font-bold tracking-wide text-sm sm:text-base uppercase">
-                        มืออาชีพที่คุณวางใจ
+                        ปรึกษาฟรี! ทักเลย มืออาชีพพร้อมดูแลคุณ
                     </p>
                 </div>
             </template>
@@ -105,10 +74,6 @@ const items = [
             <UCarousel v-slot="{ item }" loop :arrows="false" dots :autoplay="{ delay: 2000 }" :items="items">
                 <NuxtImg :src="item" class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " />
             </UCarousel>
-            <!-- <NuxtImg src="https://picsum.photos/id/180/1920/1080" alt="lmb accounting"
-            class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " /> -->
         </UPageHero>
     </section>
-
-
 </template>

@@ -32,31 +32,49 @@ const columns: FooterColumn[] = [
         label: 'ติดต่อสอบถาม',
         children: [
             {
-                label: 'คุณ ไมเคิล',
+                label: 'คุณ ลี',
                 icon: 'i-lucide-user',
             },
             {
-                label: 'โทร: 081-234-5678',
+                label: 'โทร: 096-353-5572',
                 icon: 'i-lucide-phone',
-                to: 'tel:0812345678',
+                to: 'tel:0963535572',
                 target: '_self'
             },
             {
-                label: 'LINE: @LMB-accounting',
+                label: 'โทร: 084-387-7167',
+                icon: 'i-lucide-phone',
+                to: 'tel:0843877167',
+                target: '_self'
+            },
+            {
+                label: 'โทร: 02-1650-369',
+                icon: 'i-lucide-phone',
+                to: 'tel:021650369',
+                target: '_self'
+            },
+            {
+                label: 'LINE: lee_lmbaudit',
                 icon: 'i-simple-icons-line',
-                to: 'https://line.me/ti/p/@LMB-accounting',
+                to: 'https://line.me/ti/p/~lee_lmbaudit',
                 target: '_blank'
+            },
+            {
+                label: 'Email: mayulee.mc@gmail.com',
+                icon: 'i-lucide-mail',
+                to: 'mailto:mayulee.mc@gmail.com',
+                target: '_self'
             },
             {
                 label: 'Facebook Fanpage',
                 icon: 'i-simple-icons-facebook',
-                to: 'https://www.facebook.com/LMBAccountingPlus',
+                to: 'https://www.facebook.com/LMB.ACC',
                 target: '_blank'
             },
             {
-                label: 'แผนที่ร้าน (Google Maps)',
+                label: '215/4 คุณาลัยจอย ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี',
                 icon: 'i-lucide-map-pin',
-                to: 'https://www.google.com/maps/place/LMB+Accounting+Plus/@13.756367,100.522567,17z/data=!3m1!4b1!4m5!3m4!1s0x311d56b3b3b3b3b3:0x3b3b3b3b3b3b3b3b!8m2!3d13.756367!4d100.522567',
+                to: 'https://www.google.com/maps/place/%E0%B8%96.+%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A2-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2+%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5+%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2/@13.9431569,100.3536078,17z/data=!4m15!1m8!3m7!1s0x30e28fa5a538247d:0x35893f1dfb8e7327!2z4LiWLiDguJrguYnguLLguJnguIHguKXguYnguKfguKIt4LmE4LiX4Lij4LiZ4LmJ4Lit4LiiIOC4meC4meC4l-C4muC4uOC4o-C4tSDguJvguKPguLDguYDguJfguKjguYTguJfguKI!3b1!8m2!3d13.9431517!4d100.3584787!16s%2Fg%2F122brz57!3m5!1s0x30e28fa5a538247d:0x35893f1dfb8e7327!8m2!3d13.9431517!4d100.3584787!16s%2Fg%2F122brz57?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D',
                 target: '_blank'
             },
 
