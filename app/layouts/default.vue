@@ -33,28 +33,14 @@ const socialLinks = ref([
     {
         label: 'แอดไลน์คุยกับเรา',
         icon: 'i-simple-icons-line',
+        to: 'https://line.me/ti/p/~lee_lmbaudit',
         color: "success"
-    },
-    {
-        label: 'Instagram',
-        icon: 'i-simple-icons-instagram',
-        color: 'error'
     },
     {
         label: 'Facebook',
         icon: 'i-simple-icons-facebook',
+        to: 'https://www.facebook.com/LMB.ACC',
         color: 'primary'
-    },
-
-    {
-        label: 'Youtube',
-        icon: 'i-simple-icons-youtube',
-        color: 'error'
-    },
-    {
-        label: 'Tiktok',
-        icon: 'i-simple-icons-tiktok',
-        color: 'neutral'
     },
 ])
 
