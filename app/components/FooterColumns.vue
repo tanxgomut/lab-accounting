@@ -16,11 +16,11 @@ const columns: FooterColumn[] = [
                 to: '/about',
                 icon: 'i-heroicons-building-office-2' // ตึกสำนักงาน
             },
-            {
-                label: 'บทความ',
-                to: '/blogs',
-                icon: 'i-heroicons-newspaper' // หนังสือพิมพ์/ข่าวสาร
-            },
+            // {
+            //     label: 'บทความ',
+            //     to: '/blogs',
+            //     icon: 'i-heroicons-newspaper' // หนังสือพิมพ์/ข่าวสาร
+            // },
             {
                 label: 'ติดต่อเรา',
                 to: '/contact',
@@ -113,7 +113,7 @@ const services = [
                                 class="flex items-center gap-2 ">
                                 <UIcon :name="service.icon" class="size-4 shrink-0 text-secondary" />
                                 <span class=" font-bold">{{ service.label
-                                }}</span>
+                                    }}</span>
                             </NuxtLink>
                         </div>
                     </div>

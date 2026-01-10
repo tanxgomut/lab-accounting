@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center">
-    <NuxtImg src="/logo.png" alt="LMB ACCOUNTING PLUS" class="h-10 w-auto object-contain" />
+    <NuxtImg src="/logo.png" alt="LMB ACCOUNTING PLUS" class="h-15 w-auto object-contain" />
 
     <div class="flex flex-col pl-2  font-bold">
       <p class="text-primary font-bold text-md md:text-lg tracking-tight">

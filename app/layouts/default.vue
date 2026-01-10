@@ -14,7 +14,7 @@ const sectionTitles: Record<string, string> = {
     '#services': 'บริการ',
     '#promotion': 'โปรโมชั่น',
     '#portfolio': 'ผลงาน',
-    '#blogs': 'Blogs',
+    // '#blogs': 'Blogs',
     '#contact': 'ติดต่อเรา'
 }
 
@@ -77,12 +77,12 @@ const items = computed<NavigationMenuItem[]>(() => [
         icon: 'i-heroicons-device-phone-mobile', // รูปโทรศัพท์ สื่อถึงการติดต่อได้ทันที
         active: route.path === '/contact'
     },
-    {
-        label: 'บทความ',
-        to: '/blogs',
-        icon: 'i-heroicons-newspaper', // รูปหนังสือพิมพ์ สื่อถึงข่าวสาร/ความรู้บัญชี
-        active: route.path === '/blogs'
-    },
+    // {
+    //     label: 'บทความ',
+    //     to: '/blogs',
+    //     icon: 'i-heroicons-newspaper', // รูปหนังสือพิมพ์ สื่อถึงข่าวสาร/ความรู้บัญชี
+    //     active: route.path === '/blogs'
+    // },
     // {
     //     label: 'Blogs',
     //     to: '/blogs',
