@@ -61,7 +61,7 @@ const testimonials = [
 
 // Stats Data
 const stats = [
-    { label: 'ประสบการณ์', value: '10+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'secondary' },
+    { label: 'ประสบการณ์', value: '20+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'secondary' },
     { label: 'ลูกค้าที่ไว้วางใจ', value: '500+', icon: 'i-heroicons-users', color: 'secondary' },
     { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้านบาท', color: 'secondary' },
     { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile', color: 'secondary' }

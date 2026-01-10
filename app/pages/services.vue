@@ -7,6 +7,29 @@ useSeoMeta({
     ogDescription: 'บริการจดทะเบียนบริษัท รับทำบัญชี ยื่นภาษี ปิดงบการเงิน ตรวจสอบบัญชี ครบวงจร',
 })
 
+const links = ref([
+    {
+        label: 'ขอใบเสนอราคา',
+        to: 'https://line.me/ti/p/~lee_lmbaudit',
+        target: '_blank',
+        icon: 'i-heroicons-chat-bubble-left-right',
+        size: 'xl',
+        color: 'gray',
+        variant: 'solid',
+        class: `
+            relative overflow-hidden border-0 ring-0 text-white font-extrabold rounded-full tracking-wider
+            shadow-lg shadow-primary/50 
+            before:absolute before:inset-[-500%] before:content-[''] 
+            before:animate-[spin_3s_linear_infinite] 
+            before:bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,#ffffff_10%,#34d399_20%,#10b981_25%,transparent_50%)]
+            before:z-[-2]
+            after:absolute after:inset-[2px] after:bg-primary after:content-[''] 
+            after:rounded-full after:z-[-1]
+            hover:scale-105 transition-all duration-300
+        `
+    },
+])
+
 const features = ref([
     {
         title: 'จดทะเบียนธุรกิจ',
@@ -145,7 +168,7 @@ const items = [
 
 // สถิติ
 const stats = [
-    { value: '10+', label: 'ปีประสบการณ์', icon: 'i-heroicons-calendar', color: 'secondary' },
+    { value: '20+', label: 'ปีประสบการณ์', icon: 'i-heroicons-calendar', color: 'secondary' },
     { value: '500+', label: 'ลูกค้าที่ไว้วางใจ', icon: 'i-heroicons-users', color: 'secondary' },
     { value: '1,000+', label: 'บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'secondary' },
     { value: '100%', label: 'ความพึงพอใจ', icon: 'i-heroicons-heart', color: 'secondary' },
@@ -168,7 +191,8 @@ const stats = [
         </div>
         <UPageSection title="บริการหลักของเรา"
             description="LMB Accounting Plus ให้บริการครอบคลุมทุกด้าน เพื่อให้คุณโฟกัสกับการเติบโตของธุรกิจได้อย่างเต็มที่"
-            :features="features" orientation="horizontal">
+            :links="links as any" :features="features" orientation="horizontal">
+
             <template #title>
                 <h1 class="text-6xl text-primary">บริการหลักของเรา
                 </h1>

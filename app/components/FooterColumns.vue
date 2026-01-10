@@ -66,13 +66,13 @@ const columns: FooterColumn[] = [
                 target: '_self'
             },
             {
-                label: 'Facebook Fanpage',
+                label: 'รับทำบัญชีครบวงจร จดทะเบียน วางแผนภาษี ให้คำปรึกษาฟรี',
                 icon: 'i-simple-icons-facebook',
                 to: 'https://www.facebook.com/LMB.ACC',
                 target: '_blank'
             },
             {
-                label: '215/4 คุณาลัยจอย ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี',
+                label: '215/4 หมู่ที่ 7 ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110',
                 icon: 'i-lucide-map-pin',
                 to: 'https://www.google.com/maps/place/%E0%B8%96.+%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A2-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2+%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5+%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2/@13.9431569,100.3536078,17z/data=!4m15!1m8!3m7!1s0x30e28fa5a538247d:0x35893f1dfb8e7327!2z4LiWLiDguJrguYnguLLguJnguIHguKXguYnguKfguKIt4LmE4LiX4Lij4LiZ4LmJ4Lit4LiiIOC4meC4meC4l-C4muC4uOC4o-C4tSDguJvguKPguLDguYDguJfguKjguYTguJfguKI!3b1!8m2!3d13.9431517!4d100.3584787!16s%2Fg%2F122brz57!3m5!1s0x30e28fa5a538247d:0x35893f1dfb8e7327!8m2!3d13.9431517!4d100.3584787!16s%2Fg%2F122brz57?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D',
                 target: '_blank'

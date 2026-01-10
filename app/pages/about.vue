@@ -40,9 +40,9 @@ const values = [
 // ทีมงาน
 const team = [
     {
-        name: 'คุณไมเคิล',
+        name: 'คุณ ลี',
         role: 'ผู้ก่อตั้ง / นักบัญชี',
-        description: 'ประสบการณ์ 10+ ปี ในการให้บริการด้านบัญชีและภาษี',
+        description: 'ประสบการณ์ 20+ ปี ในการให้บริการด้านบัญชีและภาษี',
         avatar: 'i-heroicons-user-circle'
     },
     {
@@ -191,7 +191,7 @@ const links = ref([
                         <div :class="['flex items-center gap-8', index % 2 === 0 ? 'flex-row' : 'flex-row-reverse']">
                             <div class="w-1/2" :class="index % 2 === 0 ? 'text-right' : 'text-left'">
                                 <p class="text-2xl font-bold text-primary-600 dark:text-primary-400">{{ milestone.year
-                                }}
+                                    }}
                                 </p>
                                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ milestone.title }}
                                 </h3>

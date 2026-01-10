@@ -48,19 +48,19 @@ const items = computed<NavigationMenuItem[]>(() => [
     {
         label: 'บริการ',
         to: '/services',
-        icon: 'i-heroicons-briefcase', // รูปกระเป๋าเอกสาร สื่อถึงการทำงาน/ธุรกิจ
+        icon: 'i-heroicons-briefcase',
         active: route.path === '/services'
     },
     {
         label: 'เกี่ยวกับเรา',
         to: '/about',
-        icon: 'i-heroicons-building-office-2', // รูปตึกสำนักงาน สื่อถึงองค์กร/ความมั่นคง
+        icon: 'i-heroicons-building-office-2',
         active: route.path === '/about'
     },
     {
         label: 'ติดต่อเรา',
         to: '/contact',
-        icon: 'i-heroicons-device-phone-mobile', // รูปโทรศัพท์ สื่อถึงการติดต่อได้ทันที
+        icon: 'i-heroicons-device-phone-mobile',
         active: route.path === '/contact'
     },
     // {
@@ -97,17 +97,12 @@ const items = computed<NavigationMenuItem[]>(() => [
         <UNavigationMenu :items="items" />
 
         <template #right>
-            <NuxtLink to="/contact" class="flex items-center gap-2.5 px-5 py-2.5 rounded-full font-bold text-xs md:text-sm
+            <NuxtLink to="https://line.me/ti/p/~lee_lmbaudit" target="_blank" class="flex items-center gap-2.5 px-5 py-2.5 rounded-full font-bold text-xs md:text-sm
                        bg-linear-to-r from-primary-500 via-primary-500 to-primary-500
                        text-white 
                        hover:scale-110 hover:-translate-y-0.5
                        transition-all duration-300 ease-out
                        ">
-                <!-- <span class="relative flex size-2.5">
-                    <span
-                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                    <span class="relative inline-flex rounded-full size-2.5 bg-white"></span>
-                </span> -->
                 <span>ปรึกษาฟรี!</span>
                 <UIcon name="i-heroicons-sparkles" class="size-4" />
             </NuxtLink>
@@ -144,12 +139,6 @@ const items = computed<NavigationMenuItem[]>(() => [
             <p class="text-muted text-xs md:text-sm">
                 Copyright © {{ new Date().getFullYear() }} LMB-Accounting-Plus. สงวนลิขสิทธิ์.
             </p>
-            <!-- <div>
-                <UTooltip v-for="link in socialLinks" :key="link.label" :text="link.label">
-                    <UButton color="neutral" variant="ghost" target="_blank" :icon="link.icon"
-                        :aria-label="link.label" />
-                </UTooltip>
-            </div> -->
         </div>
 
 

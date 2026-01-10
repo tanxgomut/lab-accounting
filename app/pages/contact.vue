@@ -230,7 +230,7 @@ const submitForm = async () => {
                     <UIcon name="i-heroicons-map-pin" class="w-6 h-6 text-primary inline mr-2" />
                     ที่ตั้งสำนักงาน
                 </h2>
-                <p class="text-muted">215/4 คุณาลัยจอย ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110 ประเทศไทย</p>
+                <p class="text-muted">215/4 หมู่ที่ 7 ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110</p>
             </div>
             <div class="relative rounded-2xl overflow-hidden shadow-lg h-[400px]">
                 <!-- Google Maps Embed -->
