@@ -42,8 +42,7 @@ const contactInfo = [
 // เวลาทำการ
 const workingHours = [
     { day: 'จันทร์ - ศุกร์', time: '09:00 - 18:00' },
-    { day: 'เสาร์', time: '09:00 - 15:00' },
-    { day: 'อาทิตย์', time: 'ปิดทำการ' },
+    { day: 'เสาร์ - อาทิตย์', time: 'ปิดทำการ' },
 ]
 
 // Form state
@@ -57,26 +56,72 @@ const form = reactive({
 })
 
 const services = [
-    'จดทะเบียนบริษัท',
+    'จดบริษัทออนไลน์',
+    'จดบริษัทแบบมือ',
     'รับทำบัญชี',
-    'ยื่นภาษี',
-    'ปิดงบการเงิน',
-    'ตรวจสอบบัญชี',
-    'ที่ปรึกษาภาษี',
-    'อื่นๆ'
+    'จดเลิกกิจการ',
+    'จดภาษีมูลค่าเพิ่ม',
+    'จดขึ้นทะเบียนนายจ้าง',
+    'แก้ไขข้อมูลนิติบุคคล',
+    'แปรสภาพห้างหุ้นส่วน',
+    'ย้ายที่อยู่นิติบุคคล',
+    'ปิดงบการเงินย้อนหลัง',
+    'ปิดงบประจำปี',
+    'ทำสลิปเงินเดือน',
+    'อื่นๆ',
 ]
 
 const mapUrl = "https://www.google.com/maps/place/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%88%E0%B8%AD%E0%B8%A2/@13.944457,100.3506321,15.71z/data=!4m6!3m5!1s0x30e28ffcff534985:0xfcbdc7ead692071f!8m2!3d13.9369724!4d100.3572137!16s%2Fg%2F11hdpsxcr5"
 
 const isSubmitting = ref(false)
+const errors = ref<{ name?: string; phone?: string; service?: string }>({})
+
+const validateForm = () => {
+    errors.value = {}
+
+    if (!form.name.trim()) {
+        errors.value.name = 'กรุณากรอกชื่อ'
+    }
+
+    if (!form.phone.trim()) {
+        errors.value.phone = 'กรุณากรอกเบอร์โทรศัพท์'
+    } else if (!/^[0-9-]{9,15}$/.test(form.phone.replace(/\s/g, ''))) {
+        errors.value.phone = 'เบอร์โทรศัพท์ไม่ถูกต้อง'
+    }
+
+    if (!form.service) {
+        errors.value.service = 'กรุณาเลือกบริการที่สนใจ'
+    }
+
+    return Object.keys(errors.value).length === 0
+}
 
 const submitForm = async () => {
+    if (!validateForm()) return
+
     isSubmitting.value = true
-    // TODO: Implement form submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
+
+    const emailBody = `
+ชื่อ: ${form.name}
+โทรศัพท์: ${form.phone}
+อีเมล: ${form.email}
+บริษัท: ${form.company || '-'}
+บริการที่สนใจ: ${form.service}
+
+ข้อความ:
+${form.message}
+    `.trim()
+
+    const subject = `[LMB Accounting Plus] ติดต่อจาก ${form.name} - ${form.service}`
+    const mailtoUrl = `mailto:mayulee.mc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`
+
+    window.open(mailtoUrl, '_blank')
+
+    await new Promise(resolve => setTimeout(resolve, 500))
     isSubmitting.value = false
-    // Reset form
+
     Object.assign(form, { name: '', phone: '', email: '', company: '', service: '', message: '' })
+    errors.value = {}
 }
 </script>
 
@@ -124,14 +169,14 @@ const submitForm = async () => {
 
                     <form @submit.prevent="submitForm" class="space-y-6">
                         <div class="grid sm:grid-cols-2 gap-6">
-                            <UFormField label="ชื่อ-นามสกุล" required>
-                                <UInput v-model="form.name" placeholder="ชื่อของคุณ" icon="i-heroicons-user"
-                                    size="lg" />
+                            <UFormField label="ชื่อ-นามสกุล" required :error="errors.name">
+                                <UInput v-model="form.name" placeholder="ชื่อของคุณ" icon="i-heroicons-user" size="lg"
+                                    :color="errors.name ? 'error' : undefined" />
                             </UFormField>
 
-                            <UFormField label="เบอร์โทรศัพท์" required>
+                            <UFormField label="เบอร์โทรศัพท์" required :error="errors.phone">
                                 <UInput v-model="form.phone" placeholder="08X-XXX-XXXX" icon="i-heroicons-phone"
-                                    size="lg" />
+                                    size="lg" :color="errors.phone ? 'error' : undefined" />
                             </UFormField>
                         </div>
 
@@ -147,9 +192,9 @@ const submitForm = async () => {
                             </UFormField>
                         </div>
 
-                        <UFormField label="บริการที่สนใจ">
+                        <UFormField label="บริการที่สนใจ" required :error="errors.service">
                             <USelect v-model="form.service" :items="services" placeholder="เลือกบริการ" size="lg"
-                                class="w-full" />
+                                class="w-full" :color="errors.service ? 'error' : undefined" />
                         </UFormField>
 
                         <UFormField label="ข้อความ">

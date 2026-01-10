@@ -61,11 +61,27 @@ const workflowSteps = [
         icon: 'i-heroicons-check-badge'
     }
 ]
+
+// Service Cards Data
+const serviceCards = [
+    { icon: 'i-heroicons-computer-desktop', title: 'จดบริษัทออนไลน์' },
+    { icon: 'i-heroicons-document-text', title: 'จดบริษัทแบบมือ' },
+    { icon: 'i-heroicons-calculator', title: 'รับทำบัญชี' },
+    { icon: 'i-heroicons-x-circle', title: 'จดเลิกกิจการ' },
+    { icon: 'i-heroicons-receipt-percent', title: 'จดภาษีมูลค่าเพิ่ม' },
+    { icon: 'i-heroicons-building-office-2', title: 'จดขึ้นทะเบียนนายจ้าง' },
+    { icon: 'i-heroicons-pencil-square', title: 'แก้ไขข้อมูลนิติบุคคล' },
+    { icon: 'i-heroicons-arrow-path', title: 'แปรสภาพห้างหุ้นส่วน' },
+    { icon: 'i-heroicons-map-pin', title: 'ย้ายที่อยู่นิติบุคคล' },
+    { icon: 'i-heroicons-chart-bar', title: 'ปิดงบการเงินย้อนหลัง' },
+    { icon: 'i-heroicons-chart-pie', title: 'ปิดงบประจำปี' },
+    { icon: 'i-heroicons-banknotes', title: 'ทำสลิปเงินเดือน' },
+]
 </script>
 
 <template>
 
-    <div class="py-20 bg-default  relative overflow-hidden">
+    <div class="py-28 bg-default  relative overflow-hidden">
 
         <div class="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.1]"
             style="background-image: radial-gradient(#6b7280 1px, transparent 1px); background-size: 32px 32px;">
@@ -101,13 +117,10 @@ const workflowSteps = [
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]">
+            <!-- <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]">
 
                 <div v-if="serviceGroups[0]"
                     class="lg:col-span-7 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10  shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 group overflow-hidden relative">
-                    <!-- <div
-                        class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-linear-to-br from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-transparent rounded-full opacity-50 blur-3xl">
-                    </div> -->
 
                     <div class="relative z-10">
                         <div class="flex items-center gap-5 mb-8">
@@ -144,12 +157,8 @@ const workflowSteps = [
                     </div>
                 </div>
 
-                <!-- Accounting Section (Tall Block) - Spans 5 cols -->
                 <div v-if="serviceGroups[1]"
                     class="lg:col-span-5 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 relative overflow-hidden group shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-secondary-500/10 transition-all duration-500 ">
-                    <!-- <div
-                        class="absolute bottom-0 left-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 group-hover:bg-orange-500/10 transition-colors duration-500">
-                    </div> -->
 
                     <div class="relative z-10 h-full flex flex-col justify-between">
                         <div class="flex items-center justify-between mb-8">
@@ -187,8 +196,7 @@ const workflowSteps = [
 
                 <div v-if="serviceGroups[2]"
                     class="lg:col-span-12 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10  shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 group overflow-hidden relative">
-                    <!-- <div class="absolute -left-10 bottom-0 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div>
-                    <div class="absolute right-0 top-0 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl"></div> -->
+                   
 
                     <div class="relative z-10 grid lg:grid-cols-[300px_1fr] gap-10 items-center">
                         <div class="text-center lg:text-left">
@@ -219,12 +227,29 @@ const workflowSteps = [
                     </div>
                 </div>
 
+            </div> -->
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8">
+                <div v-for="(service, index) in serviceCards" :key="index"
+                    class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-24 h-24 md:w-28 md:h-28 rounded-full bg-warning-500 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <UIcon :name="service.icon" class="w-10 h-10 md:w-12 md:h-12 text-white" />
+                    </div>
+                    <p class="font-semibold text-warning-600 text-sm md:text-base">{{ service.title }}</p>
+                </div>
             </div>
+
         </UContainer>
     </div>
 
-    <!-- Process Workflow Section -->
-    <div class="py-24 relative overflow-hidden ">
+    <!--  <div class="flex justify-center">
+<NuxtImg src="/images/content/09.png" alt="services"
+                    class="w-full max-w-4xl h-auto rounded-xl shadow-lg " />
+            </div>  -->
+
+
+    <div class="py-20 relative overflow-hidden ">
         <UContainer class="relative z-10">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-16">
@@ -254,7 +279,7 @@ const workflowSteps = [
                             </div>
 
                             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ step.title.split('.')[1]
-                                }}</h3>
+                            }}</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{{ step.description }}
                             </p>
                         </div>

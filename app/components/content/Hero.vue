@@ -31,12 +31,12 @@ const links = ref([
 ])
 
 const items = [
-    'https://picsum.photos/468/468?random=1',
-    'https://picsum.photos/468/468?random=2',
-    'https://picsum.photos/468/468?random=3',
-    'https://picsum.photos/468/468?random=4',
-    'https://picsum.photos/468/468?random=5',
-    'https://picsum.photos/468/468?random=6'
+    '/images/content/02.png',
+    '/images/content/05.jpg',
+    // '/images/content/03.png',
+    // '/images/content/04.png',
+    // '/images/content/05.png',
+    // '/images/content/06.png'
 ]
 </script>
 
@@ -74,7 +74,7 @@ const items = [
                 <h1 class="text-5xl">
                     <span class="text-[#384c95]">LMB</span>
                     <span class="text-[#384c95]"> ACCOUNTING</span>
-                    <span class="text-warning"> PLUS</span>
+                    <span class="text-warning-600"> PLUS</span>
                 </h1>
             </template>
             <UCarousel v-slot="{ item }" loop :arrows="false" dots :autoplay="{ delay: 2000 }" :items="items">

@@ -63,7 +63,7 @@ const testimonials = [
 const stats = [
     { label: 'ประสบการณ์', value: '20+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'secondary' },
     { label: 'ลูกค้าที่ไว้วางใจ', value: '500+', icon: 'i-heroicons-users', color: 'secondary' },
-    { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้านบาท', color: 'secondary' },
+    { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้าน', color: 'secondary' },
     { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile', color: 'secondary' }
 ]
 
@@ -93,12 +93,11 @@ const latestArticles = [
 ]
 
 const items = [
-    'https://picsum.photos/640/640?random=1',
-    'https://picsum.photos/640/640?random=2',
-    'https://picsum.photos/640/640?random=3',
-    'https://picsum.photos/640/640?random=4',
-    'https://picsum.photos/640/640?random=5',
-    'https://picsum.photos/640/640?random=6'
+    '/images/content/03.jpg',
+    '/images/content/08.jpg',
+    '/images/content/04.jpg',
+    '/images/content/06.jpg',
+    '/images/content/07.jpg',
 ]
 </script>
 
@@ -151,6 +150,8 @@ const items = [
 
 
         <ContentServices />
+
+        <ContentTypeBusinesses />
 
         <!-- 3. Why Choose Us -->
         <div class="py-24 bg-gray-950">

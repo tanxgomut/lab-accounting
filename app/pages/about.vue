@@ -61,10 +61,35 @@ const team = [
 
 // Timeline
 const milestones = [
-    { year: '2014', title: 'ก่อตั้งสำนักงาน', description: 'เริ่มต้นให้บริการรับทำบัญชี' },
-    { year: '2017', title: 'ขยายบริการ', description: 'เพิ่มบริการจดทะเบียนบริษัท' },
-    { year: '2020', title: 'เติบโตอย่างมั่นคง', description: 'ลูกค้าเกิน 300 ราย' },
-    { year: '2024', title: 'LMB Accounting Plus', description: 'พัฒนาสู่บริการครบวงจร' },
+    {
+        year: '2003',
+        title: 'ก่อตั้งสำนักงานบัญชี',
+        target: 'วางรากฐานธุรกิจและความน่าเชื่อถือ'
+    },
+    {
+        year: '2007-2008',
+        title: 'สร้างฐานลูกค้า',
+        description: 'ลูกค้าเพิ่มจากการบอกต่อ ขยายทีมงาน',
+        target: 'เพิ่มจำนวนลูกค้าและรายได้อย่างต่อเนื่อง'
+    },
+    {
+        year: '2009-2013',
+        title: 'พัฒนาระบบและมาตรฐาน',
+        description: 'ทำขั้นตอนการทำงาน Workflow ลูกค้าประจำเพิ่มขึ้น',
+        target: 'สร้างมาตรฐานและคุณภาพงาน'
+    },
+    {
+        year: '2014-2018',
+        title: 'ขยายบริการ',
+        description: 'เพิ่มบริการ วางแผนภาษี จดทะเบียนบริษัท Payroll ดูแลลูกค้านิติบุคคลมากขึ้น สร้างภาพลักษณ์มืออาชีพ',
+        target: 'เพิ่มมูลค่าบริการและความเชี่ยวชาญ'
+    },
+    {
+        year: '2019-ปัจจุบัน',
+        title: 'ขยายงานและเติบโตอย่างยั่งยืน',
+        description: 'ใช้ระบบดิจิทัล / Cloud Accounting ให้บริการออนไลน์ วางแผนเปิดสาขา สร้างแบรนด์',
+        target: 'เติบโตอย่างมั่นคงและยั่งยืน'
+    },
 ]
 
 const links = ref([
@@ -112,7 +137,7 @@ const links = ref([
 
         <!-- Vision Section -->
         <UPageSection title="วิสัยทัศน์ของเรา" headline="Vision" icon="i-heroicons-light-bulb" orientation="horizontal">
-            <NuxtImg src="https://picsum.photos/id/48/800/600" alt="Vision"
+            <NuxtImg src="/images/content/08.jpg" alt="Vision"
                 class="object-cover w-full h-[350px] rounded-2xl shadow-lg" />
             <template #description>
                 <div class="space-y-4 text-muted">
@@ -132,7 +157,7 @@ const links = ref([
         <!-- Mission Section -->
         <UPageSection title="พันธกิจของเรา" headline="Mission" icon="i-heroicons-heart" orientation="horizontal"
             reverse>
-            <NuxtImg src="https://picsum.photos/id/20/800/600" alt="Mission"
+            <NuxtImg src="/images/content/07.jpg" alt="Mission"
                 class="object-cover w-full h-[350px] rounded-2xl shadow-lg" />
             <template #description>
                 <div class="space-y-4 text-muted">
@@ -178,9 +203,12 @@ const links = ref([
         <!-- Timeline Section -->
         <section class="py-12 lg:py-16">
             <div class="text-center mb-12">
-                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                    เส้นทาง <span class="text-secondary">ของเรา</span>
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                    Timeline <span class="text-secondary">การเติบโตของบริษัทฯ</span>
                 </h2>
+                <p class="text-muted text-sm">
+                    ก่อตั้ง ➡️ เติบโต ➡️ ระบบ ➡️ บริการ ➡️ ขยายงาน
+                </p>
             </div>
             <div class="relative">
                 <div
@@ -190,12 +218,18 @@ const links = ref([
                     <div v-for="(milestone, index) in milestones" :key="milestone.year" class="relative">
                         <div :class="['flex items-center gap-8', index % 2 === 0 ? 'flex-row' : 'flex-row-reverse']">
                             <div class="w-1/2" :class="index % 2 === 0 ? 'text-right' : 'text-left'">
-                                <p class="text-2xl font-bold text-primary-600 dark:text-primary-400">{{ milestone.year
-                                    }}
+                                <p class="text-2xl font-bold text-primary-600 dark:text-primary-400">
+                                    {{ milestone.year }}
                                 </p>
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{{ milestone.title }}
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                                    {{ milestone.title }}
                                 </h3>
-                                <p class="text-sm text-gray-600 dark:text-gray-400">{{ milestone.description }}</p>
+                                <p v-if="milestone.description" class="text-md text-gray-600 dark:text-gray-400 mb-2">
+                                    {{ milestone.description }}
+                                </p>
+                                <p v-if="milestone.target" class="text-sm text-secondary font-medium">
+                                    🎯 เป้าหมาย: {{ milestone.target }}
+                                </p>
                             </div>
                             <div
                                 class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-900">

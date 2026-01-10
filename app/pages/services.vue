@@ -147,30 +147,23 @@ const workflowSteps = [
 ]
 
 const items = [
-    // รูปที่ 1: Laptop และเอกสาร (ID: 180)
-    'https://picsum.photos/id/180/800/600',
+    '/images/content/03.jpg',
+    '/images/content/06.jpg',
+    '/images/content/07.jpg',
+    '/images/content/05.jpg',
 
-    // รูปที่ 2: สมุดโน้ตและปากกา (ID: 20)
-    'https://picsum.photos/id/20/800/600',
+    // // รูปที่ 5: บรรยากาศโต๊ะทำงาน (ID: 60)
+    // 'https://picsum.photos/id/60/800/600',
 
-    // รูปที่ 3: โทรศัพท์และสมุดจด (ID: 160)
-    'https://picsum.photos/id/160/800/600',
-
-    // รูปที่ 4: การทำงานบน Laptop (ID: 1)
-    'https://picsum.photos/id/1/800/600',
-
-    // รูปที่ 5: บรรยากาศโต๊ะทำงาน (ID: 60)
-    'https://picsum.photos/id/60/800/600',
-
-    // รูปที่ 6: Laptop (ID: 119)
-    'https://picsum.photos/id/119/800/600'
+    // // รูปที่ 6: Laptop (ID: 119)
+    // 'https://picsum.photos/id/119/800/600'
 ]
 
 // สถิติ
 const stats = [
-    { value: '20+', label: 'ปีประสบการณ์', icon: 'i-heroicons-calendar', color: 'secondary' },
+    { value: '20+', label: 'ปี ประสบการณ์', icon: 'i-heroicons-calendar', color: 'secondary' },
     { value: '500+', label: 'ลูกค้าที่ไว้วางใจ', icon: 'i-heroicons-users', color: 'secondary' },
-    { value: '1,000+', label: 'บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'secondary' },
+    { value: '1,000+', label: 'ล้าน บริษัทจดทะเบียน', icon: 'i-heroicons-building-office', color: 'secondary' },
     { value: '100%', label: 'ความพึงพอใจ', icon: 'i-heroicons-heart', color: 'secondary' },
 ]
 </script>
@@ -197,8 +190,8 @@ const stats = [
                 <h1 class="text-6xl text-primary">บริการหลักของเรา
                 </h1>
             </template>
-            <NuxtImg src="https://picsum.photos/id/180/800/600" alt="Accounting Illustration"
-                class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md" />
+            <NuxtImg src="/images/content/05.jpg" alt="บริการหลักของเรา"
+                class="w-full h-[300px] md:h-[400px] rounded-xl shadow-md" />
         </UPageSection>
     </section>
 
