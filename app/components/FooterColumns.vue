@@ -105,7 +105,8 @@ const services = [
 
 <template>
     <UContainer class="mb-6">
-        <UFooterColumns :columns="columns">
+        <UFooterColumns :columns="columns"
+            :ui="{ linkLabel: 'text-wrap break-words', linkLabelExternalIcon: 'hidden' }">
             <template #right>
                 <div>
                     <!-- Brand Section -->
@@ -132,7 +133,7 @@ const services = [
                                 class="flex items-center gap-2 ">
                                 <UIcon :name="service.icon" class="size-4 shrink-0 text-secondary" />
                                 <span class=" font-bold">{{ service.label
-                                }}</span>
+                                    }}</span>
                             </NuxtLink>
                         </div>
                     </div>
