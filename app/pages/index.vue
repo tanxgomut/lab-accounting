@@ -59,13 +59,6 @@ const testimonials = [
     }
 ]
 
-// Stats Data
-const stats = [
-    { label: 'ประสบการณ์', value: '20+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'secondary' },
-    { label: 'ลูกค้าที่ไว้วางใจ', value: '500+', icon: 'i-heroicons-users', color: 'secondary' },
-    { label: 'ทุนจดทะเบียนรวม', value: '1,000+', icon: 'i-heroicons-banknotes', suffix: 'ล้าน', color: 'secondary' },
-    { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile', color: 'secondary' }
-]
 
 // Latest Articles Mockup (Replace with actual data fetching later)
 const latestArticles = [
@@ -94,10 +87,12 @@ const latestArticles = [
 
 const items = [
     '/images/content/03.jpg',
-    '/images/content/08.jpg',
     '/images/content/04.jpg',
     '/images/content/06.jpg',
     '/images/content/07.jpg',
+    '/images/place/07.jpg',
+    '/images/place/08.jpg',
+    '/images/place/09.jpg',
 ]
 </script>
 
@@ -106,9 +101,9 @@ const items = [
         <!-- 1. Hero Section -->
         <ContentHero />
 
-        <div class="py-20 relative overflow-hidden">
+        <!-- <div class="py-20 relative overflow-hidden">
             <UContainer class="relative z-10">
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-3 gap-8">
                     <div v-for="(stat, index) in stats" :key="index" class="text-center group">
                         <div
                             :class="`mb-4 inline-flex p-3 rounded-2xl bg-${stat.color}-100 text-${stat.color}   transition-colors duration-300 transform group-hover:scale-110 shadow-sm`">
@@ -122,7 +117,8 @@ const items = [
                     </div>
                 </div>
             </UContainer>
-        </div>
+        </div> -->
+        <ContentStats />
 
         <!-- <UContainer class="my-20">
             <UPageLogos title="ได้รับความไว้วางใจจาก" />
@@ -158,8 +154,9 @@ const items = [
             <UContainer>
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                     <div>
-                        <h2 class="text-3xl font-bold text-white mb-6">
-                            ทำไมต้องเลือก <span class="text-success">LMB Accounting Plus</span> ?
+                        <h2 class="text-4xl md:text-3xl font-bold text-white mb-6">
+                            ทำไมต้องเลือก <span class="text-primary">LMB Accounting <span
+                                    class="text-warning-600">Plus</span></span> ?
                         </h2>
                         <p class="text-lg text-gray-400 mb-8">
                             เราไม่ได้เป็นแค่ผู้ทำบัญชี แต่เป็นพาร์ทเนอร์ที่ช่วยให้คำแนะนำและแก้ไขปัญหาทางธุรกิจของคุณ

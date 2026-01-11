@@ -13,9 +13,9 @@ const links = ref([
         to: 'https://line.me/ti/p/~lee_lmbaudit',
         target: '_blank',
         icon: 'i-heroicons-chat-bubble-left-right',
-        size: 'xl',
-        color: 'gray',
-        variant: 'solid',
+        size: 'xl' as const,
+        color: 'gray' as any,
+        variant: 'solid' as const,
         class: `
             relative overflow-hidden border-0 ring-0 text-white font-extrabold rounded-full tracking-wider
             shadow-lg shadow-primary/50 
@@ -150,7 +150,12 @@ const items = [
     '/images/content/03.jpg',
     '/images/content/06.jpg',
     '/images/content/07.jpg',
-    '/images/content/05.jpg',
+    '/images/place/02.jpg',
+    '/images/place/03.jpg',
+    '/images/place/04.jpg',
+    '/images/place/05.jpg',
+    '/images/place/06.jpg',
+
 
     // // รูปที่ 5: บรรยากาศโต๊ะทำงาน (ID: 60)
     // 'https://picsum.photos/id/60/800/600',
@@ -184,7 +189,7 @@ const stats = [
         </div>
         <UPageSection title="บริการหลักของเรา"
             description="LMB Accounting Plus ให้บริการครอบคลุมทุกด้าน เพื่อให้คุณโฟกัสกับการเติบโตของธุรกิจได้อย่างเต็มที่"
-            :links="links as any" :features="features" orientation="horizontal">
+            :links="links" :features="features" orientation="horizontal">
 
             <template #title>
                 <h1 class="text-6xl text-primary">บริการหลักของเรา
@@ -195,21 +200,7 @@ const stats = [
         </UPageSection>
     </section>
 
-    <UContainer>
-        <section class="py-12 lg:py-16">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                <div v-for="stat in stats" :key="stat.label" class="text-center p-6  transition-all">
-                    <div
-                        :class="`w-12 h-12 mx-auto mb-4 bg-${stat.color}-100 dark:bg-${stat.color}-900/30 rounded-xl flex items-center justify-center`">
-                        <UIcon :name="stat.icon" :class="`w-6 h-6 text-${stat.color}`" />
-                    </div>
-                    <p :class="`text-3xl lg:text-4xl font-bold text-${stat.color}`">{{ stat.value }}
-                    </p>
-                    <p class="text-sm text-muted mt-1">{{ stat.label }}</p>
-                </div>
-            </div>
-        </section>
-    </UContainer>
+    <ContentStats />
 
 
     <div class="py-12 bg-gray-50 dark:bg-gray-900/50 relative overflow-hidden">

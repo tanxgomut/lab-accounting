@@ -31,8 +31,8 @@ const links = ref([
 ])
 
 const items = [
-    '/images/content/02.png',
-    '/images/content/05.jpg',
+    '/images/content/02.jpg',
+    // '/images/content/05.jpg',
     // '/images/content/03.png',
     // '/images/content/04.png',
     // '/images/content/05.png',
@@ -77,9 +77,14 @@ const items = [
                     <span class="text-warning-600"> PLUS</span>
                 </h1>
             </template>
-            <UCarousel v-slot="{ item }" loop :arrows="false" dots :autoplay="{ delay: 2000 }" :items="items">
+            <NuxtImg src="/images/content/02.jpg" alt="สำนักบัญชีครบวงจร ให้บริการด้านบัญชี ภาษี และจดทะเบียนธุรกิจ และวางระบบบัญชี
+                    วางแผนภาษี ตรวจสอบบัญชี ที่ปรึกษากฏหมายธุรกิจ ด้วยทีมงานมืออาชีพประสบการณ์กว่า 20 ปี
+                    ทำงานด้วยใจ ใส่ใจทุกรายละเอียด เพราะตัวเลขที่ดี คือพื้นฐานของธุรกิจที่มั่นคง"
+                class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " />
+            <!-- <UCarousel v-slot="{ item }" loop :arrows="false" dots :autoplay="{ delay: 2000 }" :items="items">
                 <NuxtImg :src="item" class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " />
-            </UCarousel>
+            </UCarousel> -->
         </UPageHero>
     </section>
+
 </template>

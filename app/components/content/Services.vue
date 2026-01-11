@@ -236,7 +236,7 @@ const serviceCards = [
                         class="w-24 h-24 md:w-28 md:h-28 rounded-full bg-warning-500 flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                         <UIcon :name="service.icon" class="w-10 h-10 md:w-12 md:h-12 text-white" />
                     </div>
-                    <p class="font-semibold text-warning-600 text-sm md:text-base">{{ service.title }}</p>
+                    <p class="font-semibold  text-sm md:text-base">{{ service.title }}</p>
                 </div>
             </div>
 
@@ -279,7 +279,7 @@ const serviceCards = [
                             </div>
 
                             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ step.title.split('.')[1]
-                            }}</h3>
+                                }}</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{{ step.description }}
                             </p>
                         </div>

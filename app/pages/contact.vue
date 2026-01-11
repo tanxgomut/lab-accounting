@@ -33,7 +33,7 @@ const contactInfo = [
     {
         icon: 'i-simple-icons-facebook',
         label: 'Facebook',
-        value: 'LMB Accounting Plus',
+        value: 'รับทำบัญชีครบวงจร จดทะเบียน วางแผนภาษี ให้คำปรึกษาฟรี',
         href: 'https://facebook.com/LMB.ACC',
         color: 'primary'
     },
@@ -269,27 +269,40 @@ ${form.message}
         </div>
 
         <!-- Map Section -->
-        <section class="mt-16">
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-highlighted mb-2">
-                    <UIcon name="i-heroicons-map-pin" class="w-6 h-6 text-primary inline mr-2" />
-                    ที่ตั้งสำนักงาน
+        <section class="mt-24">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-highlighted mb-2">
+                    <UIcon name="i-heroicons-map-pin" class="w-7 h-7 text-primary inline mr-2" />
+                    ที่ตั้งสำนักงานบัญชี
                 </h2>
-                <p class="text-muted">215/4 หมู่ที่ 7 ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110</p>
+                <p class="text-muted text-md">215/4 หมู่ที่ 7 ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110</p>
             </div>
-            <div class="relative rounded-2xl overflow-hidden shadow-lg h-[400px]">
-                <!-- Google Maps Embed -->
-                <iframe src="https://maps.google.com/maps?q=13.9369724,100.3572137&z=16&output=embed"
-                    class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen>
-                </iframe>
 
-                <!-- Overlay Button -->
-                <div class="absolute bottom-4 right-4">
-                    <UButton :to="mapUrl" target="_blank" color="primary" class="shadow-lg">
-                        <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-4 h-4 mr-2" />
-                        เปิดใน Google Maps
-                    </UButton>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg h-[300px] md:h-[400px] group">
+                    <NuxtImg src="/images/content/08.jpg" alt="ที่ตั้งสำนักงานบัญชี LMB Accounting Plus"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">LMB Accounting Plus</h3>
+                        <p class="text-white/90 text-sm">สำนักงานบัญชีครบวงจร พร้อมให้บริการ</p>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg h-[300px] md:h-[400px]">
+                    <iframe src="https://maps.google.com/maps?q=13.9369724,100.3572137&z=16&output=embed"
+                        class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+
+                    <!-- Overlay Button -->
+                    <div class="absolute bottom-4 right-4">
+                        <UButton :to="mapUrl" target="_blank" color="primary" class="shadow-lg">
+                            <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-4 h-4 mr-2" />
+                            เปิดใน Google Maps
+                        </UButton>
+                    </div>
                 </div>
             </div>
         </section>
