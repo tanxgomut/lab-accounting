@@ -65,6 +65,10 @@ const testimonials = [
         type: 'image',
         avatar: '/images/review/S__43147299.jpg'
     },
+    {
+        type: 'image',
+        avatar: '/images/review/S__43204630.jpg'
+    },
 ]
 </script>
 

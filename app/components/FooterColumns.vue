@@ -116,7 +116,10 @@ const services = [
                             <div>
                                 <h3 class="text-lg text-[#384c95] font-bold ">LMB ACCOUNTING <span
                                         class="text-warning-600">PLUS</span></h3>
-                                <p class="text-xs text-muted">by RSR TECH GROUP</p>
+                                <a href="http://rsrtechgroup.com/" target="_blank" rel="noopener noreferrer">
+                                    <p class="text-xs text-muted hover:text-primary">by RSR TECH GROUP</p>
+                                </a>
+
                             </div>
                         </div>
                         <p class="text-sm text-muted leading-relaxed max-w-sm">

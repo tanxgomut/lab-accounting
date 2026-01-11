@@ -219,7 +219,8 @@ const items = [
                 :links="[
                     { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/~lee_lmbaudit', target: '_blank' },
                     { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0963535572' }
-                ]" variant="solid" />
+                ]" variant="soft"
+                :ui="{ root: 'bg-primary-50 dark:bg-gray-950', title: ' text-primary-900 dark:text-white  ', description: 'dark:text-white' }" />
         </UContainer>
 
     </div>
