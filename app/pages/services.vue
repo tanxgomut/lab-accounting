@@ -333,13 +333,13 @@ const stats = [
         </UContainer>
     </div>
 
-    <section class="py-16 lg:py-24 bg-gray-900 border-t border-gray-800">
+    <section class="py-16 lg:py-24 bg-gray-50 dark:bg-gray-950">
         <UContainer>
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-white mb-4">
+                <h2 class="text-3xl font-bold  mb-4">
                     ขั้นตอนการทำงาน <span class="text-primary">ที่เรียบง่าย</span>
                 </h2>
-                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                <p class="text-lg text-muted max-w-2xl mx-auto">
                     เริ่มต้นใช้งานบริการของเราได้ง่ายๆ เพียง 4 ขั้นตอน ไม่ยุ่งยาก
                 </p>
             </div>
@@ -355,13 +355,13 @@ const stats = [
                             <div
                                 class="w-24 h-24 rounded-full bg-gray-800 border-4 border-gray-900 group-hover:border-primary-900/50 flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 shadow-sm">
                                 <UIcon :name="step.icon"
-                                    class="w-10 h-10 text-gray-400 group-hover:text-primary transition-colors duration-300" />
+                                    class="w-10 h-10 text-secondary group-hover:text-primary transition-colors duration-300" />
                             </div>
 
-                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                            <h3 class="text-xl font-bold text-secondary mb-3 transition-colors">
                                 {{ step.title }}
                             </h3>
-                            <p class="text-gray-400 leading-relaxed text-sm px-2">
+                            <p class="text-muted leading-relaxed text-sm px-2">
                                 {{ step.description }}
                             </p>
                         </div>

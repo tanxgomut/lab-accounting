@@ -150,34 +150,31 @@ const items = [
         <ContentTypeBusinesses />
 
         <!-- 3. Why Choose Us -->
-        <div class="py-24 bg-gray-950">
+        <div class="py-24 bg-gray-50 dark:bg-gray-950">
             <UContainer>
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                     <div>
-                        <h2 class="text-4xl md:text-3xl font-bold text-white mb-6">
+                        <h2 class="text-4xl md:text-3xl font-bold  mb-6">
                             ทำไมต้องเลือก <span class="text-success">LMB Accounting Plus</span> ?
                         </h2>
-                        <p class="text-lg text-gray-400 mb-8">
+                        <p class="text-lg text-muted mb-8">
                             เราไม่ได้เป็นแค่ผู้ทำบัญชี แต่เป็นพาร์ทเนอร์ที่ช่วยให้คำแนะนำและแก้ไขปัญหาทางธุรกิจของคุณ
                             ด้วยความเชี่ยวชาญและความใส่ใจในทุกรายละเอียด
                         </p>
                         <ul class="space-y-6">
                             <li v-for="feature in features" :key="feature.name" class="flex gap-4">
                                 <div
-                                    class="shrink-0 w-12 h-12 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center">
-                                    <UIcon :name="feature.icon" class="w-6 h-6 text-primary" />
+                                    class="shrink-0 w-12 h-12 rounded-xl bg-primary-900  flex items-center justify-center">
+                                    <UIcon :name="feature.icon" class="w-6 h-6 text-primary-50" />
                                 </div>
                                 <div>
-                                    <h3 class="font-semibold text-white mb-1">{{ feature.name }}</h3>
-                                    <p class="text-sm text-gray-500">{{ feature.description }}</p>
+                                    <h3 class="font-semibold  mb-1">{{ feature.name }}</h3>
+                                    <p class="text-sm text-muted">{{ feature.description }}</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="mt-12 lg:mt-0 relative">
-                        <!-- <div
-                            class="absolute inset-0 bg-linear-to-tr  from-cyan-500/90 to-blue-500/90 rounded-2xl transform rotate-1">
-                        </div> -->
                         <UCarousel class="rounded-2xl" v-slot="{ item }" :items="items" dots loop
                             :autoplay="{ delay: 2000 }" :ui="{
                                 dot: 'w-6 h-1'
