@@ -124,7 +124,7 @@ const items = [
             </UContainer>
         </div>
 
-        <UContainer class="my-20">
+        <!-- <UContainer class="my-20">
             <UPageLogos title="ได้รับความไว้วางใจจาก" />
             <UMarquee :overlay="false" pause-on-hover>
                 <NuxtImg src="/images/review/S__43032598.png"
@@ -146,7 +146,7 @@ const items = [
                 <NuxtImg src="/images/review/S__43089937.jpg"
                     class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
             </UMarquee>
-        </UContainer>
+        </UContainer> -->
 
 
         <ContentServices />
