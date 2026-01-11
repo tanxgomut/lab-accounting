@@ -8,5 +8,6 @@ export default defineSitemapEventHandler(() => {
         { loc: '/contact', changefreq: 'monthly' as const, priority: 0.7 as const },
     ]
 
+
     return staticPages
 })

@@ -190,7 +190,6 @@ const items = [
             </UContainer>
         </div>
 
-        <!-- 4. Testimonials & Clients -->
         <ContentTestimonials />
 
         <!-- 5. Latest Articles -->

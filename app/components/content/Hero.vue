@@ -32,11 +32,6 @@ const links = ref([
 
 const items = [
     '/images/content/02.jpg',
-    // '/images/content/05.jpg',
-    // '/images/content/03.png',
-    // '/images/content/04.png',
-    // '/images/content/05.png',
-    // '/images/content/06.png'
 ]
 </script>
 

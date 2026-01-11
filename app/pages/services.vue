@@ -155,13 +155,6 @@ const items = [
     '/images/place/04.jpg',
     '/images/place/05.jpg',
     '/images/place/06.jpg',
-
-
-    // // รูปที่ 5: บรรยากาศโต๊ะทำงาน (ID: 60)
-    // 'https://picsum.photos/id/60/800/600',
-
-    // // รูปที่ 6: Laptop (ID: 119)
-    // 'https://picsum.photos/id/119/800/600'
 ]
 
 // สถิติ
