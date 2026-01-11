@@ -175,12 +175,13 @@ const items = [
                         </ul>
                     </div>
                     <div class="mt-12 lg:mt-0 relative">
-                        <div
+                        <!-- <div
                             class="absolute inset-0 bg-linear-to-tr  from-cyan-500/90 to-blue-500/90 rounded-2xl transform rotate-1">
-                        </div>
-                        <UCarousel v-slot="{ item }" :items="items" dots loop :autoplay="{ delay: 2000 }" :ui="{
-                            dot: 'w-6 h-1'
-                        }">
+                        </div> -->
+                        <UCarousel class="rounded-2xl" v-slot="{ item }" :items="items" dots loop
+                            :autoplay="{ delay: 2000 }" :ui="{
+                                dot: 'w-6 h-1'
+                            }">
                             <NuxtImg :src="item" alt="Team working"
                                 class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px] md:h-[600px] transition-all duration-500" />
                         </UCarousel>

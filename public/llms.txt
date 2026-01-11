@@ -44,16 +44,7 @@ LMB Accounting Plus เป็นสำนักงานบัญชีที่
 - Homepage: https://lmb-accounting.com/
 - About Us: https://lmb-accounting.com/about
 - Services: https://lmb-accounting.com/services
-- Blog: https://lmb-accounting.com/blogs
 - Contact: https://lmb-accounting.com/contact
-
-### Blog Articles
-- สรุปภาษีที่ต้องรู้สำหรับ SMEs ปี 2568: /blog/1/สรุปภาษีที่ต้องรู้สำหรับ-SMEs-ปี-2568
-- ขั้นตอนการจดทะเบียนบริษัทใหม่ 2568: /blog/2/ขั้นตอนการจดทะเบียนบริษัทใหม่-2568
-- เทคนิคการบริหาร Cash Flow ให้ธุรกิจไม่สะดุด: /blog/3/เทคนิคการบริหาร-Cash-Flow-ให้ธุรกิจไม่สะดุด
-- การทำบัญชีสำหรับ Startup ที่เพิ่งเริ่มต้น: /blog/4/การทำบัญชีสำหรับ-Startup-ที่เพิ่งเริ่มต้น
-- Update กฎหมายแรงงานใหม่ พ.ศ. 2568: /blog/5/Update-กฎหมายแรงงานใหม่-2568
-- เคล็ดลับการใช้ e-Tax Invoice ให้คุ้มค่า: /blog/6/เคล็ดลับการใช้-e-Tax-Invoice-ให้คุ้มค่า
 
 ## Contact Information
 
@@ -62,14 +53,13 @@ LMB Accounting Plus เป็นสำนักงานบัญชีที่
 - **LINE ID**: lee_lmbaudit
 - **Email**: mayulee.mc@gmail.com
 - **Facebook**: https://www.facebook.com/LMB.ACC
-- **Google Maps**: https://www.google.com/maps/place/%E0%B8%96.+%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A2-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2/@13.9431569,100.3536078,17z
+- **Google Maps**: https://www.google.com/maps/place/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%88%E0%B8%AD%E0%B8%A2/@13.944457,100.3506321,15.71z/data=!4m6!3m5!1s0x30e28ffcff534985:0xfcbdc7ead692071f!8m2!3d13.9369724!4d100.3572137!16s%2Fg%2F11hdpsxcr5
 - **Location**: ถ.บ้านกล้วย-ไทรน้อย นนทบุรี ประเทศไทย
 
 ## Business Hours
 
 - วันจันทร์ - วันศุกร์: 09:00 - 18:00
-- วันเสาร์: 09:00 - 12:00
-- วันอาทิตย์: ปิดทำการ
+- วันเสาร์: - วันอาทิตย์: ปิดทำการ
 
 ## Language
 

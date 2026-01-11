@@ -178,10 +178,10 @@ const stats = [
     <section class="relative overflow-hidden">
         <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             <div
-                class="absolute top-0 right-0 w-[600px] h-[600px] bg-success-500/20 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen opacity-50 animate-pulse">
+                class="absolute top-0 right-0 w-[600px] h-[600px] bg-success-500/30 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen opacity-50 animate-pulse">
             </div>
             <div
-                class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-500/20 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-screen opacity-50 animate-pulse delay-1000">
+                class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-500/30 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-screen opacity-50 animate-pulse delay-1000">
             </div>
             <div
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/40 dark:bg-gray-900/40 blur-[80px] rounded-full">
@@ -196,7 +196,7 @@ const stats = [
                 </h1>
             </template>
             <NuxtImg src="/images/content/05.jpg" alt="บริการหลักของเรา"
-                class="w-full h-[300px] md:h-[400px] rounded-xl shadow-md" />
+                class="w-full h-auto object-contain rounded-xl" />
         </UPageSection>
     </section>
 

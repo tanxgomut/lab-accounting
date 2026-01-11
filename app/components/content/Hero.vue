@@ -5,9 +5,9 @@ const links = ref([
         to: 'https://line.me/ti/p/~lee_lmbaudit',
         target: '_blank',
         icon: 'i-heroicons-chat-bubble-left-right',
-        size: 'xl',
-        color: 'gray',
-        variant: 'solid',
+        size: 'xl' as any,
+        color: 'gray' as any,
+        variant: 'solid' as any,
         class: `
             relative overflow-hidden border-0 ring-0 text-white font-extrabold rounded-full tracking-wider
             shadow-lg shadow-primary/50 
@@ -23,9 +23,9 @@ const links = ref([
     {
         label: 'ดูบริการทั้งหมด',
         to: '/services',
-        color: 'neutral',
-        variant: 'ghost',
-        size: 'lg',
+        color: 'neutral' as any,
+        variant: 'ghost' as any,
+        size: 'lg' as any,
         trailingIcon: 'i-heroicons-arrow-right',
     }
 ])
@@ -44,10 +44,10 @@ const items = [
     <section class="relative overflow-hidden">
         <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             <div
-                class="absolute -top-[20%] -right-[10%] w-[700px] h-[700px] bg-primary-400/20 rounded-full blur-[130px] mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse">
+                class="absolute -top-[20%] -right-[10%] w-[700px] h-[700px] bg-primary-400/30 rounded-full blur-[130px] mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse">
             </div>
             <div
-                class="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] bg-secondary-400/20 rounded-full blur-[130px] mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse delay-1000">
+                class="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] bg-secondary-400/30 rounded-full blur-[130px] mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse delay-1000">
             </div>
             <div
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/60 dark:bg-gray-900/60 blur-[100px] rounded-full">
@@ -55,7 +55,7 @@ const items = [
         </div>
         <UPageHero
             description="สำนักบัญชีครบวงจร ให้บริการด้านบัญชี ภาษี และจดทะเบียนธุรกิจ และวางระบบบัญชี วางแผนภาษี ตรวจสอบบัญชี ที่ปรึกษากฏหมายธุรกิจ ด้วยทีมงานมืออาชีพประสบการณ์กว่า 20 ปี ❝ ทำงานด้วยใจ ใส่ใจทุกรายละเอียด เพราะตัวเลขที่ดี คือพื้นฐานของธุรกิจที่มั่นคง ❞ "
-            orientation="horizontal" :links="links as any">
+            orientation="horizontal" :links="links">
             <template #headline>
                 <div class="flex justify-center items-center gap-2">
                     <UIcon name="i-heroicons-shield-check" class="w-5 h-5 text-secondary" />
@@ -80,7 +80,7 @@ const items = [
             <NuxtImg src="/images/content/02.jpg" alt="สำนักบัญชีครบวงจร ให้บริการด้านบัญชี ภาษี และจดทะเบียนธุรกิจ และวางระบบบัญชี
                     วางแผนภาษี ตรวจสอบบัญชี ที่ปรึกษากฏหมายธุรกิจ ด้วยทีมงานมืออาชีพประสบการณ์กว่า 20 ปี
                     ทำงานด้วยใจ ใส่ใจทุกรายละเอียด เพราะตัวเลขที่ดี คือพื้นฐานของธุรกิจที่มั่นคง"
-                class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " />
+                class="w-full h-auto object-contain rounded-xl   " />
             <!-- <UCarousel v-slot="{ item }" loop :arrows="false" dots :autoplay="{ delay: 2000 }" :items="items">
                 <NuxtImg :src="item" class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " />
             </UCarousel> -->
