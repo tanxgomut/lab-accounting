@@ -132,7 +132,7 @@ const services = [
                                 class="flex items-center gap-2 ">
                                 <UIcon :name="service.icon" class="size-4 shrink-0 text-secondary" />
                                 <span class=" font-bold">{{ service.label
-                                    }}</span>
+                                }}</span>
                             </NuxtLink>
                         </div>
                     </div>
