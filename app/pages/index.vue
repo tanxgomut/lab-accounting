@@ -155,8 +155,7 @@ const items = [
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                     <div>
                         <h2 class="text-4xl md:text-3xl font-bold text-white mb-6">
-                            ทำไมต้องเลือก <span class="text-primary">LMB Accounting <span
-                                    class="text-warning-600">Plus</span></span> ?
+                            ทำไมต้องเลือก <span class="text-success">LMB Accounting Plus</span> ?
                         </h2>
                         <p class="text-lg text-gray-400 mb-8">
                             เราไม่ได้เป็นแค่ผู้ทำบัญชี แต่เป็นพาร์ทเนอร์ที่ช่วยให้คำแนะนำและแก้ไขปัญหาทางธุรกิจของคุณ
