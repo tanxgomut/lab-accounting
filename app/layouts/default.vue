@@ -1,33 +1,11 @@
 <script setup lang="ts">
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import type { NavigationMenuItem } from '@nuxt/ui'
-import type { FooterColumn } from '@nuxt/ui'
+
 
 import Logo from '~/components/Logo.vue'
 
 const route = useRoute()
-
-const breakpoints = useBreakpoints(breakpointsTailwind)
-const isMobile = breakpoints.smaller('sm')
-
-const sectionTitles: Record<string, string> = {
-    '#services': 'บริการ',
-    '#promotion': 'โปรโมชั่น',
-    '#portfolio': 'ผลงาน',
-    // '#blogs': 'Blogs',
-    '#contact': 'ติดต่อเรา'
-}
-
-const pageTitle = computed(() => {
-    if (route.hash && sectionTitles[route.hash]) {
-        return sectionTitles[route.hash]
-    }
-    return null
-})
-
-useHead({
-    title: pageTitle
-})
 
 const socialLinks = ref([
     {
