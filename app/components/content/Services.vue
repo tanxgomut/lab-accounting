@@ -117,118 +117,6 @@ const serviceCards = [
                 </p>
             </div>
 
-            <!-- <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)]">
-
-                <div v-if="serviceGroups[0]"
-                    class="lg:col-span-7 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10  shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 group overflow-hidden relative">
-
-                    <div class="relative z-10">
-                        <div class="flex items-center gap-5 mb-8">
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-sm group-hover:scale-110 transition-transform duration-500">
-                                <UIcon name="i-heroicons-building-office" class="w-8 h-8" />
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">งานจดทะเบียน</h3>
-                                <div
-                                    class="flex items-center gap-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 mt-1">
-                                    <span>Registration Service</span>
-                                    <span class="w-1 h-1 rounded-full bg-emerald-600"></span>
-                                    <span>Fast & Easy</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
-                            <div v-for="(item, i) in serviceGroups[0]?.items" :key="i"
-                                class="flex items-start gap-3 group/item p-2 -ml-2 rounded-xl hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10 transition-colors">
-                                <div
-                                    class="mt-1 p-1 rounded bg-emerald-100/50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 group-hover/item:bg-emerald-500 group-hover/item:text-white transition-all">
-                                    <UIcon :name="item.icon" class="w-4 h-4" />
-                                </div>
-                                <div>
-                                    <h4
-                                        class="font-bold text-gray-900 dark:text-white text-sm group-hover/item:text-emerald-700 dark:group-hover/item:text-emerald-300 transition-colors">
-                                        {{ item.title }}</h4>
-                                    <p class="text-xs text-gray-500 mt-0.5">{{ item.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div v-if="serviceGroups[1]"
-                    class="lg:col-span-5 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10 relative overflow-hidden group shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-secondary-500/10 transition-all duration-500 ">
-
-                    <div class="relative z-10 h-full flex flex-col justify-between">
-                        <div class="flex items-center justify-between mb-8">
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-14 h-14 rounded-2xl bg-secondary-50 dark:bg-secondary-900/30 flex items-center justify-center text-secondary-600 dark:text-secondary-400 group-hover:scale-110 transition-transform duration-500">
-                                    <UIcon name="i-heroicons-calculator" class="w-8 h-8" />
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">บัญชีและภาษี</h3>
-                                    <p class="text-secondary-600 dark:text-secondary-400 text-sm font-medium">Accounting
-                                        & Tax
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="space-y-4">
-                            <div v-for="(item, i) in serviceGroups[1]?.items" :key="i"
-                                class="flex items-start gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-secondary-50 dark:hover:bg-secondary-900/20 transition-colors group/item cursor-default border border-gray-100 dark:border-gray-800 hover:border-secondary-100 dark:hover:border-secondary-900/30">
-                                <div
-                                    class="mt-1 p-1.5 rounded-lg bg-white dark:bg-gray-800 text-gray-400 group-hover/item:text-secondary-500 shadow-sm transition-colors">
-                                    <UIcon :name="item.icon" class="w-5 h-5" />
-                                </div>
-                                <div>
-                                    <h4
-                                        class="font-bold text-gray-900 dark:text-white group-hover/item:text-secondary-600 dark:group-hover/item:text-secondary-400 transition-colors">
-                                        {{ item.title }}</h4>
-                                    <p class="text-sm text-gray-500 mt-1">{{ item.description }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div v-if="serviceGroups[2]"
-                    class="lg:col-span-12 bg-white dark:bg-gray-900 rounded-4xl p-8 lg:p-10  shadow-xl shadow-gray-200/50 dark:shadow-none hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 group overflow-hidden relative">
-                   
-
-                    <div class="relative z-10 grid lg:grid-cols-[300px_1fr] gap-10 items-center">
-                        <div class="text-center lg:text-left">
-                            <div
-                                class="inline-flex p-3 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-500">
-                                <UIcon name="i-heroicons-user-group" class="w-8 h-8" />
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">HR & ประกันสังคม</h3>
-                            <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">
-                                ดูแลสวัสดิการพนักงานและงานประกันสังคมครบวงจร ถูกต้อง รวดเร็ว</p>
-                            <UButton color="primary" variant="soft" to="/services" class="hidden lg:inline-flex">
-                                ดูรายละเอียด
-                                <UIcon name="i-heroicons-arrow-right" class="ml-1" />
-                            </UButton>
-                        </div>
-
-                        <div class="grid sm:grid-cols-3 gap-6">
-                            <div v-for="(item, i) in serviceGroups[2]?.items" :key="i"
-                                class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-gray-100 dark:border-gray-700 group/hr text-center lg:text-left">
-                                <div
-                                    class="w-12 h-12 mx-auto lg:mx-0 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-500 flex items-center justify-center mb-4 group-hover/hr:bg-blue-500 group-hover/hr:text-white transition-colors">
-                                    <UIcon :name="item.icon" class="w-6 h-6" />
-                                </div>
-                                <h4 class="font-bold text-gray-900 dark:text-white mb-1">{{ item.title }}</h4>
-                                <p class="text-xs text-gray-500">{{ item.description }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
-
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8">
                 <div v-for="(service, index) in serviceCards" :key="index"
                     class="flex flex-col items-center text-center group">
@@ -243,11 +131,6 @@ const serviceCards = [
         </UContainer>
     </div>
 
-    <!--  <div class="flex justify-center">
-<NuxtImg src="/images/content/09.png" alt="services"
-                    class="w-full max-w-4xl h-auto rounded-xl shadow-lg " />
-            </div>  -->
-
 
     <div class="py-20 relative overflow-hidden ">
         <UContainer class="relative z-10">
@@ -260,14 +143,12 @@ const serviceCards = [
                 </div>
 
                 <div class="relative">
-                    <!-- Connecting Line (Desktop) -->
                     <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gray-100 dark:bg-gray-800 -z-10">
                     </div>
 
                     <div class="grid md:grid-cols-4 gap-8">
                         <div v-for="(step, index) in workflowSteps" :key="index"
                             class="text-center group relative  pt-4 md:pt-0">
-                            <!-- Step Number/Icon -->
                             <div
                                 class="w-16 h-16 mx-auto bg-white dark:bg-gray-950 rounded-2xl flex items-center justify-center mb-6 border-2 border-secondary-100 dark:border-success-500 group-hover:border-primary-500 group-hover:scale-110 transition-all duration-300 relative z-10 shadow-sm">
                                 <UIcon :name="step.icon"
@@ -279,7 +160,7 @@ const serviceCards = [
                             </div>
 
                             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ step.title.split('.')[1]
-                                }}</h3>
+                            }}</h3>
                             <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{{ step.description }}
                             </p>
                         </div>

@@ -19,10 +19,8 @@ useHead({
 })
 
 useSeoMeta({
-    // Default SEO - will be overridden per-page
     title: 'บริการบัญชีและภาษี',
     description: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน โดยทีมผู้เชี่ยวชาญ',
-    // OG defaults
     ogTitle: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
     ogDescription: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน โดยทีมผู้เชี่ยวชาญ',
     ogImage: `${siteUrl}/og-image.png`,
@@ -32,12 +30,10 @@ useSeoMeta({
     ogUrl: `${siteUrl}${route.path}`,
     ogSiteName: 'LMB Accounting Plus',
     ogLocale: 'th_TH',
-    // Twitter defaults
     twitterCard: 'summary_large_image',
     twitterImage: `${siteUrl}/og-image.png`,
     twitterTitle: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
     twitterDescription: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน',
-    // Other
     charset: 'utf-8',
     viewport: 'width=device-width, initial-scale=1',
 })

@@ -36,6 +36,7 @@ const items = [
 </script>
 
 <template>
+
     <section class="relative overflow-hidden">
         <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             <div
@@ -66,20 +67,17 @@ const items = [
                 </p>
             </template>
             <template #title>
-                <h1 class="text-5xl">
+                <span class="text-5xl">
                     <span class="text-[#384c95]">LMB</span>
                     <span class="text-[#384c95]"> ACCOUNTING</span>
                     <span class="text-warning-600"> PLUS</span>
-                </h1>
+                </span>
             </template>
-            <NuxtImg src="/images/content/02.jpg" alt="สำนักบัญชีครบวงจร ให้บริการด้านบัญชี ภาษี และจดทะเบียนธุรกิจ และวางระบบบัญชี
-                    วางแผนภาษี ตรวจสอบบัญชี ที่ปรึกษากฏหมายธุรกิจ ด้วยทีมงานมืออาชีพประสบการณ์กว่า 20 ปี
-                    ทำงานด้วยใจ ใส่ใจทุกรายละเอียด เพราะตัวเลขที่ดี คือพื้นฐานของธุรกิจที่มั่นคง"
-                class="w-full h-auto object-contain rounded-xl   " />
-            <!-- <UCarousel v-slot="{ item }" loop :arrows="false" dots :autoplay="{ delay: 2000 }" :items="items">
-                <NuxtImg :src="item" class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md   " />
-            </UCarousel> -->
+            <NuxtImg src="/images/content/02.jpg"
+                alt="LMB Accounting Plus สำนักบัญชีครบวงจร รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี"
+                class="w-full h-auto object-contain rounded-xl" />
         </UPageHero>
+
     </section>
 
 </template>

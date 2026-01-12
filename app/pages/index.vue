@@ -98,58 +98,14 @@ const items = [
 
 <template>
     <div>
-        <!-- 1. Hero Section -->
         <ContentHero />
 
-        <!-- <div class="py-20 relative overflow-hidden">
-            <UContainer class="relative z-10">
-                <div class="grid grid-cols-3 gap-8">
-                    <div v-for="(stat, index) in stats" :key="index" class="text-center group">
-                        <div
-                            :class="`mb-4 inline-flex p-3 rounded-2xl bg-${stat.color}-100 text-${stat.color}   transition-colors duration-300 transform group-hover:scale-110 shadow-sm`">
-                            <UIcon :name="stat.icon" class="w-8 h-8" />
-                        </div>
-                        <div :class="`text-3xl md:text-4xl font-bold mb-2 ${'text-' + stat.color}`">{{ stat.value }}
-                            <span v-if="stat.suffix" class="text-lg font-normal text-gray-500 dark:text-gray-400">{{
-                                stat.suffix }} </span>
-                        </div>
-                        <div class="text-gray-500 dark:text-gray-400 text-sm font-medium">{{ stat.label }}</div>
-                    </div>
-                </div>
-            </UContainer>
-        </div> -->
         <ContentStats />
-
-        <!-- <UContainer class="my-20">
-            <UPageLogos title="ได้รับความไว้วางใจจาก" />
-            <UMarquee :overlay="false" pause-on-hover>
-                <NuxtImg src="/images/review/S__43032598.png"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43032599.jpg"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43032600.jpg"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43032601.jpg"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43032602.png"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43089934.jpg"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43089935.jpg"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43089936.jpg"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-                <NuxtImg src="/images/review/S__43089937.jpg"
-                    class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-xl shadow-md" />
-            </UMarquee>
-        </UContainer> -->
-
 
         <ContentServices />
 
         <ContentTypeBusinesses />
 
-        <!-- 3. Why Choose Us -->
         <div class="py-24 bg-gray-50 dark:bg-gray-950">
             <UContainer>
                 <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
@@ -189,27 +145,6 @@ const items = [
         </div>
 
         <ContentTestimonials />
-
-        <!-- 5. Latest Articles -->
-        <!-- <div class="py-16 ">
-            <UContainer>
-                <UPageHeader title="บทความล่าสุด" description="อัปเดตความรู้ด้านภาษีและกฎหมายธุรกิจ" :links="[{
-                    label: 'ดูบทความทั้งหมด',
-                    trailingIcon: 'i-heroicons-arrow-right',
-                    to: '/blogs',
-                    variant: 'ghost',
-                    color: 'neutral'
-                }]" class="mb-10" />
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <UBlogPost v-for="(post, index) in latestArticles" :key="index" :title="post.title"
-                        :description="post.description" :date="post.date" :image="post.image" :badge="post.badge as any"
-                        orientation="vertical" :to="'#'"
-                        :ui="{ image: 'group-hover:scale-105 transition-transform duration-500' }" />
-                </div>
-            </UContainer>
-        </div> -->
-
 
         <UContainer class="mt-16">
             <UPageCTA title="พร้อมก้าวสู่ความสำเร็จทางธุรกิจหรือยัง?"

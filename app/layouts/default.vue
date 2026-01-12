@@ -63,24 +63,6 @@ const items = computed<NavigationMenuItem[]>(() => [
         icon: 'i-heroicons-device-phone-mobile',
         active: route.path === '/contact'
     },
-    // {
-    //     label: 'บทความ',
-    //     to: '/blogs',
-    //     icon: 'i-heroicons-newspaper', // รูปหนังสือพิมพ์ สื่อถึงข่าวสาร/ความรู้บัญชี
-    //     active: route.path === '/blogs'
-    // },
-    // {
-    //     label: 'Blogs',
-    //     to: '/blogs',
-    //     icon: 'i-lucide-file-text',
-    //     active: route.path.startsWith('/blogs') || route.hash === '#blogs',
-    //     children: blogs?.value?.map((blog) => ({
-    //         icon: 'i-lucide-file-text',
-    //         description: blog.title,
-    //         to: `${blog.to}`,
-    //     }))
-    // },
-
 ])
 
 
@@ -140,8 +122,6 @@ const items = computed<NavigationMenuItem[]>(() => [
                 Copyright © {{ new Date().getFullYear() }} LMB-Accounting-Plus. สงวนลิขสิทธิ์.
             </p>
         </div>
-
-
 
         <template #right>
             <UTooltip v-for="link in socialLinks" :key="link.label" :text="link.label">

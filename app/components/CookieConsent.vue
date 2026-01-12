@@ -38,9 +38,6 @@ const onModalConfirm = () => {
                 class="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 z-50 md:max-w-md">
                 <div
                     class="bg-default backdrop-blur-xl border border-gray-200 dark:border-gray-800 p-6 rounded-3xl shadow relative overflow-hidden">
-                    <!-- Decor Blur -->
-                    <!-- <div class="absolute top-0 right-0 -mr-8 -mt-8 w-24 h-24 bg-primary-500/20 rounded-full blur-2xl">
-                    </div> -->
 
                     <div class="flex flex-col gap-4 relative z-10">
                         <div class="flex items-start gap-4">

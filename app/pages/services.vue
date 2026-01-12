@@ -345,13 +345,11 @@ const stats = [
             </div>
 
             <div class="relative">
-                <!-- Connecting Line (Desktop) -->
                 <div class="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-gray-800"></div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
                     <div v-for="(step, index) in workflowSteps" :key="index" class="relative group pt-4 lg:pt-0">
                         <div class="flex flex-col items-center text-center relative z-10">
-                            <!-- Step Number Circle -->
                             <div
                                 class="w-24 h-24 rounded-full bg-gray-800 border-4 border-gray-900 group-hover:border-primary-900/50 flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 shadow-sm">
                                 <UIcon :name="step.icon"

@@ -7,7 +7,6 @@ useSeoMeta({
     ogDescription: 'ติดต่อสำนักงานบัญชี LMB Accounting Plus รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปรึกษาฟรี',
 })
 
-// ข้อมูลติดต่อ
 const contactInfo = [
     {
         icon: 'i-heroicons-phone',
@@ -39,13 +38,11 @@ const contactInfo = [
     },
 ]
 
-// เวลาทำการ
 const workingHours = [
     { day: 'จันทร์ - ศุกร์', time: '09:00 - 18:00' },
     { day: 'เสาร์ - อาทิตย์', time: 'ปิดทำการ' },
 ]
 
-// Form state
 const form = reactive({
     name: '',
     phone: '',
@@ -149,9 +146,8 @@ ${form.message}
             </template>
         </UPageHeader>
 
-        <!-- Main Content -->
         <div class="grid lg:grid-cols-3 gap-12 mt-12">
-            <!-- Contact Form -->
+
             <div class="lg:col-span-2">
                 <UCard class="p-2" variant="soft">
                     <template #header>
@@ -215,9 +211,7 @@ ${form.message}
                 </UCard>
             </div>
 
-            <!-- Contact Info Sidebar -->
             <div class="space-y-6">
-                <!-- Quick Contact -->
                 <UCard>
                     <template #header>
                         <h3 class="text-lg font-bold text-highlighted">ช่องทางติดต่อ</h3>
@@ -237,7 +231,6 @@ ${form.message}
                     </div>
                 </UCard>
 
-                <!-- Working Hours -->
                 <UCard>
                     <template #header>
                         <div class="flex items-center gap-2">
@@ -255,7 +248,6 @@ ${form.message}
                     </div>
                 </UCard>
 
-                <!-- LINE CTA -->
                 <div class="p-6 bg-success-50 dark:bg-success-900/20 rounded-2xl text-center">
                     <UIcon name="i-simple-icons-line" class="w-12 h-12 text-success mx-auto mb-3" />
                     <h4 class="font-bold text-highlighted mb-2">แอดไลน์ ตอบไว!</h4>
@@ -268,7 +260,6 @@ ${form.message}
             </div>
         </div>
 
-        <!-- Map Section -->
         <section class="mt-24">
             <div class="text-center mb-10">
                 <h2 class="text-2xl md:text-3xl font-bold text-highlighted mb-2">
@@ -289,14 +280,12 @@ ${form.message}
                     </div>
                 </div>
 
-                <!-- Google Maps -->
                 <div class="relative rounded-2xl overflow-hidden shadow-lg h-[300px] md:h-[400px]">
                     <iframe src="https://maps.google.com/maps?q=13.9369724,100.3572137&z=16&output=embed"
                         class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         allowfullscreen>
                     </iframe>
 
-                    <!-- Overlay Button -->
                     <div class="absolute bottom-4 right-4">
                         <UButton :to="mapUrl" target="_blank" color="primary" class="shadow-lg">
                             <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-4 h-4 mr-2" />
@@ -307,7 +296,6 @@ ${form.message}
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section class="mt-16">
             <div class="text-center mb-8">
                 <h2 class="text-2xl font-bold text-highlighted mb-2">

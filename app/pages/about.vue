@@ -9,7 +9,6 @@ useSeoMeta({
 
 
 
-// ค่านิยมองค์กร
 const values = [
     {
         icon: 'i-heroicons-shield-check',
@@ -37,7 +36,6 @@ const values = [
     },
 ]
 
-// ทีมงาน
 const team = [
     {
         name: 'คุณ ลี',
@@ -59,7 +57,6 @@ const team = [
     },
 ]
 
-// Timeline
 const milestones = [
     {
         year: '2003',
@@ -132,10 +129,6 @@ const links = ref([
             </template>
         </UPageHeader>
 
-        <!-- Stats Section -->
-
-
-        <!-- Vision Section -->
         <UPageSection title="วิสัยทัศน์ของเรา" headline="Vision" icon="i-heroicons-light-bulb" orientation="horizontal">
             <NuxtImg src="/images/content/08.jpg" alt="Vision"
                 class="object-cover w-full h-[350px] rounded-2xl shadow-lg" />
@@ -154,7 +147,6 @@ const links = ref([
             </template>
         </UPageSection>
 
-        <!-- Mission Section -->
         <UPageSection title="พันธกิจของเรา" headline="Mission" icon="i-heroicons-heart" orientation="horizontal"
             reverse>
             <NuxtImg src="/images/content/07.jpg" alt="Mission"
@@ -177,7 +169,6 @@ const links = ref([
             </template>
         </UPageSection>
 
-        <!-- Values Section -->
         <section class="py-12 lg:py-16">
             <div class="text-center mb-12">
                 <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -200,7 +191,6 @@ const links = ref([
             </div>
         </section>
 
-        <!-- Timeline Section -->
         <section class="py-12 lg:py-16">
             <div class="text-center mb-12">
                 <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
@@ -241,7 +231,6 @@ const links = ref([
             </div>
         </section>
 
-        <!-- Team Section -->
         <section class="py-12 lg:py-16">
             <div class="text-center mb-12">
                 <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">

@@ -1,14 +1,4 @@
 <script setup lang="ts">
-const isMd = ref(true)
-
-onMounted(() => {
-    const checkBreakpoint = () => {
-        isMd.value = window.innerWidth >= 768 // md breakpoint
-    }
-    checkBreakpoint()
-    window.addEventListener('resize', checkBreakpoint)
-    onUnmounted(() => window.removeEventListener('resize', checkBreakpoint))
-})
 
 const testimonials = [
     {
@@ -55,7 +45,7 @@ const testimonials = [
                             <UAvatar :src="item.avatar" :alt="item.name" size="md" class="ring-2 ring-white/50" />
                             <div class="flex-1 min-w-0">
                                 <span class="text-sm font-bold text-white truncate block drop-shadow-md">{{ item.name
-                                    }}</span>
+                                }}</span>
                                 <div class="flex gap-0.5 mt-0.5">
                                     <UIcon v-for="i in 5" :key="i" name="i-heroicons-star-solid"
                                         class="w-3.5 h-3.5 text-warning-400 drop-shadow-sm" />

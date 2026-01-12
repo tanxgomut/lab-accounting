@@ -9,22 +9,17 @@ const columns: FooterColumn[] = [
             {
                 label: 'บริการ',
                 to: '/services',
-                icon: 'i-heroicons-briefcase' // กระเป๋าเอกสาร
+                icon: 'i-heroicons-briefcase'
             },
             {
                 label: 'เกี่ยวกับเรา',
                 to: '/about',
-                icon: 'i-heroicons-building-office-2' // ตึกสำนักงาน
+                icon: 'i-heroicons-building-office-2'
             },
-            // {
-            //     label: 'บทความ',
-            //     to: '/blogs',
-            //     icon: 'i-heroicons-newspaper' // หนังสือพิมพ์/ข่าวสาร
-            // },
             {
                 label: 'ติดต่อเรา',
                 to: '/contact',
-                icon: 'i-heroicons-phone' // โทรศัพท์
+                icon: 'i-heroicons-phone'
             }
         ]
     },
@@ -109,7 +104,6 @@ const services = [
             :ui="{ linkLabel: 'text-wrap break-words', linkLabelExternalIcon: 'hidden' }">
             <template #right>
                 <div>
-                    <!-- Brand Section -->
                     <div class="space-y-3 mb-2">
                         <div class="flex items-center gap-3">
                             <NuxtImg src="/logo.png" alt="LAB ACCOUNTING PLUS" class="h-10 w-auto object-contain" />
@@ -128,7 +122,6 @@ const services = [
                         </p>
                     </div>
 
-                    <!-- Services Section -->
                     <div>
                         <p class="text-sm font-semibold mb-4">บริการของเรา</p>
                         <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm ">
@@ -136,7 +129,7 @@ const services = [
                                 class="flex items-center gap-2 ">
                                 <UIcon :name="service.icon" class="size-4 shrink-0 text-secondary" />
                                 <span class=" font-bold">{{ service.label
-                                    }}</span>
+                                }}</span>
                             </NuxtLink>
                         </div>
                     </div>
