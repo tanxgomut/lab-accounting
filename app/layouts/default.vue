@@ -145,7 +145,8 @@ const items = computed<NavigationMenuItem[]>(() => [
 
         <template #right>
             <UTooltip v-for="link in socialLinks" :key="link.label" :text="link.label">
-                <UButton color="neutral" variant="ghost" target="_blank" :icon="link.icon" :aria-label="link.label" />
+                <UButton color="neutral" variant="ghost" :to="link.to" target="_blank" :icon="link.icon"
+                    :aria-label="link.label" />
             </UTooltip>
         </template>
 

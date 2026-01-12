@@ -112,9 +112,10 @@ const handleConfirm = () => {
             <p>
               หากท่านมีข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัว สามารถติดต่อได้ที่:<br>
               <strong>บริษัท แอลเอ็มบี แอคเคาท์ติ้ง พลัส จำกัด</strong><br>
-              เบอร์โทรศัพท์: 096-353-5572, 084-387-7167, 02-1650-369<br>
+              เบอร์โทรศัพท์: <a href="tel:0963535572">096-353-5572</a>, <a href="tel:0843877167">084-387-7167</a>, <a
+                href="tel:021650369">02-1650-369</a><br>
               ไลน์: <a href="https://line.me/ti/p/~lee_lmbaudit" target="_blank">lee_lmbaudit</a><br>
-              อีเมล: mayulee.mc@gmail.com<br>
+              อีเมล: <a href="mailto:mayulee.mc@gmail.com">mayulee.mc@gmail.com</a><br>
               ที่อยู่:215/4 หมู่ที่ 7 ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110
             </p>
           </section>
