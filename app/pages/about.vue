@@ -194,11 +194,8 @@ const links = ref([
         <section class="py-12 lg:py-16">
             <div class="text-center mb-12">
                 <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                    Timeline <span class="text-secondary">การเติบโตของบริษัทฯ</span>
+                    เส้นทาง <span class="text-secondary">ของเรา</span>
                 </h2>
-                <p class="text-muted text-sm">
-                    ก่อตั้ง ➡️ เติบโต ➡️ ระบบ ➡️ บริการ ➡️ ขยายงาน
-                </p>
             </div>
             <div class="relative">
                 <div
