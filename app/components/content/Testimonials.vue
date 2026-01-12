@@ -13,13 +13,23 @@ onMounted(() => {
 const testimonials = [
     {
         name: 'CY INFINITY CO.,LTD',
-        quote: 'บริการจดทะเบียนบริษัทรวดเร็วมากครับ ทีมงานให้คำแนะนำละเอียดทุกขั้นตอน มือใหม่เริ่มธุรกิจแนะนำที่นี่เลยครับ ครบจบในที่เดียว',
-        avatar: '/images/review/S__43032598.png'
+        avatar: '/images/review/S__43032598.png',
+        imageReview: '/images/review/S__43229212.jpg'
     },
     {
         name: 'BREW GARD',
-        quote: 'ประทับใจบริการทำบัญชีที่นี่มากค่ะ ปิดงบตรงเวลา อธิบายเรื่องภาษีได้เข้าใจง่าย ช่วยวางแผนภาษีทำให้ประหยัดค่าใช้จ่ายได้เยอะเลย',
-        avatar: '/images/review/S__43032599.jpg'
+        avatar: '/images/review/S__43204631.jpg',
+        imageReview: '/images/review/S__43204630.jpg'
+    },
+    {
+        name: 'ห้างหุ่นส่วนจำกัด เพช เพอฟอมเมินซ์',
+        avatar: '/images/review/S__43089937.jpg',
+        imageReview: '/images/review/S__43089938.jpg'
+    },
+    {
+        name: 'BEIGE DECOR',
+        avatar: '/images/review/S__43089934.jpg',
+        imageReview: '/images/review/S__43147299.jpg'
     },
     {
         name: 'เหล็กกัปตัน',
@@ -37,11 +47,6 @@ const testimonials = [
         avatar: '/images/review/S__43032602.png'
     },
     {
-        name: 'BEIGE DECOR',
-        quote: 'ประทับใจความรวดเร็วในการทำงานครับ เวลามีข้อสงสัยเรื่องหัก ณ ที่จ่าย หรือภาษีมูลค่าเพิ่ม ก็ตอบคำถามได้ไวและเคลียร์มาก',
-        avatar: '/images/review/S__43089934.jpg'
-    },
-    {
         name: 'PRINTER THAI CO.,LTD',
 
         quote: 'ใช้บริการมาหลายปีแล้วครับ มั่นใจในความถูกต้องแม่นยำ ปิดงบสวย ไม่เคยมีปัญหากับสรรพากรเลย แนะนำต่อเพื่อนๆ ตลอดครับ',
@@ -52,23 +57,19 @@ const testimonials = [
         quote: 'เริ่มต้นธุรกิจใหม่ก็กังวลเรื่องภาษี แต่ได้ทีมงาน LMB ช่วยดูแลตั้งแต่จดทะเบียนยันวางระบบบัญชี ทำให้ทุกอย่างราบรื่นมากครับ',
         avatar: '/images/review/S__43089936.jpg'
     },
-    {
-        name: 'ห้างหุ่นส่วนจำกัด เพช เพอฟอมเมินซ์',
-        quote: 'บริการดี ราคาเป็นกันเองครับ สิ่งที่ชอบที่สุดคือความใส่ใจ ไม่ใช่แค่ทำบัญชีให้จบๆ ไป แต่ยังช่วยดูจุดบกพร่องและแก้ไขให้เราด้วย',
-        avatar: '/images/review/S__43089937.jpg'
-    },
-    {
-        type: 'image',
-        avatar: '/images/review/S__43089938.jpg'
-    },
-    {
-        type: 'image',
-        avatar: '/images/review/S__43147299.jpg'
-    },
-    {
-        type: 'image',
-        avatar: '/images/review/S__43204630.jpg'
-    },
+
+    // {
+    //     type: 'image',
+    //     avatar: '/images/review/S__43089938.jpg'
+    // },
+    // {
+    //     type: 'image',
+    //     avatar: '/images/review/S__43147299.jpg'
+    // },
+    // {
+    //     type: 'image',
+    //     avatar: '/images/review/S__43204630.jpg'
+    // },
 ]
 </script>
 
@@ -80,60 +81,56 @@ const testimonials = [
                 <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
             </div>
 
-            <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div v-for="(item, index) in testimonials" :key="index"
-                    class="bg-default rounded-xl p-6 shadow-lg hover:shadow-primary-500/10 transition-all duration-300 hover:-translate-y-1">
-
-                    <template v-if="item.type !== 'image'">
-                        <div class="flex items-center gap-4 mb-4">
-                            <UAvatar :src="item.avatar" :alt="item.name" size="md" />
-                            <div>
-                                <h4 class="font-bold  text-base">{{ item.name }}</h4>
-                                <p class="text-xs text-primary-400 font-medium">{{ item.position }}</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-1 mb-4">
-                            <UIcon v-for="i in 5" :key="i" name="i-heroicons-star-solid"
-                                class="w-4 h-4 text-warning-400" />
-                        </div>
-
-                        <p class="text-muted text-sm leading-relaxed font-light">
-                            "{{ item.quote }}"
-                        </p>
-                    </template>
-<template v-else>
-                        <NuxtImg :src="item.avatar" class="w-full h-full object-cover" />
-                    </template>
-</div>
-</div> -->
-
             <UCarousel v-slot="{ item }" loop :arrows="isMd" :prev="{ variant: 'solid' }" :next="{ variant: 'solid' }"
-                :dots="false" :autoplay="{ delay: 2000 }" :items="testimonials"
+                :dots="false" :autoplay="{ delay: 2500 }" :items="testimonials"
                 :ui="{ item: 'basis-1/1 sm:basis-1/2 md:basis-1/4' }">
-                <div class="bg-default rounded-xl p-6 border border-secondary-600 h-[250px]">
 
-                    <template v-if="item.type !== 'image'">
-                        <div class="flex items-center gap-4 mb-4">
-                            <UAvatar :src="item.avatar" :alt="item.name" size="md" />
-                            <div>
-                                <h4 class="font-bold  text-base">{{ item.name }}</h4>
+                <!-- Card with imageReview -->
+                <template v-if="item.imageReview">
+                    <div
+                        class="relative rounded-2xl overflow-hidden h-[320px]  group  border border-secondary-600 dark:border-secondary-700">
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent z-10">
+                        </div>
+                        <!-- Badge ชื่อลูกค้า -->
+                        <div class="absolute z-20 bottom-4 left-4 right-4 flex items-center gap-3">
+                            <UAvatar :src="item.avatar" :alt="item.name" size="md" class="ring-2 ring-white/50" />
+                            <div class="flex-1 min-w-0">
+                                <span class="text-sm font-bold text-white truncate block drop-shadow-md">{{ item.name
+                                    }}</span>
+                                <div class="flex gap-0.5 mt-0.5">
+                                    <UIcon v-for="i in 5" :key="i" name="i-heroicons-star-solid"
+                                        class="w-3.5 h-3.5 text-warning-400 drop-shadow-sm" />
+                                </div>
                             </div>
                         </div>
+                        <!-- รูป Review -->
+                        <NuxtImg :src="item.imageReview" :alt="`รีวิวจาก ${item.name}`"
+                            class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                </template>
 
-                        <div class="flex gap-1 mb-4">
+                <!-- Card with quote -->
+                <template v-else>
+                    <div
+                        class="bg-default rounded-xl p-5 border border-secondary-600 dark:border-secondary-700 h-[320px] flex flex-col">
+                        <!-- Avatar + Name -->
+                        <div class="flex items-center gap-3 mb-2">
+                            <UAvatar :src="item.avatar" :alt="item.name" size="lg" />
+                            <h4 class="font-bold text-sm flex-1">{{ item.name }}</h4>
+                        </div>
+                        <!-- Stars -->
+                        <div class="flex gap-0.5 mb-4">
                             <UIcon v-for="i in 5" :key="i" name="i-heroicons-star-solid"
                                 class="w-4 h-4 text-warning-400" />
                         </div>
-
-                        <p class="text-muted text-sm leading-relaxed font-light">
+                        <!-- Quote -->
+                        <p class="text-muted text-sm leading-relaxed font-light line-clamp-6 flex-1">
                             "{{ item.quote }}"
                         </p>
-                    </template>
-                    <template v-else>
-                        <NuxtImg :src="item.avatar" class="w-full h-full " />
-                    </template>
-                </div>
+                    </div>
+                </template>
+
             </UCarousel>
 
 
