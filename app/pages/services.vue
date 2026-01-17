@@ -321,13 +321,13 @@ const stats = [
                 <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
             </div>
 
-            <UCarousel v-slot="{ item }" :items="items" loop dots :arrows="false" auto-scroll
+            <UCarousel v-slot="{ item, index }" :items="items" loop dots :arrows="false" auto-scroll
                 :ui="{ item: 'basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 snap-start' }"
                 class="rounded-xl overflow-hidden">
                 <div class="p-2">
-                    <img :src="item" alt="Team working"
+                    <NuxtImg :src="item" :alt="`ภาพบรรยากาศการทำงานสำนักงานบัญชี LMB - ${index + 1}`"
                         class="w-full h-64 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
-                        draggable="false">
+                        draggable="false" />
                 </div>
             </UCarousel>
         </UContainer>

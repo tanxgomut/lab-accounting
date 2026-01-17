@@ -69,8 +69,11 @@ const testimonials = [
             </div>
 
             <UCarousel v-slot="{ item }" loop :arrows="isMd" :prev="{ variant: 'solid' }" :next="{ variant: 'solid' }"
-                :dots="false" :autoplay="{ delay: 2500 }" :items="testimonials"
-                :ui="{ item: 'basis-1/1 sm:basis-1/2 md:basis-1/4' }">
+                :dots="false" :autoplay="{ delay: 2500 }" :items="testimonials" :ui="{
+                    item: 'basis-1/1 sm:basis-1/2 md:basis-1/4',
+                    prev: 'sm:start-8',
+                    next: 'sm:end-8',
+                }">
 
                 <template v-if="item.imageReview">
                     <div
@@ -81,7 +84,7 @@ const testimonials = [
                             <UAvatar :src="item.avatar" :alt="item.name" size="md" class="ring-2 ring-white/50" />
                             <div class="flex-1 min-w-0">
                                 <span class="text-sm font-bold text-white truncate block drop-shadow-md">{{ item.name
-                                }}</span>
+                                    }}</span>
                                 <div class="flex gap-0.5 mt-0.5">
                                     <UIcon v-for="i in 5" :key="i" name="i-heroicons-star-solid"
                                         class="w-3.5 h-3.5 text-warning-400 drop-shadow-sm" />
