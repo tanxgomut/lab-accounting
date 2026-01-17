@@ -68,9 +68,9 @@ const items = [
             </template>
             <template #title>
                 <span class="text-5xl">
-                    <span class="text-[#384c95]">LMB</span>
-                    <span class="text-[#384c95]"> ACCOUNTING</span>
-                    <span class="text-warning-600"> PLUS</span>
+                    <span class="text-blue-900 ">LMB</span>
+                    <span class="text-blue-900 "> ACCOUNTING</span>
+                    <span class="text-warning-500 "> PLUS</span>
                 </span>
             </template>
             <NuxtImg src="/images/content/02.jpg"

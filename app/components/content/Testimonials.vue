@@ -81,7 +81,7 @@ const testimonials = [
                             <UAvatar :src="item.avatar" :alt="item.name" size="md" class="ring-2 ring-white/50" />
                             <div class="flex-1 min-w-0">
                                 <span class="text-sm font-bold text-white truncate block drop-shadow-md">{{ item.name
-                                    }}</span>
+                                }}</span>
                                 <div class="flex gap-0.5 mt-0.5">
                                     <UIcon v-for="i in 5" :key="i" name="i-heroicons-star-solid"
                                         class="w-3.5 h-3.5 text-warning-400 drop-shadow-sm" />
@@ -99,7 +99,7 @@ const testimonials = [
 
                         <div class="flex items-center gap-3 mb-2">
                             <UAvatar :src="item.avatar" :alt="item.name" size="lg" />
-                            <h4 class="font-bold text-sm flex-1">{{ item.name }}</h4>
+                            <p class="font-bold text-sm flex-1">{{ item.name }}</p>
                         </div>
 
                         <div class="flex gap-0.5 mb-4">

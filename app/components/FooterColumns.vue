@@ -108,8 +108,8 @@ const services = [
                         <div class="flex items-center gap-3">
                             <NuxtImg src="/logo.png" alt="LAB ACCOUNTING PLUS" class="h-10 w-auto object-contain" />
                             <div>
-                                <h3 class="text-lg text-[#384c95] font-bold ">LMB ACCOUNTING <span
-                                        class="text-warning-600">PLUS</span></h3>
+                                <h3 class="text-lg text-blue-900 dark:text-primary-300 font-bold ">LMB ACCOUNTING <span
+                                        class="text-warning-500 dark:text-warning-400">PLUS</span></h3>
                                 <a href="http://rsrtechgroup.com/" target="_blank" rel="noopener noreferrer">
                                     <p class="text-xs text-muted hover:text-primary">by RSR TECH GROUP</p>
                                 </a>

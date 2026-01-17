@@ -83,7 +83,6 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <UMain>
         <slot />
-
     </UMain>
 
     <USeparator color="secondary" :avatar="{ src: '/logo.png' }" class="mt-16" />
