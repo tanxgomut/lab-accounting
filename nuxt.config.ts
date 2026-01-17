@@ -104,8 +104,8 @@ export default defineNuxtConfig({
         addressCountry: 'TH',
       },
       geo: {
-        latitude: 13.7563,
-        longitude: 100.5018,
+        latitude: 13.9431569,
+        longitude: 100.3536078,
       },
       openingHoursSpecification: [
         {
