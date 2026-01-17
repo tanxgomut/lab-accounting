@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 
   // SEO Configuration
   site: {
-    url: 'https://lmb-accounting.com',
+    url: 'https://lmbaccount-law.com',
     name: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
     description: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน โดยทีมผู้เชี่ยวชาญ',
     defaultLocale: 'th',
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         allow: ['/'],
       },
     ],
-    sitemap: 'https://lmb-accounting.com/sitemap.xml',
+    sitemap: 'https://lmbaccount-law.com/sitemap.xml',
   },
 
   // OG Image Configuration
@@ -71,8 +71,8 @@ export default defineNuxtConfig({
       type: 'LocalBusiness',
       name: 'LMB Accounting Plus',
       description: 'สำนักงานบัญชีครบวงจร บริการรับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน',
-      url: 'https://lmb-accounting.com',
-      logo: 'https://lmb-accounting.com/logo.png',
+      url: 'https://lmbaccount-law.com',
+      logo: 'https://lmbaccount-law.com/logo.png',
       telephone: '+66-96-353-5572',
       email: 'mayulee.mc@gmail.com',
       address: {
@@ -106,6 +106,15 @@ export default defineNuxtConfig({
     },
   },
 
+  // Route Rules for proper headers
+  routeRules: {
+    '/llms.txt': {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8'
+      }
+    }
+  },
+
   // Link Checker (disable in production)
   linkChecker: {
     enabled: false,
@@ -127,7 +136,7 @@ export default defineNuxtConfig({
   // Runtime Config
   runtimeConfig: {
     public: {
-      siteUrl: 'https://lmb-accounting.com',
+      siteUrl: 'https://lmbaccount-law.com',
     }
   },
 })

@@ -12,6 +12,9 @@ useHead({
     htmlAttrs: {
         lang: 'th'
     },
+    meta: [
+        { name: 'llms', content: 'lmbaccount-law.com/llms.txt' }
+    ],
     link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },

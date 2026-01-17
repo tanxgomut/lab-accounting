@@ -1,4 +1,7 @@
-# LMB Accounting Plus
+export default defineEventHandler((event) => {
+    setHeader(event, 'Content-Type', 'text/plain; charset=utf-8')
+    return `
+    # LMB Accounting Plus
 
 > สำนักงานบัญชีครบวงจร บริการรับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน
 
@@ -41,10 +44,10 @@ LMB Accounting Plus เป็นสำนักงานบัญชีที่
 ## Sitemap
 
 ### Main Pages
-- Homepage: https://lmb-accounting.com/
-- About Us: https://lmb-accounting.com/about
-- Services: https://lmb-accounting.com/services
-- Contact: https://lmb-accounting.com/contact
+- Homepage: https://lmbaccount-law.com/
+- About Us: https://lmbaccount-law.com/about
+- Services: https://lmbaccount-law.com/services
+- Contact: https://lmbaccount-law.com/contact
 
 ## Contact Information
 
@@ -73,3 +76,7 @@ LMB Accounting Plus เป็นสำนักงานบัญชีที่
 ## License
 
 © 2025 LMB Accounting Plus. All rights reserved.
+
+`
+})
+
