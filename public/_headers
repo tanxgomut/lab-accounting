@@ -1,8 +1,40 @@
 # Cloudflare Pages Headers
 # https://developers.cloudflare.com/pages/configuration/headers/
 
+# Text files with UTF-8
 /llms.txt
   Content-Type: text/plain; charset=utf-8
 
 /*.txt
   Content-Type: text/plain; charset=utf-8
+
+# Static assets - long cache
+/_nuxt/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - cache with revalidation
+/images/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*.jpg
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*.webp
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts - long cache
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+
+# Default pages
+/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

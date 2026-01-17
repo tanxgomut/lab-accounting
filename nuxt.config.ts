@@ -22,6 +22,27 @@ export default defineNuxtConfig({
     defaultLocale: 'th',
   },
 
+  // Image Optimization
+  image: {
+    quality: 80,
+    format: ['webp', 'avif', 'jpg'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+    },
+  },
+
+  // Icon Configuration - use local icons for performance
+  icon: {
+    serverBundle: 'auto',
+    clientBundle: {
+      scan: true,
+    },
+  },
+
   // Sitemap Configuration
   sitemap: {
     sources: ['/api/__sitemap__/urls'],
@@ -106,11 +127,27 @@ export default defineNuxtConfig({
     },
   },
 
-  // Route Rules for proper headers
+  // Route Rules for caching and headers
   routeRules: {
     '/llms.txt': {
       headers: {
         'Content-Type': 'text/plain; charset=utf-8'
+      }
+    },
+    // Static assets caching
+    '/_nuxt/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=31536000, immutable'
+      }
+    },
+    '/images/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800'
+      }
+    },
+    '/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400'
       }
     }
   },
@@ -118,6 +155,18 @@ export default defineNuxtConfig({
   // Link Checker (disable in production)
   linkChecker: {
     enabled: false,
+  },
+
+  // Experimental features for performance
+  experimental: {
+    viewTransition: true,
+    payloadExtraction: true,
+  },
+
+  // Nitro Configuration for performance
+  nitro: {
+    compressPublicAssets: true,
+    minify: true,
   },
 
   // Vite Build Configuration
@@ -130,6 +179,13 @@ export default defineNuxtConfig({
           drop_console: true,
         },
       },
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vue-vendor': ['vue', 'vue-router'],
+          }
+        }
+      }
     },
   },
 
