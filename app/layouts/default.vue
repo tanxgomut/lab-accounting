@@ -49,7 +49,7 @@ const items = computed<NavigationMenuItem[]>(() => [
     <UHeader title="LMB-Accounting-Plus" mode="slideover">
 
         <template #left>
-            <NuxtLink to="/">
+            <NuxtLink to="/" aria-label="หน้าแรก - LMB Accounting Plus">
                 <Logo />
             </NuxtLink>
         </template>
@@ -57,7 +57,7 @@ const items = computed<NavigationMenuItem[]>(() => [
         <UNavigationMenu :items="items" />
 
         <template #right>
-            <NuxtLink to="https://line.me/ti/p/~lee_lmbaudit" target="_blank" class="flex items-center gap-2.5 px-5 py-2.5 rounded-full font-bold text-xs md:text-sm
+            <NuxtLink to="https://line.me/ti/p/~lee_lmbaudit" target="_blank" aria-label="ปรึกษาฟรีผ่าน LINE" class="flex items-center gap-2.5 px-5 py-2.5 rounded-full font-bold text-xs md:text-sm
                        bg-linear-to-r from-primary-500 via-primary-500 to-primary-500
                        text-white 
                        hover:scale-110 hover:-translate-y-0.5

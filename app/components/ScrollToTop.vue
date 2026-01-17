@@ -25,7 +25,7 @@ const scrollToTop = () => {
 <template>
     <div class="fixed bottom-8 right-8 z-999 transition-all duration-300 transform"
         :class="[y > 300 ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0']">
-        <UButton icon="i-heroicons-arrow-up" size="xl" color="primary" variant="solid"
+        <UButton icon="i-heroicons-arrow-up" size="xl" color="primary" variant="solid" aria-label="กลับไปด้านบน"
             class="rounded-full shadow-lg hover:shadow-primary-500/50 hover:scale-110 transition-all duration-300"
             @click="scrollToTop" />
     </div>

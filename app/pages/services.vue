@@ -325,7 +325,7 @@ const stats = [
                 :ui="{ item: 'basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 snap-start' }"
                 class="rounded-xl overflow-hidden">
                 <div class="p-2">
-                    <img :src="item"
+                    <img :src="item" alt="Team working"
                         class="w-full h-64 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
                         draggable="false">
                 </div>

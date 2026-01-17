@@ -132,11 +132,11 @@ const items = [
                         </ul>
                     </div>
                     <div class="mt-12 lg:mt-0 relative">
-                        <UCarousel class="rounded-2xl" v-slot="{ item }" :items="items" dots loop
+                        <UCarousel class="rounded-2xl" v-slot="{ item, index }" :items="items" dots loop
                             :autoplay="{ delay: 2000 }" :ui="{
                                 dot: 'w-6 h-1'
                             }">
-                            <NuxtImg :src="item" alt="Team working"
+                            <NuxtImg :src="item" :alt="`ภาพบรรยากาศสำนักงาน LMB Accounting Plus - ${index + 1}`"
                                 class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px] md:h-[600px] transition-all duration-500" />
                         </UCarousel>
                     </div>
@@ -151,7 +151,7 @@ const items = [
                 description="ให้เราดูแลเรื่องบัญชีและภาษี เพื่อให้คุณมีเวลาบริหารธุรกิจได้เต็มที่ ปรึกษาเราได้เลยวันนี้"
                 :links="[
                     { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/~lee_lmbaudit', target: '_blank' },
-                    { label: 'โทรหาเรา', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0963535572' }
+                    { label: 'โทรหาเรา 096-353-5572', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0963535572' }
                 ]" variant="soft"
                 :ui="{ root: 'bg-primary-50 dark:bg-gray-950', title: ' text-primary-900 dark:text-white  ', description: 'dark:text-white' }" />
         </UContainer>
