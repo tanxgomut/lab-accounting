@@ -260,7 +260,7 @@ const links = ref([
         <UPageCTA title="พร้อมให้เราดูแลบัญชีธุรกิจคุณ?"
             description="ปรึกษาฟรี! ไม่มีค่าใช้จ่าย รับข้อเสนอพิเศษสำหรับลูกค้าใหม่วันนี้" variant="soft" :links="[
                 { label: 'แอดไลน์ปรึกษาฟรี', icon: 'i-simple-icons-line', color: 'success', size: 'xl', to: 'https://line.me/ti/p/~lee_lmbaudit', target: '_blank' },
-                { label: 'โทรหาเรา 084-387-5572', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0843875572' }
+                { label: 'โทรหาเรา 084-387-7167', icon: 'i-heroicons-phone', color: 'neutral', variant: 'soft', size: 'xl', to: 'tel:0843877167' }
             ]" />
 
     </UContainer>
