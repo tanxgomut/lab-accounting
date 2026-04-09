@@ -102,6 +102,10 @@ const items = [
 
         <ContentStats />
 
+        <ContentHighlights />
+
+       
+
         <ContentServices />
 
         <ContentTypeBusinesses />
@@ -143,6 +147,8 @@ const items = [
                 </div>
             </UContainer>
         </div>
+
+         <ContentCertifications />
 
         <ContentTestimonials />
 

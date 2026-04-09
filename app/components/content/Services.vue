@@ -131,6 +131,7 @@ const serviceCards = [
         </UContainer>
     </div>
 
+    <ContentRecommend />
 
     <div class="py-20 relative overflow-hidden ">
         <UContainer class="relative z-10">

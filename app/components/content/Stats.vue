@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const stats = [
-    { label: 'ประสบการณ์', value: '20+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'secondary' },
+    { label: 'ประสบการณ์ด้านบัญชี-ภาษีอากร', value: '20+', icon: 'i-heroicons-calendar-days', suffix: 'ปี', color: 'secondary' },
     { label: 'ประเภทธุรกิจที่ดูแลบัญชี-ภาษี', value: '20', icon: 'i-heroicons-building-office', color: 'secondary' },
-    { label: 'เศสงานทะเบียนที่สำเร็จ', value: '600', icon: 'i-heroicons-clipboard-document-check', suffix: '', color: 'secondary' },
-    { label: 'ความพึงพอใจ', value: '100%', icon: 'i-heroicons-face-smile', color: 'secondary' }
+    { label: 'ธุรกิจจดทะเบียน/ปี', value: '50', icon: 'i-heroicons-clipboard-document-check', suffix: '', color: 'secondary' },
+    { label: 'งบการเงินที่ปิด', value: '1,200+', icon: 'i-heroicons-face-smile', color: 'secondary' }
 ]
 </script>
 
