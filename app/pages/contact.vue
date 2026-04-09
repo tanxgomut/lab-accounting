@@ -272,7 +272,9 @@ ${form.message}
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="relative rounded-2xl overflow-hidden shadow-lg h-[300px] md:h-[400px] group">
                     <NuxtImg src="/images/content/08.jpg" alt="ที่ตั้งสำนักงานบัญชี LMB Accounting Plus"
-                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                        format="webp" />
                     <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <h3 class="text-xl font-bold mb-2">LMB Accounting Plus</h3>

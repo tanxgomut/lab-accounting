@@ -30,7 +30,9 @@ const businesses = [
                     <div
                         class="w-40 h-40 md:w-48 md:h-48 bg-white dark:bg-gray-800 rounded-full shadow-xl flex items-center justify-center border-4 border-primary/20">
                         <NuxtImg src="/logo.png" alt="LMB Accounting Plus"
-                            class="w-28 h-28 md:w-36 md:h-36 object-contain" />
+                            class="w-28 h-28 md:w-36 md:h-36 object-contain"
+                            loading="lazy"
+                            format="webp" />
                     </div>
                 </div>
 

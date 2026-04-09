@@ -189,7 +189,9 @@ const stats = [
                 </h1>
             </template>
             <NuxtImg src="/images/content/05.jpg" alt="บริการหลักของเรา"
-                class="w-full h-auto object-contain rounded-xl" />
+                class="w-full h-auto object-contain rounded-xl"
+                loading="lazy"
+                format="webp" />
         </UPageSection>
     </section>
 
@@ -327,7 +329,9 @@ const stats = [
                 <div class="p-2">
                     <NuxtImg :src="item" :alt="`ภาพบรรยากาศการทำงานสำนักงานบัญชี LMB - ${index + 1}`"
                         class="w-full h-64 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
-                        draggable="false" />
+                        draggable="false"
+                        loading="lazy"
+                        format="webp" />
                 </div>
             </UCarousel>
         </UContainer>

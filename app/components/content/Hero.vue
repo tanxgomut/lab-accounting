@@ -75,7 +75,10 @@ const items = [
             </template>
             <NuxtImg src="/images/content/02.jpg"
                 alt="LMB Accounting Plus สำนักบัญชีครบวงจร รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี"
-                class="w-full h-auto object-contain rounded-xl" />
+                class="w-full h-auto object-contain rounded-xl"
+                preload
+                fetchpriority="high"
+                format="webp" />
         </UPageHero>
 
     </section>

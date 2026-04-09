@@ -140,6 +140,11 @@ export default defineNuxtConfig({
         'Cache-Control': 'public, max-age=31536000, immutable'
       }
     },
+    '/_ipx/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=31536000, immutable'
+      }
+    },
     '/images/**': {
       headers: {
         'Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800'
