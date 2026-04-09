@@ -165,7 +165,7 @@ export default defineNuxtConfig({
   // Experimental features for performance
   experimental: {
     viewTransition: true,
-    payloadExtraction: true,
+    payloadExtraction: true
   },
 
   // Nitro Configuration for performance

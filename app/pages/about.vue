@@ -132,6 +132,7 @@ const links = ref([
         <UPageSection title="วิสัยทัศน์ของเรา" headline="Vision" icon="i-heroicons-light-bulb" orientation="horizontal">
             <NuxtImg src="/images/content/08.jpg" alt="Vision"
                 class="object-cover w-full h-[350px] rounded-2xl shadow-lg"
+                width="700" height="350"
                 loading="lazy"
                 format="webp" />
             <template #description>
@@ -153,6 +154,7 @@ const links = ref([
             reverse>
             <NuxtImg src="/images/content/07.jpg" alt="Mission"
                 class="object-cover w-full h-[350px] rounded-2xl shadow-lg"
+                width="700" height="350"
                 loading="lazy"
                 format="webp" />
             <template #description>

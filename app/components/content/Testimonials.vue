@@ -93,6 +93,7 @@ const testimonials = [
                         </div>
                         <NuxtImg :src="item.imageReview" :alt="`รีวิวจาก ${item.name}`"
                             class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                            width="320" height="320"
                             loading="lazy"
                             format="webp" />
                     </div>

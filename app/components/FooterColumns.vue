@@ -106,7 +106,7 @@ const services = [
                 <div>
                     <div class="space-y-3 mb-2">
                         <div class="flex items-center gap-3">
-                            <NuxtImg src="/logo.png" alt="LAB ACCOUNTING PLUS" class="h-10 w-auto object-contain" format="webp" loading="lazy" />
+                            <NuxtImg src="/logo.png" alt="LAB ACCOUNTING PLUS" class="h-10 w-auto object-contain" width="40" height="40" format="webp" loading="lazy" />
                             <div>
                                 <h3 class="text-lg text-blue-900 dark:text-primary-300 font-bold ">LMB ACCOUNTING <span
                                         class="text-warning-500 dark:text-warning-400">PLUS</span></h3>

@@ -142,6 +142,7 @@ const items = [
                             }">
                             <NuxtImg :src="item" :alt="`ภาพบรรยากาศสำนักงาน LMB Accounting Plus - ${index + 1}`"
                                 class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px] md:h-[600px] transition-all duration-500"
+                                width="600" height="600"
                                 loading="lazy"
                                 format="webp" />
                         </UCarousel>

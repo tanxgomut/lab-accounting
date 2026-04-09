@@ -273,6 +273,7 @@ ${form.message}
                 <div class="relative rounded-2xl overflow-hidden shadow-lg h-[300px] md:h-[400px] group">
                     <NuxtImg src="/images/content/08.jpg" alt="ที่ตั้งสำนักงานบัญชี LMB Accounting Plus"
                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        width="600" height="400"
                         loading="lazy"
                         format="webp" />
                     <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
