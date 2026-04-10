@@ -100,15 +100,13 @@ const items = [
     <div>
         <ContentHero />
 
-        <ContentStats />
+        <LazyContentStats hydrate-on-visible />
 
-        <ContentHighlights />
+        <LazyContentHighlights hydrate-on-visible />
 
-       
+        <LazyContentServices hydrate-on-visible />
 
-        <ContentServices />
-
-        <ContentTypeBusinesses />
+        <LazyContentTypeBusinesses hydrate-on-visible />
 
         <div class="py-24 bg-gray-50 dark:bg-gray-950">
             <UContainer>
@@ -144,6 +142,7 @@ const items = [
                                 class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px] md:h-[600px] transition-all duration-500"
                                 width="600" height="600"
                                 loading="lazy"
+                                fetchpriority="low"
                                 format="webp" />
                         </UCarousel>
                     </div>
@@ -151,9 +150,9 @@ const items = [
             </UContainer>
         </div>
 
-         <ContentCertifications />
+        <LazyContentCertifications hydrate-on-visible />
 
-        <ContentTestimonials />
+        <LazyContentTestimonials hydrate-on-visible />
 
         <UContainer class="mt-16">
             <UPageCTA title="พร้อมก้าวสู่ความสำเร็จทางธุรกิจหรือยัง?"

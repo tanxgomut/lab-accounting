@@ -20,6 +20,7 @@
             src="/images/content/cert-2.jpg"
             alt="FLOWACCOUNT A Complete Guide to Mastering Flow Account"
             class="w-full rounded-lg"
+            width="600" height="400"
             loading="lazy"
             format="webp"
             />
@@ -36,6 +37,7 @@
             src="/images/content/cert-1.jpg"
             alt="PEAK Specialist ผู้เชี่ยวชาญโปรแกรม PEAK Advisor Level Advance"
             class="w-full rounded-lg"
+            width="600" height="400"
             loading="lazy"
             format="webp"
             />

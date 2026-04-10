@@ -41,6 +41,7 @@ const items = computed<NavigationMenuItem[]>(() => [
         icon: 'i-heroicons-device-phone-mobile',
         active: route.path === '/contact'
     },
+    { label: 'บทความ', to: '/blogs', icon: 'i-heroicons-document-text', active: route.path === '/blogs' },
 ])
 
 

@@ -190,7 +190,7 @@ const stats = [
             </template>
             <NuxtImg src="/images/content/05.jpg" alt="บริการหลักของเรา"
                 class="w-full h-auto object-contain rounded-xl"
-                width="700"
+                width="700" height="525"
                 loading="lazy"
                 format="webp" />
         </UPageSection>

@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     name: 'LMB Accounting Plus - สำนักงานบัญชีครบวงจร',
     description: 'บริษัท นิติบุคคล ผู้ให้บริการบริหารจัดการการเงิน รับทำบัญชี จดทะเบียนบริษัท ยื่นภาษี ปิดงบการเงิน โดยทีมผู้เชี่ยวชาญ',
     defaultLocale: 'th',
+    indexable: true,
   },
 
   // Image Optimization
@@ -55,7 +56,7 @@ export default defineNuxtConfig({
       {
         userAgent: '*',
         allow: ['/'],
-        disallow: ['/api/', '/_nuxt/', '/manage/', '/preview'],
+        disallow: ['/api/', '/manage/', '/preview'],
       },
       {
         userAgent: 'GPTBot',
@@ -150,6 +151,13 @@ export default defineNuxtConfig({
         'Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800'
       }
     },
+    // Hybrid Rendering - prerender static pages, ISR for dynamic
+    '/': { prerender: true },
+    '/about': { prerender: true },
+    '/services': { prerender: true },
+    '/contact': { prerender: true },
+    '/blogs': { isr: 3600 },
+    '/blog/**': { isr: 3600 },
     '/**': {
       headers: {
         'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400'
