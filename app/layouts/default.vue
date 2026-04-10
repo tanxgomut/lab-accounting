@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 

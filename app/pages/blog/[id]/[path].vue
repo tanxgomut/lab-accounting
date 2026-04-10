@@ -5,7 +5,15 @@ const route = useRoute()
 const id = route.params.id
 const path = route.params.path
 
+
 const { data: article } = await useFetch(`/api/blogs/${id}`)
+
+useSeoMeta({
+    title: article?.value?.title,
+    description: article?.value?.description,
+    ogTitle: article?.value?.title,
+    ogDescription: article?.value?.description,
+})
 
 const copyLink = () => {
     copy(`https://lmbaccount-law.com/blog/${id}/${path}`)
