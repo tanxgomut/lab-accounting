@@ -24,7 +24,7 @@ const copyLink = () => {
     <UContainer>
         <UBreadcrumb class="mt-10" :items="[
             { label: '', to: '/blogs', icon: 'i-lucide-book-open' },
-            { label: path as string, to: `/blog/${path}`, icon: 'i-lucide-box', },
+            { label: path as string, to: `/blog/${id}/${path}`, icon: 'i-lucide-box', },
         ]" />
         <UPageHeader :title="article?.title" :description="article?.description">
             <template #headline>
