@@ -42,5 +42,30 @@
             format="webp"
             />
         </UPageCTA>
+        <UPageCTA
+            title="Certificate of Completion สำหรับหลักสูตร Introduction to Claude Cowork"
+            description="เป็นใบรับรองอย่างเป็นทางการจาก Anthropic ที่ยืนยันว่ามีความสามารถในการใช้งาน Claude ในรูปแบบ ตัวช่วยทำงาน (Agentic AI)"
+            orientation="horizontal"
+            class="rounded-none"
+            variant="naked"
+            reverse
+        >
+        <UCarousel 
+            v-slot="{ item, index }" 
+            dots 
+            :autoplay="{ delay: 3000 }"
+            :items="['/images/content/cert-3.jpg', '/images/content/cert-4.jpg']" 
+            class="w-full">
+            <NuxtImg
+                    :src="item"
+                    :alt="`Certificate of Completion สำหรับหลักสูตร Introduction to Claude Cowork-${index + 1}`"
+                    class="w-full rounded-lg"
+                    width="600" height="400"
+                    loading="lazy"
+                    format="webp"
+                    />
+        </UCarousel>
+           
+        </UPageCTA>
     </UContainer>
 </template>
