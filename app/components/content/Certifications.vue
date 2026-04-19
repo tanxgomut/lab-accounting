@@ -53,7 +53,7 @@
         <UCarousel 
             v-slot="{ item, index }" 
             dots 
-            :autoplay="{ delay: 3000 }"
+            :autoplay="{ delay: 5000 }"
             :items="['/images/content/cert-3.jpg', '/images/content/cert-4.jpg']" 
             class="w-full">
             <NuxtImg
