@@ -29,11 +29,11 @@ const businesses = [
                     class="flex justify-center mb-8 md:mb-0 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 z-10">
                     <div
                         class="w-40 h-40 md:w-48 md:h-48 bg-white dark:bg-gray-800 rounded-full shadow-xl flex items-center justify-center border-4 border-primary/20">
-                        <NuxtImg src="/logo.png" alt="LMB Accounting Plus"
+                        <img src="/images/content/logo.png" alt="LMB Accounting Plus"
                             class="w-28 h-28 md:w-36 md:h-36 object-contain"
                             width="144" height="144"
-                            loading="lazy"
-                            format="webp" />
+                            format="webp"
+                            loading="lazy" />
                     </div>
                 </div>
 
